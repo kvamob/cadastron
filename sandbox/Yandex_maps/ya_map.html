@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Yandex Maps</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+        
+        function init(){ 
+            var x, y;
+            x = 55.76;
+            y = 60.64;
+
+            myMap = new ymaps.Map("map", {
+                center: [x, y],
+                zoom: 7
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([x, y], {
+                hintContent: 'Москва',
+                balloonContent: 'Столица России'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="map" style="width: 800px; height: 800px"></div>
+</body>
+
+</html>

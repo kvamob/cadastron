@@ -1,0 +1,34 @@
+textarea {
+  font-family: monospace;
+}
+
+#output_console {
+  font-family: monospace;
+}
+
+h1 {
+  color: #1882a5;
+}
+
+/* масштабирование текста и компонентов  */
+html {
+  font-size: 1.0rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Cadastron</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <!-- <link rel="stylesheet" href="css/mdb.min.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
+  <script type="text/javascript" src="/eel.js"></script>
+  <!-- Yandex Maps -->
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <!-- MDB core JavaScript -->
+  <!-- <script type="text/javascript" src="js/mdb.min.js"></script> -->
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <!-- <div class="jumbotron">
+      <h1 class="h1-reponsive mb-4 mt-2 blue-text font-bold"><span><img src="favicon.ico"></span> Cadastron</h1>
+      <p class="lead">Получение информации об участке по его кадастровому номеру</p>
+    </div> -->
+    <div>
+      <h1 class="h1-reponsive mb-4 mt-2"><span><img src="favicon.ico"></span> Cadastron</h1>
+      <!-- <hr class="my-4"> -->
+      <!-- <p class="small">Получение информации об участке по его кадастровому номеру</p> -->
+      <hr class="my-4">
+    </div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#tab_home">Параметры</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#tab_map">Карта 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#tab_map_stat">Карта 2</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Первая вкладка -->
+      <div id="tab_home" class="container tab-pane active"><br>
+
+        <label for="inp_cadaster" class="small">Кадастровый номер</label>
+        <div class="input-group mb-3">
+          <input id="inp_cadaster" type="text" class="form-control" placeholder="Кадастровый номер" aria-label="Cadaster" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button id="btn_get" class="btn btn-outline-secondary" type="button">Старт</button>
+          </div>
+        </div>
+
+        <textarea id="output" style="width: 100%;" rows="7" class="form-control form-control-sm"></textarea>
+
+        <br>
+
+        <div class="clearfix">
+          <h4 id="nomenclature" class="float-left"></h4><a id="url_yandex" href="#" class="btn btn-info float-right disabled" role="button" target="_blank">Yandex Maps</a>
+        </div>
+
+        <label for="dst_folder" class="small">Имя папки с отчетом по изысканиям</label>
+        <div class="input-group mb-3">
+          <input id="dst_folder" type="text" class="form-control" placeholder="Имя папки">
+          <div class="input-group-append">
+            <button id="btn_create" class="btn btn-outline-secondary" type="button" disabled>Создать</button>
+          </div>
+        </div>
+
+        <div>
+          <textarea id="output_console" style="width: 100%;" rows="7" class="form-control form-control-sm"></textarea>
+        </div>
+      </div>
+
+      <!-- Вторая вкладка -->
+      <div id="tab_map" class="container tab-pane fade"><br>
+        <!-- Yandex Maps -->
+        <!-- <img src="https://static-maps.yandex.ru/1.x/?pt=60.55,56.68,comma&z=11&size=600,450&l=map" alt="Yandex Map"> -->
+        <div class="d-flex justify-content-center">
+        <div id="map" style="width: 650px; height: 650px"></div>
+      </div>
+      </div>
+
+      <!-- Третья вкладка -->
+      <div id="tab_map_stat" class="container tab-pane fade"><br>
+        <!-- Yandex Maps -->
+        <div class="d-flex justify-content-center">
+        <img id="img_map" src="https://static-maps.yandex.ru/1.x/?pt=60.60,56.83,comma&z=13&size=600,450&l=map" alt="Yandex Map">
+        </div>
+        <!-- <div id="map" style="width: 650px; height: 650px"></div> -->
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+</body>
+
+</html>

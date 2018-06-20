@@ -13,6 +13,7 @@ $(function() {
 
   // Execution output
   eel.expose(addOutput);
+
   function addOutput(line) {
     //      document.getElementById('output_console').style.display = 'block';
     $('#output_console').append(line);
@@ -82,11 +83,10 @@ $(function() {
     myPlacemark;
 
   function init() {
-    var lat, lon;
-    lat = 56.83;
-    lon = 60.60;
+    var lat = 56.83;
+    var lon = 60.60;
 
-    myMap = new ymaps.Map("map", {
+    myMap = new ymaps.Map('map', {
       center: [lat, lon],
       zoom: 11
     });
@@ -100,10 +100,11 @@ $(function() {
   }
 
   //----------------------------------------------------------------------
-  // Задать позицию цетра карты
+  // Задать позицию цетра интерактивной Yandex карты
   //----------------------------------------------------------------------
   eel.expose(setYmapPosition_js);
-  function setYmapPosition_js(lat, lon, scale, content)  {
+
+  function setYmapPosition_js(lat, lon, scale, content) {
     myMap.setCenter([lat, lon], scale);
     newPlacemark = new ymaps.Placemark([lat, lon], {
       hintContent: 'Участок',
@@ -122,8 +123,8 @@ $(function() {
   $('#btn_get').click(function() {
     let info = eel.load_info($('#inp_cadaster').val())();
     print_to_textarea_js(info);
-//    set_ymap_src_js('https://static-maps.yandex.ru/1.x/?pt=60.00,56.30,comma&z=13&size=600,450&l=map');
-//    setYmapPosition_js('55.0', '60.5', 12);
+    //    set_ymap_src_js('https://static-maps.yandex.ru/1.x/?pt=60.00,56.30,comma&z=13&size=600,450&l=map');
+    //    setYmapPosition_js('55.0', '60.5', 12);
   });
 
   // Кнопка Создать

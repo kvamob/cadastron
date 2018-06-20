@@ -8,6 +8,7 @@
   <title>Cadastron</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/leaflet.css">
   <!-- Material Design Bootstrap -->
   <!-- <link rel="stylesheet" href="css/mdb.min.css"> -->
   <link rel="stylesheet" href="css/main.css">
@@ -19,6 +20,7 @@
   <script type="text/javascript" src="/eel.js"></script>
   <!-- Yandex Maps -->
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script type="text/javascript" src="js/leaflet.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <!-- MDB core JavaScript -->
   <!-- <script type="text/javascript" src="js/mdb.min.js"></script> -->
@@ -45,9 +47,15 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#tab_map">Карта 1</a>
+        <!-- Yandex Maps interactive -->
       </li>
       <li class="nav-item">
         <a class="nav-link" data-toggle="tab" href="#tab_map_stat">Карта 2</a>
+        <!-- Yandex Maps  - static image-->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#tab_map_geo">Геология</a>
+        <!-- Геология -->
       </li>
     </ul>
 
@@ -87,20 +95,28 @@
 
       <!-- Вторая вкладка -->
       <div id="tab_map" class="container tab-pane fade"><br>
-        <!-- Yandex Maps -->
+        <!-- Yandex Maps interactive -->
         <!-- <img src="https://static-maps.yandex.ru/1.x/?pt=60.55,56.68,comma&z=11&size=600,450&l=map" alt="Yandex Map"> -->
         <div class="d-flex justify-content-center">
-        <div id="map" style="width: 650px; height: 650px"></div>
-      </div>
+          <div id="map" style="width: 650px; height: 650px"></div>
+        </div>
       </div>
 
       <!-- Третья вкладка -->
       <div id="tab_map_stat" class="container tab-pane fade"><br>
-        <!-- Yandex Maps -->
+        <!-- Yandex Maps  - static image-->
         <div class="d-flex justify-content-center">
-        <img id="img_map" src="https://static-maps.yandex.ru/1.x/?pt=60.60,56.83,comma&z=13&size=600,450&l=map" alt="Yandex Map">
+          <img id="img_map" src="https://static-maps.yandex.ru/1.x/?pt=60.60,56.83,comma&z=13&size=600,450&l=map" alt="Yandex Map">
         </div>
         <!-- <div id="map" style="width: 650px; height: 650px"></div> -->
+      </div>
+
+      <!-- Четвертая вкладка -->
+      <div id="tab_map_geo" class="container tab-pane fade"><br>
+        <!-- Геология -->
+        <div class="d-flex justify-content-center">
+          <div id="geomap" style="width: 650px; height: 650px"></div>
+        </div>
       </div>
 
     </div>

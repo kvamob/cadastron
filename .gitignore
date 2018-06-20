@@ -3,5 +3,6 @@
 venv/
 __pycache__
 geomap/
-!geomap/readme.txt
+!web/geomap/readme.txt
+!sandbox/leaflet/geomap/readme.txt
 

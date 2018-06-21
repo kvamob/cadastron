@@ -13,13 +13,8 @@ $(function() {
 
   // Execution output
   eel.expose(addOutput);
-
   function addOutput(line) {
-    //      document.getElementById('output_console').style.display = 'block';
     $('#output_console').append(line);
-    //      document.getElementById('output_console').children[1].value += line;
-    //      document.getElementById('output_console').children[1].rows = (parseInt(document.getElementById('output_console').children[1].rows) + 1) + '';
-    //      window.scrollTo(0, document.body.scrollHeight);
   }
 
   eel.expose(print_to_input_report_js); // Expose this function to Python
@@ -66,15 +61,6 @@ $(function() {
   addOutput('');
   $('#nomenclature').val('Лист O-41-25');
 
-  // if ($('#url_yandex').attr('disabled')) {
-  //   console.log('Кнопка Yandex Maps disabled');
-  // }
-  //
-  // if ($('#btn_create').attr('disabled')) {
-  //   console.log('Кнопка Создать disabled');
-  // } else {
-  //   console.log('Кнопка Создать enabled');
-  // }
 
   // Yandex Maps
   ymaps.ready(init);
@@ -102,20 +88,19 @@ $(function() {
     myMap.geoObjects.add(myPlacemark);
   }
 
-    // Leaflet.js 
+    // Leaflet.js
     var mapExtent = [57.52479930, 55.89930842, 62.99872460, 59.39520320];
     var mapMinZoom = 10;
     var mapMaxZoom = 12;
-    
+
     var bounds = new L.LatLngBounds(
       new L.LatLng(mapExtent[1], mapExtent[0]),
       new L.LatLng(mapExtent[3], mapExtent[2]));
     var geomap = L.map('geomap').fitBounds(bounds);
-    geomap.setView(new L.LatLng(lat, lon), 12);
-    console.log('lat =', lat );
-    console.log('lon =', lon );
 
-//    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(geomap);
+    // geomap.setView(new L.LatLng(lat, lon), 12);
+
+   // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(geomap);
     var layer;
     var options = {
       minZoom: mapMinZoom,
@@ -125,17 +110,20 @@ $(function() {
       //attribution: 'Rendered with <a href="http://www.maptiler.com/">MapTiler</a>',
       tms: false
     };
-    geomap.setView(new L.LatLng(lat, lon), 12);
+
+    // geomap.setView(new L.LatLng(lat, lon), 12);
+    // setGeoMapPosition_js(lat, lon, 12);
     layer = L.tileLayer('geomap/{z}/{x}/{y}.png', options).addTo(geomap);
 
-    var marker = L.marker([lat, lon]).addTo(geomap);
+//    var marker = L.marker([lat, lon]).addTo(geomap);
 
   //----------------------------------------------------------------------
   // Задать позицию цетра интерактивной Yandex карты
+  // И установить маркер на центр
   //----------------------------------------------------------------------
   eel.expose(setYmapPosition_js);
-  function setYmapPosition_js(lat, lon, scale, content) {
-    myMap.setCenter([lat, lon], scale);
+  function setYmapPosition_js(lat, lon, zoom, content) {
+    myMap.setCenter([lat, lon], zoom);
     newPlacemark = new ymaps.Placemark([lat, lon], {
       hintContent: 'Участок',
       iconContent: content
@@ -143,6 +131,18 @@ $(function() {
       preset: 'islands#blueStretchyIcon'
     });
     myMap.geoObjects.add(newPlacemark);
+  }
+
+  //----------------------------------------------------------------------
+  // Задать позицию цетра интерактивной геологической карты (на Leaflet.js)
+  // И установить маркер на центр
+  //----------------------------------------------------------------------
+  eel.expose(setGeoMapPosition_js);
+  function setGeoMapPosition_js(lat, lon, zoom) {
+    geomap.setView(new L.LatLng(lat, lon), zoom);
+    var marker = L.marker([lat, lon]).addTo(geomap);
+    console.log('lat =', lat);
+    console.log('lon =', lon);
   }
 
   //

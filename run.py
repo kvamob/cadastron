@@ -37,6 +37,7 @@ def load_info(x):
         eel.addOutput('>>> Создаем файл Ozi Waypoints\n')
         eel.setYmapPosition_js(area.lat, area.lon, 13, area.cadaster)
         eel.set_ymap_src_js(area.yandex_url_static)
+        eel.setGeoMapPosition_js(area.lat, area.lon, 12)
         eel.print_nomenclature_js('Лист ' + area.nomenclature)
     else:
         eel.print_to_textarea_js(area.errmsg)

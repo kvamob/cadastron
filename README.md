@@ -31,7 +31,10 @@
 Chrome запустится в режиме приложения с этим проектом внутри.
 
 ## TODO
-- Выводить Yandex карту в отдельном поле
+~- Выводить Yandex карту в отдельном поле~
+~- Геологическая карта~
+- Входной параметр - координаты, а не кадастровый номер
+
 
 ## Something is Wrong?
 There could be a chance that you were using an old version and I have changed something and your cache is now a mess. Press Shift+F5 in the chrome app to force reload everything.

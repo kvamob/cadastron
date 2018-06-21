@@ -82,9 +82,12 @@ $(function() {
   var myMap,
     myPlacemark;
 
+  var lat = 56.842004;
+  var lon = 60.553123;
+
   function init() {
-    var lat = 56.83;
-    var lon = 60.60;
+    // var lat = 56.83;
+    // var lon = 60.60;
 
     myMap = new ymaps.Map('map', {
       center: [lat, lon],
@@ -99,11 +102,38 @@ $(function() {
     myMap.geoObjects.add(myPlacemark);
   }
 
+    // Leaflet.js 
+    var mapExtent = [57.52479930, 55.89930842, 62.99872460, 59.39520320];
+    var mapMinZoom = 10;
+    var mapMaxZoom = 12;
+    
+    var bounds = new L.LatLngBounds(
+      new L.LatLng(mapExtent[1], mapExtent[0]),
+      new L.LatLng(mapExtent[3], mapExtent[2]));
+    var geomap = L.map('geomap').fitBounds(bounds);
+    geomap.setView(new L.LatLng(lat, lon), 12);
+    console.log('lat =', lat );
+    console.log('lon =', lon );
+
+//    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(geomap);
+    var layer;
+    var options = {
+      minZoom: mapMinZoom,
+      maxZoom: mapMaxZoom,
+      //opacity: 0.4,
+      opacity: 1.0,
+      //attribution: 'Rendered with <a href="http://www.maptiler.com/">MapTiler</a>',
+      tms: false
+    };
+    geomap.setView(new L.LatLng(lat, lon), 12);
+    layer = L.tileLayer('geomap/{z}/{x}/{y}.png', options).addTo(geomap);
+
+    var marker = L.marker([lat, lon]).addTo(geomap);
+
   //----------------------------------------------------------------------
   // Задать позицию цетра интерактивной Yandex карты
   //----------------------------------------------------------------------
   eel.expose(setYmapPosition_js);
-
   function setYmapPosition_js(lat, lon, scale, content) {
     myMap.setCenter([lat, lon], scale);
     newPlacemark = new ymaps.Placemark([lat, lon], {
@@ -132,5 +162,10 @@ $(function() {
     eel.create_report($('#dst_folder').val())();
     //    print_to_textarea_js(info);
   });
+
+  // При открытии вкладки Геология карте нужно послать сигнал, чтобы обновить информацию о размере элемента
+  $('#link_geomap').on('shown.bs.tab', function() {
+    geomap.invalidateSize();
+});
 
 });

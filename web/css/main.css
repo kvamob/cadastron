@@ -6,6 +6,16 @@ textarea {
   font-family: monospace;
 }
 
+#map {
+  width: 650px; 
+  height: 650px;
+}
+
+#geomap {
+  width: 650px; 
+  height: 650px;
+}
+
 h1 {
   color: #1882a5;
 }

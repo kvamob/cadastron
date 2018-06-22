@@ -54,8 +54,8 @@
 
    <div class="tab-content">
     <div id="tab_home" class="container tab-pane active"><br>      
-      <p>Lorem ipsum</p>
-      Просто текст
+      <button id="btn_1" class="btn btn-outline-secondary" type="button">Coords 1</button>
+      <button id="btn_2" class="btn btn-outline-secondary" type="button">Coords 2</button>
     </div>
     
     <div id="tab_geomap" class="container tab-pane fade"><br>
@@ -95,9 +95,24 @@
 
     var marker = L.marker([lat, lon]).addTo(geomap);
 
+//    alert('Next');
+//    geomap.setView(new L.LatLng(56.78979,  60.863708, 12));
+
     $('#link_geomap').on('shown.bs.tab', function() {
       geomap.invalidateSize();
   });
+
+  $('#btn_1').click(function() {
+    geomap.setView(new L.LatLng(56.162464,	60.915409), 12);
+    L.marker([56.162464,	60.915409]).addTo(geomap);
+  });
+
+  $('#btn_2').click(function() {
+    geomap.setView(new L.LatLng(56.74345,  61.079306), 12);
+    L.marker([56.74345,  61.079306]).addTo(geomap);
+  });
+
+
   </script>
 </body>
 

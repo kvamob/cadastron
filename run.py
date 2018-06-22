@@ -40,6 +40,10 @@ def load_info(x):
         # eel.setGeoMapPosition_js(area.lat, area.lon, 12)
         # eel.setGeoMapPosition_js(area.lat, area.lon)
         eel.print_nomenclature_js('Лист ' + area.nomenclature)
+
+        eel.addOutput('>>> Latitude  : {0}\n'.format(area.lat))
+        eel.addOutput('>>> Longitude : {0}\n'.format(area.lon))
+
     else:
         eel.print_to_textarea_js(area.errmsg)
 
@@ -56,6 +60,7 @@ def get_longitude():
     global area
     return '61.430803'
     # return area.lon
+
 
 @eel.expose                         # Expose this function to Javascript
 def create_report(folder):

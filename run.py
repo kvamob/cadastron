@@ -51,15 +51,15 @@ def load_info(x):
 @eel.expose                         # Expose this function to Javascript
 def get_latitude():
     global area
-    return '56.52813'
-    # return area.lat
+    # return '56.52813'
+    return area.lat
 
 
 @eel.expose                         # Expose this function to Javascript
 def get_longitude():
     global area
-    return '61.430803'
-    # return area.lon
+    # return '61.430803'
+    return area.lon
 
 
 @eel.expose                         # Expose this function to Javascript

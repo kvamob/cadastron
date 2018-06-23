@@ -63,7 +63,7 @@ $(function() {
   $('#nomenclature').val('Лист O-41-25');
 
 
-  // Yandex Maps
+  // ---------------- Yandex Maps ----------------------------------------------------
   ymaps.ready(init);
 
   var myMap,
@@ -159,6 +159,18 @@ $(function() {
   // Обработчики событий
   //
 
+  async function changeGeoMapPosition() {
+    let lat = await eel.get_latitude()(); // Получим из Python шиироту
+    let lon = await eel.get_longitude()(); // Получим из Python долготу
+
+    console.log('Got this from Python: lat = ' + lat);
+    console.log('Got this from Python: lon = ' + lon);
+
+    geomap.setView(new L.LatLng(lat, lon), 12);
+    L.marker([lat, lon]).addTo(geomap);
+  }
+
+
   // async function getLatitude() {
   //   let return_value = await eel.get_latitude()(); // Must prefix call with 'await'
   //   console.log('Got this from Python: ' + return_value);
@@ -177,7 +189,11 @@ $(function() {
   // Кнопка Старт
   $('#btn_get').click(function() {
     // let info = eel.load_info($('#inp_cadaster').val())();
+    console.log('eel.load_info');
     eel.load_info($('#inp_cadaster').val())();
+    console.log('changeGeoMapPosition()');
+    changeGeoMapPosition();
+
     //    print_to_textarea_js(info);
     //    console.log(info);
 
@@ -213,16 +229,24 @@ $(function() {
     geomap.invalidateSize();
   });
 
+
   // $('#btn_1').click(function() {
-  // //   geomap.setView(new L.LatLng(56.162464,	60.915409), 12);
-  // //   L.marker([56.162464,	60.915409]).addTo(geomap);
-  //   setGeoMapPosition_js(56.162464,	60.915409);
+  //   changeGeoMapPosition();
   // });
-  //
   // $('#btn_2').click(function() {
-  //   // geomap.setView(new L.LatLng(56.52813,  61.430803), 12);
-  //   // L.marker([56.52813,  61.430803]).addTo(geomap);
-  //     setGeoMapPosition_js(56.52813,  61.430803);
+  //     changeGeoMapPosition();
   // });
+
+  $('#btn_1').click(function() {
+  //   geomap.setView(new L.LatLng(56.162464,	60.915409), 12);
+  //   L.marker([56.162464,	60.915409]).addTo(geomap);
+    setGeoMapPosition_js(56.162464,	60.915409);
+  });
+
+  $('#btn_2').click(function() {
+    // geomap.setView(new L.LatLng(56.52813,  61.430803), 12);
+    // L.marker([56.52813,  61.430803]).addTo(geomap);
+      setGeoMapPosition_js(56.52813,  61.430803);
+  });
 
 });

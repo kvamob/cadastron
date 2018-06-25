@@ -38,7 +38,7 @@ def load_info(x):
         eel.setYmapPosition_js(area.lat, area.lon, 13, area.cadaster)
         eel.set_ymap_src_js(area.yandex_url_static)
         # eel.setGeoMapPosition_js(area.lat, area.lon, 12)
-        # eel.setGeoMapPosition_js(area.lat, area.lon)
+        eel.setGeoMapPosition_js(area.lat, area.lon)
         eel.print_nomenclature_js('Лист ' + area.nomenclature)
 
         eel.addOutput('>>> Latitude  : {0}\n'.format(area.lat))
@@ -48,18 +48,18 @@ def load_info(x):
         eel.print_to_textarea_js(area.errmsg)
 
 
-@eel.expose                         # Expose this function to Javascript
-def get_latitude():
-    global area
-    # return '56.52813'
-    return area.lat
-
-
-@eel.expose                         # Expose this function to Javascript
-def get_longitude():
-    global area
-    # return '61.430803'
-    return area.lon
+# @eel.expose                         # Expose this function to Javascript
+# def get_latitude():
+#     global area
+#     # return '56.52813'
+#     return area.lat
+#
+#
+# @eel.expose                         # Expose this function to Javascript
+# def get_longitude():
+#     global area
+#     # return '61.430803'
+#     return area.lon
 
 
 @eel.expose                         # Expose this function to Javascript

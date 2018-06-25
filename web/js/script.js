@@ -74,8 +74,6 @@ $(function() {
   var geomap;
 
   function init() {
-    // var lat = 56.83;
-    // var lon = 60.60;
 
     myMap = new ymaps.Map('map', {
       center: [lat, lon],
@@ -117,13 +115,11 @@ $(function() {
     tms: false
   };
 
-  // geomap.setView(new L.LatLng(lat, lon), 12);
-  // setGeoMapPosition_js(lat, lon, 12);
-
-  layer = L.tileLayer('geomap/{z}/{x}/{y}.png', options).addTo(geomap);
-
+// Слой с тайлами гелогической карты - локальный веб-сервер
+// Почему-то тайлы плохо грузятся, если использовать доступ к локальной папке без веб-сервера
+//  layer = L.tileLayer('geomap/{z}/{x}/{y}.png', options).addTo(geomap);
+  layer = L.tileLayer('http://localhost/{z}/{x}/{y}.png').addTo(geomap);
   var marker = L.marker([lat, lon]).addTo(geomap);
-
 
   //----------------------------------------------------------------------
   // Задать позицию цетра интерактивной Yandex карты
@@ -159,30 +155,15 @@ $(function() {
   // Обработчики событий
   //
 
-  async function changeGeoMapPosition() {
-    let lat = await eel.get_latitude()(); // Получим из Python шиироту
-    let lon = await eel.get_longitude()(); // Получим из Python долготу
-
-    console.log('Got this from Python: lat = ' + lat);
-    console.log('Got this from Python: lon = ' + lon);
-
-    geomap.setView(new L.LatLng(lat, lon), 12);
-    L.marker([lat, lon]).addTo(geomap);
-  }
-
-
-  // async function getLatitude() {
-  //   let return_value = await eel.get_latitude()(); // Must prefix call with 'await'
-  //   console.log('Got this from Python: ' + return_value);
-  //   lat = return_value;
-  //   console.log('Got this from Python lat: ' + lat);
-  // }
+  // async function changeGeoMapPosition() {
+  //   let lat = await eel.get_latitude()(); // Получим из Python шиироту
+  //   let lon = await eel.get_longitude()(); // Получим из Python долготу
   //
-  // async function getLongitude() {
-  //   let return_value = await eel.get_longitude()(); // Must prefix call with 'await'
-  //   console.log('Got this from Python: ' + return_value);
-  //   lon = return_value;
-  //   console.log('Got this from Python lon: ' + lon);
+  //   console.log('Got this from Python: lat = ' + lat);
+  //   console.log('Got this from Python: lon = ' + lon);
+  //
+  //   geomap.setView(new L.LatLng(lat, lon), 12);
+  //   L.marker([lat, lon]).addTo(geomap);
   // }
 
 
@@ -191,8 +172,8 @@ $(function() {
     // let info = eel.load_info($('#inp_cadaster').val())();
     console.log('eel.load_info');
     eel.load_info($('#inp_cadaster').val())();
-    console.log('changeGeoMapPosition()');
-    changeGeoMapPosition();
+    // console.log('changeGeoMapPosition()');
+    // changeGeoMapPosition();
 
     //    print_to_textarea_js(info);
     //    console.log(info);
@@ -237,16 +218,16 @@ $(function() {
   //     changeGeoMapPosition();
   // });
 
-  $('#btn_1').click(function() {
-  //   geomap.setView(new L.LatLng(56.162464,	60.915409), 12);
-  //   L.marker([56.162464,	60.915409]).addTo(geomap);
-    setGeoMapPosition_js(56.162464,	60.915409);
-  });
-
-  $('#btn_2').click(function() {
-    // geomap.setView(new L.LatLng(56.52813,  61.430803), 12);
-    // L.marker([56.52813,  61.430803]).addTo(geomap);
-      setGeoMapPosition_js(56.52813,  61.430803);
-  });
+  // $('#btn_1').click(function() {
+  // //   geomap.setView(new L.LatLng(56.162464,	60.915409), 12);
+  // //   L.marker([56.162464,	60.915409]).addTo(geomap);
+  //   setGeoMapPosition_js(56.162464,	60.915409);
+  // });
+  //
+  // $('#btn_2').click(function() {
+  //   // geomap.setView(new L.LatLng(56.52813,  61.430803), 12);
+  //   // L.marker([56.52813,  61.430803]).addTo(geomap);
+  //     setGeoMapPosition_js(56.52813,  61.430803);
+  // });
 
 });

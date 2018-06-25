@@ -210,6 +210,16 @@ $(function() {
     geomap.invalidateSize();
   });
 
+  $('#cb_show_geomap').on('click', function() {
+    console.log('CHECKBOX -->', $('#cb_show_geomap').is(':checked'));
+    if ($('#cb_show_geomap').is(':checked')) {
+      layer.opacity = 1;
+    }
+    else {
+      layer.opacity = 0.1;
+    }
+
+  });
 
   // $('#btn_1').click(function() {
   //   changeGeoMapPosition();

@@ -89,4 +89,4 @@ def create_report(folder):
 eel.say_hello_js('connected!')   # Call a Javascript function
 eel.print_to_textarea_js('')     # Call a Javascript function
 
-eel.start('main.html', size=(800, 900))    # Start
+eel.start('main.html', size=(800, 950))    # Start

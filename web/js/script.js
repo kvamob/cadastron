@@ -13,7 +13,6 @@ $(function() {
 
   // Execution output
   eel.expose(addOutput);
-
   function addOutput(line) {
     $('#output_console').append(line);
   }
@@ -91,7 +90,7 @@ $(function() {
   // ------- Leaflet.js --------------------------------------------------------------
   var mapExtent = [57.52479930, 55.89930842, 62.99872460, 59.39520320];
   var mapMinZoom = 10;
-  var mapMaxZoom = 12;
+  var mapMaxZoom = 13;
 
   var bounds = new L.LatLngBounds(
     new L.LatLng(mapExtent[1], mapExtent[0]),
@@ -109,8 +108,8 @@ $(function() {
   var options = {
     minZoom: mapMinZoom,
     maxZoom: mapMaxZoom,
-    //opacity: 0.4,
     opacity: 1.0,
+    //opacity: 1.0,
     //attribution: 'Rendered with <a href="http://www.maptiler.com/">MapTiler</a>',
     tms: false
   };
@@ -118,7 +117,7 @@ $(function() {
 // Слой с тайлами гелогической карты - локальный веб-сервер
 // Почему-то тайлы плохо грузятся, если использовать доступ к локальной папке без веб-сервера
 //  layer = L.tileLayer('geomap/{z}/{x}/{y}.png', options).addTo(geomap);
-  layer = L.tileLayer('http://localhost/{z}/{x}/{y}.png').addTo(geomap);
+  layer = L.tileLayer('http://localhost/{z}/{x}/{y}.png', options).addTo(geomap);
   var marker = L.marker([lat, lon]).addTo(geomap);
 
   //----------------------------------------------------------------------
@@ -172,32 +171,6 @@ $(function() {
     // let info = eel.load_info($('#inp_cadaster').val())();
     console.log('eel.load_info');
     eel.load_info($('#inp_cadaster').val())();
-    // console.log('changeGeoMapPosition()');
-    // changeGeoMapPosition();
-
-    //    print_to_textarea_js(info);
-    //    console.log(info);
-
-    // let lat = eel.get_latitude()();
-    // let lon = eel.get_longitude()();
-
-    // let lat = getLatitude();
-    // let lon = getLongitude();
-
-    // getLatitude();
-    // getLongitude();
-
-
-    // console.log('lat ---> ', lat);
-    // console.log('lon ---> ', lon);
-
-    // geomap.setView(new L.LatLng(lat, lon), 12);
-    // L.marker([lat, lon]).addTo(geomap);
-
-    // geomap.setView(new L.LatLng(56.52813,  61.430803), 12);
-    // L.marker([56.52813,  61.430803]).addTo(geomap);
-
-
   });
 
   // Кнопка Создать
@@ -211,33 +184,18 @@ $(function() {
   });
 
   $('#cb_show_geomap').on('click', function() {
-    console.log('CHECKBOX -->', $('#cb_show_geomap').is(':checked'));
-    if ($('#cb_show_geomap').is(':checked')) {
-      layer.opacity = 1;
+    let checked = $('#cb_show_geomap').is(':checked');
+    console.log('CHECKBOX -->', checked);
+
+    if (checked) {
+      layer.setOpacity(1.0);
+      console.log('Show layer');
     }
     else {
-      layer.opacity = 0.1;
+      layer.setOpacity(0.2);
+      console.log('Hide layer');
     }
 
   });
-
-  // $('#btn_1').click(function() {
-  //   changeGeoMapPosition();
-  // });
-  // $('#btn_2').click(function() {
-  //     changeGeoMapPosition();
-  // });
-
-  // $('#btn_1').click(function() {
-  // //   geomap.setView(new L.LatLng(56.162464,	60.915409), 12);
-  // //   L.marker([56.162464,	60.915409]).addTo(geomap);
-  //   setGeoMapPosition_js(56.162464,	60.915409);
-  // });
-  //
-  // $('#btn_2').click(function() {
-  //   // geomap.setView(new L.LatLng(56.52813,  61.430803), 12);
-  //   // L.marker([56.52813,  61.430803]).addTo(geomap);
-  //     setGeoMapPosition_js(56.52813,  61.430803);
-  // });
 
 });

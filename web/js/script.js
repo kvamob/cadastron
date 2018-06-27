@@ -76,7 +76,7 @@ $(function() {
 
     myMap = new ymaps.Map('map', {
       center: [lat, lon],
-      zoom: 11
+      zoom: 12
     });
 
     myPlacemark = new ymaps.Placemark([lat, lon], {

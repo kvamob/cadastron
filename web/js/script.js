@@ -78,6 +78,16 @@ $(function() {
       center: [lat, lon],
       zoom: 12
     });
+    // Удалим лишние контролы с карты
+    myMap.controls.remove('zoomControl');
+//    myMap.controls.remove('rulerControl');
+    myMap.controls.remove('typeSelector');
+    myMap.controls.remove('fullscreenControl');
+    myMap.controls.remove('geolocationControl');
+    myMap.controls.remove('routeButtonControl');
+    myMap.controls.remove('trafficControl');
+    myMap.controls.remove('searchControl');
+    // myMap.controls.remove('');
 
     myPlacemark = new ymaps.Placemark([lat, lon], {
       hintContent: 'Екатеринбург',
@@ -96,7 +106,13 @@ $(function() {
     new L.LatLng(mapExtent[1], mapExtent[0]),
     new L.LatLng(mapExtent[3], mapExtent[2]));
 
-  geomap = L.map('geomap').fitBounds(bounds);
+  var map_options = {
+      attributionControl: false,
+      zoomControl: false
+    };
+
+
+  geomap = L.map('geomap', map_options).fitBounds(bounds);
   //      var geomap = L.map('geomap').fitBounds(bounds);
   //    var geomap = L.map('geomap', {center: [lat, lon], zoom: 12});
 
@@ -109,6 +125,8 @@ $(function() {
     minZoom: mapMinZoom,
     maxZoom: mapMaxZoom,
     opacity: 1.0,
+    attributionControl: false,
+    zoomControl: false,
     //opacity: 1.0,
     //attribution: 'Rendered with <a href="http://www.maptiler.com/">MapTiler</a>',
     tms: false

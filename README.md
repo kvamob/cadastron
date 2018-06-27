@@ -47,9 +47,11 @@ If this doesn't work please report it and I will look into it!
 ## Screenshots
 ![Start screen](screenshots/screenshot1.png "Start screen")
 
-![Map1 tab](screenshots/screenshot2.png "Map1 tab")
+![Map1 tab](screenshots/screenshot2.png "Yandex Map tab")
 
-![Map2 tab](screenshots/screenshot3.png "Map2 tab")
+![Map2 tab](screenshots/screenshot3.png "Yandex image tab")
+
+![Map2 tab](screenshots/screenshot4.png "Geology tab")
 
 `![Empty interface](https://i.imgur.com/dd0LC2n.png)`
 

@@ -1,5 +1,6 @@
 textarea {
   font-family: monospace;
+  width: 100%;
 }
 
 #output_console {

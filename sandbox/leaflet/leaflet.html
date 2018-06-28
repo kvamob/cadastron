@@ -71,8 +71,8 @@
     var lon = 60.553123;
 
     var mapExtent = [57.52479930, 55.89930842, 62.99872460, 59.39520320];
-    var mapMinZoom = 10;
-    var mapMaxZoom = 12;
+    var mapMinZoom = 8;
+    var mapMaxZoom = 15;
 
     var bounds = new L.LatLngBounds(
       new L.LatLng(mapExtent[1], mapExtent[0]),
@@ -94,7 +94,8 @@
 //    layer = L.tileLayer('geomap/{z}/{x}/{y}.png', options).addTo(geomap);
     // Тайлы карты неоген-четвертичных отложений O-41-XXV с сайта ВСЕГЕИ http://geo.mfvsegei.ru
     // 'http://geo.mfvsegei.ru/200k/o-41/o-41-25/11/{z}/{x}/{y}.png'
-    layer = L.tileLayer('http://geo.mfvsegei.ru/200k/o-41/o-41-25/11/{z}/{x}/{y}.png', options).addTo(geomap);
+//    layer = L.tileLayer('http://geo.mfvsegei.ru/200k/o-41/o-41-25/11/{z}/{x}/{y}.png', options).addTo(geomap);
+    layer = L.tileLayer('http://geo.mfvsegei.ru/200k/o-41/o-41-31/1/{z}/{x}/{y}.png', options).addTo(geomap);
 
     var marker = L.marker([lat, lon]).addTo(geomap);
 

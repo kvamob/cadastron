@@ -69,9 +69,9 @@
       tms: false
     };
     geomap.setView(new L.LatLng(lat, lon), 12);
-    //layer = L.tileLayer('http://localhost/{z}/{x}/{y}.png', options).addTo(geomap);
+    layer = L.tileLayer('http://localhost/{z}/{x}/{y}.png', options).addTo(geomap);
 
-    var marker = L.marker([lat, lon]).addTo(geomap);
+  //  var marker = L.marker([lat, lon]).addTo(geomap);
 
     document.getElementById('snap').addEventListener('click', function() {
       leafletImage(geomap, doImage);

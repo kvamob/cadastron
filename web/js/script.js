@@ -95,6 +95,7 @@ $(function() {
     });
 
     myMap.geoObjects.add(myPlacemark);
+
   }
 
   // ------- Leaflet.js --------------------------------------------------------------
@@ -135,7 +136,8 @@ $(function() {
 // Слой с тайлами гелогической карты - локальный веб-сервер
 // Почему-то тайлы плохо грузятся, если использовать доступ к локальной папке без веб-сервера
 //  layer = L.tileLayer('geomap/{z}/{x}/{y}.png', options).addTo(geomap);
-   layer = L.tileLayer('http://localhost/{z}/{x}/{y}.png', options).addTo(geomap);
+//   layer = L.tileLayer('http://localhost/{z}/{x}/{y}.png', options).addTo(geomap);
+   layer = L.tileLayer('http://ex1c.delrus.ru/geomap/{z}/{x}/{y}.png', options).addTo(geomap);
 //  layer = L.tileLayer('http://geo.mfvsegei.ru/200k/o-41/o-41-31/1/{z}/{x}/{y}.png', options).addTo(geomap);
   var marker = L.marker([lat, lon]).addTo(geomap);
 

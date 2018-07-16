@@ -82,7 +82,8 @@
     geomap.setView(new L.LatLng(lat, lon), 12);
 
     //L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(geomap);
-    var layer;
+    var layer25;
+    var layer31;
     var options = {
       minZoom: mapMinZoom,
       maxZoom: mapMaxZoom,
@@ -95,8 +96,8 @@
 //    layer = L.tileLayer('geomap/{z}/{x}/{y}.png', options).addTo(geomap);
     // Тайлы карты неоген-четвертичных отложений O-41-XXV с сайта ВСЕГЕИ http://geo.mfvsegei.ru
     // 'http://geo.mfvsegei.ru/200k/o-41/o-41-25/11/{z}/{x}/{y}.png'
-//    layer = L.tileLayer('http://geo.mfvsegei.ru/200k/o-41/o-41-25/11/{z}/{x}/{y}.png', options).addTo(geomap);
-    layer = L.tileLayer('http://geo.mfvsegei.ru/200k/o-41/o-41-31/1/{z}/{x}/{y}.png', options).addTo(geomap);
+    layer25 = L.tileLayer('http://geo.mfvsegei.ru/200k/o-41/o-41-25/11/{z}/{x}/{y}.png', options).addTo(geomap);
+    layer31 = L.tileLayer('http://geo.mfvsegei.ru/200k/o-41/o-41-31/1/{z}/{x}/{y}.png', options).addTo(geomap);
 
     var marker = L.marker([lat, lon]).addTo(geomap);
 
@@ -113,8 +114,8 @@
   });
 
   $('#btn_2').click(function() {
-    geomap.setView(new L.LatLng(56.74345,  61.079306), 12);
-    L.marker([56.74345,  61.079306]).addTo(geomap);
+    geomap.setView(new L.LatLng(57.15448,  60.199509), 12);
+    L.marker([57.15448,  60.199509]).addTo(geomap);
   });
 
 

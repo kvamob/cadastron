@@ -154,6 +154,8 @@ def get_info(cadaster):
                 if feature.get('attrs'):
                     attrs = feature['attrs']
                     Result.address = attrs['address']
+                    if Result.address is None:
+                        Result.address = 'Адрес не задан'
                 else:
                     Result.address = ''
 

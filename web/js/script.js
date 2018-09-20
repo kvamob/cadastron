@@ -187,11 +187,17 @@ $(function() {
   // }
 
 
-  // Кнопка Старт
+  // Кнопка Старт (по кадастровому номеру)
   $('#btn_get').click(function() {
     // let info = eel.load_info($('#inp_cadaster').val())();
     console.log('eel.load_info');
     eel.load_info($('#inp_cadaster').val())();
+  });
+
+  // Кнопка Старт (по координатам)
+  $('#btn_get_by_coords').click(function() {
+    console.log('eel.load_info_by_coords');
+    eel.load_info_by_coords($('#inp_coords').val(), $('#inp_address').val())();
   });
 
   // Кнопка Создать

@@ -70,8 +70,26 @@
 
         <br>
 
-        <div class="clearfix">
+        <label for="inp_coords" class="small">Координаты</label>
+        <div class="input-group mb-3">
+          <input id="inp_coords" type="text" class="form-control" placeholder="Широта Долгота" aria-label="Coords" aria-describedby="basic-addon2">
+        </div>
+
+        <label for="inp_address" class="small">Адрес участка</label>
+        <div class="input-group mb-3">
+          <input id="inp_address" type="text" class="form-control" placeholder="Адрес участка" aria-label="Address" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button id="btn_get_by_coords" class="btn btn-outline-secondary" type="button">Старт</button>
+          </div>
+
+        </div>
+
+        <br>
+        <!-- <div class="clearfix">
           <h4 id="nomenclature" class="float-left"></h4><a id="url_yandex" href="#" class="btn btn-info float-right disabled" role="button" target="_blank">Yandex Maps</a>
+        </div> -->
+        <div class="clearfix">
+          <h4 id="nomenclature" class="float-left"></h4>
         </div>
 
         <label for="dst_folder" class="small">Имя папки с отчетом по изысканиям</label>

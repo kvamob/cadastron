@@ -79,6 +79,18 @@ def parse_cadaster(input_str):
     return cadaster
 
 
+def parse_coords(input_str):
+    """
+    Обрабатывает входной параметр - координаты центра участка, которые могут быть заданы через пробел (lat lon)
+    В качестве десятичного разделителя может быть точка или запятая
+    Возвращает кортеж (lat, lon) в виде строк с десятичной точкой
+    :type input_str: str
+    """
+    (lat, lon) = input_str.replace(',', '.').split()
+
+    return lat, lon
+
+
 def get_obj_id(cadaster):
     """
         Получить id участка по его кадастровому номеру
@@ -214,6 +226,78 @@ def get_info(cadaster):
 
         except Exception as err:
             Result.errmsg = 'Ошибка get_info(): {0}'.format(repr(err))
+
+    return Result
+
+
+def get_info_by_coords(lat, lon, address):
+    """
+        Получим данные об участке по координатам его центра
+        Функция возвращает именованный кортеж с полями:
+
+        errmsg В случае ошибки сюда записывается сообщение об ошибке
+        address
+        coords
+        lat
+        lon
+        nomenclature
+        info
+        ozi_info
+        cadaster
+        yandex_url
+        yandex_url_static
+
+    """
+    Result = namedtuple('Result', 'errmsg address coords lat lon nomenclature info brief ozi_info cadaster yandex_url '
+                                  'yandex_url_static')
+    Result.info = ''
+    Result.errmsg = ''
+    Result.cadaster = 'Не задан'
+    Result.address = address
+    Result.lat = lat
+    Result.lon = lon
+    lat_f = float(lat)
+    lon_f = float(lon)
+
+    Result.yandex_url = (
+        'https://yandex.ru/maps/?mode=search&text={latitude}%2C{longitude}'
+    ).format(latitude=lat, longitude=lon)
+    Result.yandex_url_static = (
+        'https://static-maps.yandex.ru/1.x/?pt={longitude},{latitude},comma&z=13&size=600,450&l=map'
+    ).format(latitude=lat, longitude=lon)
+
+    Result.nomenclature = get_nomenclature(lat_f, lon_f)
+    Result.coords = '{0}\t{1}'.format(lat.replace('.', ','), lon.replace('.', ','))
+
+    Result.info = (
+        'Кадастровый номер: {cad}\n'
+        'Адрес: {addr}\n'
+        'Координаты:\n{lat:9}\t{lon:9}\n{latdms} с.ш. {londms} в.д.\n'
+        'Лист М 1:200000 : {nomenclature}\n\n'
+        '{url}\n\n'
+        'file://d:/OziExplorer/data/CADASTER.txt\n'
+        'Datum,WGS 84\n'
+        'WP,D,{cad},{latp:9},{lonp:9},{day},{time},,D,N,-9999\n'
+    ).format(addr=Result.address, lat=lat.replace('.', ','), latdms=degrees2dms(lat_f),
+             lon=lon.replace('.', ','), londms=degrees2dms(lon_f), nomenclature=get_nomenclature(lat_f, lon_f),
+             url=Result.yandex_url, day=datetime.now().strftime('%m/%d/%y'),
+             cad=Result.cadaster, latp=lat, lonp=lon,
+             time=datetime.now().strftime('%H/%M/%S'))
+
+    Result.brief = (
+        'Кадастровый номер: {cad}\n'
+        'Адрес: {addr}\n'
+        'Координаты: {lat:9} {lon:9}\n\n'
+        'Лист М 1:200000 : {nomenclature}\n'
+    ).format(cad=Result.cadaster, addr=Result.address, lat=lat.replace('.', ','),
+                         lon=lon.replace('.', ','), nomenclature=Result.nomenclature)
+
+    Result.ozi_info = (
+        'Datum,WGS 84\n'
+        'WP,D,{cad},{latp:9},{lonp:9},{day},{time},,D,N,-9999\n'
+    ).format(day=datetime.now().strftime('%m/%d/%y'),
+                cad=Result.cadaster, latp=lat, lonp=lon,
+                time=datetime.now().strftime('%H/%M/%S'))
 
     return Result
 

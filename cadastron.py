@@ -82,11 +82,12 @@ def parse_cadaster(input_str):
 def parse_coords(input_str):
     """
     Обрабатывает входной параметр - координаты центра участка, которые могут быть заданы через пробел (lat lon)
+    Либо в таком формате (через запятую): lat, lon
     В качестве десятичного разделителя может быть точка или запятая
     Возвращает кортеж (lat, lon) в виде строк с десятичной точкой
     :type input_str: str
     """
-    (lat, lon) = input_str.replace(',', '.').split()
+    (lat, lon) = input_str.replace(', ', ' ').replace(',', '.').split()
 
     return lat, lon
 
@@ -252,7 +253,7 @@ def get_info_by_coords(lat, lon, address):
                                   'yandex_url_static')
     Result.info = ''
     Result.errmsg = ''
-    Result.cadaster = 'Не задан'
+    Result.cadaster = 'Участок'
     Result.address = address
     Result.lat = lat
     Result.lon = lon

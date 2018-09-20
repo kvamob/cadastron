@@ -4,4 +4,4 @@ venv/
 __pycache__
 geomap/
 !readme.txt
-
+debug.log

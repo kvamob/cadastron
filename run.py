@@ -82,7 +82,6 @@ def load_info_by_coords(coords, address):
         eel.print_to_textarea_js(area.errmsg)
 
 
-
 @eel.expose                         # Expose this function to Javascript
 def create_report(folder):
     global area

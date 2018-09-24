@@ -78,6 +78,9 @@ def load_info_by_coords(coords, address):
         eel.addOutput('>>> Latitude  : {0}\n'.format(area.lat))
         eel.addOutput('>>> Longitude : {0}\n'.format(area.lon))
 
+        # eel.getAddress(area.ym_coords)
+
+
     else:
         eel.print_to_textarea_js(area.errmsg)
 

@@ -239,6 +239,7 @@ def get_info_by_coords(lat, lon, address):
         errmsg В случае ошибки сюда записывается сообщение об ошибке
         address
         coords
+        ym_coords
         lat
         lon
         nomenclature
@@ -249,8 +250,8 @@ def get_info_by_coords(lat, lon, address):
         yandex_url_static
 
     """
-    Result = namedtuple('Result', 'errmsg address coords lat lon nomenclature info brief ozi_info cadaster yandex_url '
-                                  'yandex_url_static')
+    Result = namedtuple('Result', 'errmsg address coords ym_coords lat lon nomenclature info brief ozi_info '
+                                  'cadaster yandex_url yandex_url_static')
     Result.info = ''
     Result.errmsg = ''
     Result.cadaster = 'Участок'
@@ -269,6 +270,7 @@ def get_info_by_coords(lat, lon, address):
 
     Result.nomenclature = get_nomenclature(lat_f, lon_f)
     Result.coords = '{0}\t{1}'.format(lat.replace('.', ','), lon.replace('.', ','))
+    Result.ym_coords = '{}, {}'.format(lat, lon)
 
     Result.info = (
         'Кадастровый номер: {cad}\n'

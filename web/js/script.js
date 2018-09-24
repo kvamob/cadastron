@@ -71,6 +71,7 @@ $(function() {
   var lat = 56.842004;
   var lon = 60.553123;
   var geomap;
+  var address;
 
   function init() {
 
@@ -171,20 +172,21 @@ $(function() {
     L.marker([lat, lon]).addTo(geomap);
   }
 
-  //
-  // Обработчики событий
-  //
+//-----------------------------------------------------------------------
+// Выполнить запрос к API Yandex карт и получить адрес по координатам
+// ВОзвращает полученный адрес
+//-----------------------------------------------------------------------
+//  eel.expose(getAddress);
+  function getAddress(coords) {
+      ymaps.geocode(coords).then(function (res) {
+            var firstGeoObject = res.geoObjects.get(0);
+            var addressLine;
+            addressLine = firstGeoObject.getAddressLine()   // Адрес, полученный по координатам
 
-  // async function changeGeoMapPosition() {
-  //   let lat = await eel.get_latitude()(); // Получим из Python шиироту
-  //   let lon = await eel.get_longitude()(); // Получим из Python долготу
-  //
-  //   console.log('Got this from Python: lat = ' + lat);
-  //   console.log('Got this from Python: lon = ' + lon);
-  //
-  //   geomap.setView(new L.LatLng(lat, lon), 12);
-  //   L.marker([lat, lon]).addTo(geomap);
-  // }
+            $('#inp_address').val(addressLine); // Заполним поле ввода адреса
+
+            });
+  }
 
 
   // Кнопка Старт (по кадастровому номеру)
@@ -194,9 +196,17 @@ $(function() {
     eel.load_info($('#inp_cadaster').val())();
   });
 
+
+  // Кнопка Адрес (по координатам)
+  $('#btn_get_address').click(function() {
+    console.log('eel.getAddress');
+    getAddress($('#inp_coords').val()); // Получим адрес по координатам из Yandex API
+  });
+
   // Кнопка Старт (по координатам)
   $('#btn_get_by_coords').click(function() {
     console.log('eel.load_info_by_coords');
+//    getAddress($('#inp_coords').val()); // Получим адрес по координатам из Yandex API
     eel.load_info_by_coords($('#inp_coords').val(), $('#inp_address').val())();
   });
 

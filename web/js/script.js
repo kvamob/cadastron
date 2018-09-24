@@ -198,16 +198,23 @@ $(function() {
 
 
   // Кнопка Адрес (по координатам)
-  $('#btn_get_address').click(function() {
-    console.log('eel.getAddress');
-    getAddress($('#inp_coords').val()); // Получим адрес по координатам из Yandex API
-  });
+//  $('#btn_get_address').click(function() {
+//    console.log('eel.getAddress');
+//    getAddress($('#inp_coords').val()); // Получим адрес по координатам из Yandex API
+//  });
 
   // Кнопка Старт (по координатам)
   $('#btn_get_by_coords').click(function() {
     console.log('eel.load_info_by_coords');
-//    getAddress($('#inp_coords').val()); // Получим адрес по координатам из Yandex API
-    eel.load_info_by_coords($('#inp_coords').val(), $('#inp_address').val())();
+//    eel.load_info_by_coords($('#inp_coords').val(), $('#inp_address').val())();
+    // Получим адрес по координатам, используя Yandex API
+    ymaps.geocode($('#inp_coords').val()).then(function (res) {
+            var firstGeoObject = res.geoObjects.get(0);
+            var addressLine;
+            addressLine = firstGeoObject.getAddressLine()   // Адрес, полученный по координатам
+            $('#inp_address').val(addressLine); // Заполним поле ввода адреса
+            eel.load_info_by_coords($('#inp_coords').val(), addressLine)();
+            });
   });
 
   // Кнопка Создать

@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
   // Эти функции вызываются из Python
   eel.expose(say_hello_js); // Expose this function to Python
@@ -13,6 +13,7 @@ $(function() {
 
   // Execution output
   eel.expose(addOutput);
+
   function addOutput(line) {
     $('#output_console').append(line);
   }
@@ -81,7 +82,7 @@ $(function() {
     });
     // Удалим лишние контролы с карты
     myMap.controls.remove('zoomControl');
-//    myMap.controls.remove('rulerControl');
+    //    myMap.controls.remove('rulerControl');
     myMap.controls.remove('typeSelector');
     myMap.controls.remove('fullscreenControl');
     myMap.controls.remove('geolocationControl');
@@ -109,9 +110,9 @@ $(function() {
     new L.LatLng(mapExtent[3], mapExtent[2]));
 
   var map_options = {
-      attributionControl: false,
-      zoomControl: false
-    };
+    attributionControl: false,
+    zoomControl: false
+  };
 
 
   geomap = L.map('geomap', map_options).fitBounds(bounds);
@@ -134,12 +135,12 @@ $(function() {
     tms: false
   };
 
-// Слой с тайлами гелогической карты - локальный веб-сервер
-// Почему-то тайлы плохо грузятся, если использовать доступ к локальной папке без веб-сервера
-//  layer = L.tileLayer('geomap/{z}/{x}/{y}.png', options).addTo(geomap);
-//   layer = L.tileLayer('http://localhost/{z}/{x}/{y}.png', options).addTo(geomap);
-   layer = L.tileLayer('http://ex1c.delrus.ru/geomap/{z}/{x}/{y}.png', options).addTo(geomap);
-//  layer = L.tileLayer('http://geo.mfvsegei.ru/200k/o-41/o-41-31/1/{z}/{x}/{y}.png', options).addTo(geomap);
+  // Слой с тайлами гелогической карты - локальный веб-сервер
+  // Почему-то тайлы плохо грузятся, если использовать доступ к локальной папке без веб-сервера
+  //  layer = L.tileLayer('geomap/{z}/{x}/{y}.png', options).addTo(geomap);
+  //   layer = L.tileLayer('http://localhost/{z}/{x}/{y}.png', options).addTo(geomap);
+  layer = L.tileLayer('http://ex1c.delrus.ru/geomap/{z}/{x}/{y}.png', options).addTo(geomap);
+  //  layer = L.tileLayer('http://geo.mfvsegei.ru/200k/o-41/o-41-31/1/{z}/{x}/{y}.png', options).addTo(geomap);
   var marker = L.marker([lat, lon]).addTo(geomap);
 
   //----------------------------------------------------------------------
@@ -147,6 +148,7 @@ $(function() {
   // И установить маркер на центр
   //----------------------------------------------------------------------
   eel.expose(setYmapPosition_js);
+
   function setYmapPosition_js(lat, lon, zoom, content) {
     myMap.setCenter([lat, lon], zoom);
     newPlacemark = new ymaps.Placemark([lat, lon], {
@@ -163,6 +165,7 @@ $(function() {
   // И установить маркер на центр
   //----------------------------------------------------------------------
   eel.expose(setGeoMapPosition_js);
+
   function setGeoMapPosition_js(lat, lon) {
 
     console.log('lat=', lat);
@@ -172,25 +175,25 @@ $(function() {
     L.marker([lat, lon]).addTo(geomap);
   }
 
-//-----------------------------------------------------------------------
-// Выполнить запрос к API Yandex карт и получить адрес по координатам
-// ВОзвращает полученный адрес
-//-----------------------------------------------------------------------
-//  eel.expose(getAddress);
+  //-----------------------------------------------------------------------
+  // Выполнить запрос к API Yandex карт и получить адрес по координатам
+  // ВОзвращает полученный адрес
+  //-----------------------------------------------------------------------
+  //  eel.expose(getAddress);
   function getAddress(coords) {
-      ymaps.geocode(coords).then(function (res) {
-            var firstGeoObject = res.geoObjects.get(0);
-            var addressLine;
-            addressLine = firstGeoObject.getAddressLine()   // Адрес, полученный по координатам
+    ymaps.geocode(coords).then(function (res) {
+      var firstGeoObject = res.geoObjects.get(0);
+      var addressLine;
+      addressLine = firstGeoObject.getAddressLine() // Адрес, полученный по координатам
 
-            $('#inp_address').val(addressLine); // Заполним поле ввода адреса
+      $('#inp_address').val(addressLine); // Заполним поле ввода адреса
 
-            });
+    });
   }
 
 
   // Кнопка Старт (по кадастровому номеру)
-  $('#btn_get').click(function() {
+  $('#btn_get').click(function () {
     // let info = eel.load_info($('#inp_cadaster').val())();
     console.log('eel.load_info');
     eel.load_info($('#inp_cadaster').val())();
@@ -198,44 +201,46 @@ $(function() {
 
 
   // Кнопка Адрес (по координатам)
-//  $('#btn_get_address').click(function() {
-//    console.log('eel.getAddress');
-//    getAddress($('#inp_coords').val()); // Получим адрес по координатам из Yandex API
-//  });
+  //  $('#btn_get_address').click(function() {
+  //    console.log('eel.getAddress');
+  //    getAddress($('#inp_coords').val()); // Получим адрес по координатам из Yandex API
+  //  });
 
   // Кнопка Старт (по координатам)
-  $('#btn_get_by_coords').click(function() {
+  $('#btn_get_by_coords').click(function () {
     console.log('eel.load_info_by_coords');
-//    eel.load_info_by_coords($('#inp_coords').val(), $('#inp_address').val())();
     // Получим адрес по координатам, используя Yandex API
-    ymaps.geocode($('#inp_coords').val()).then(function (res) {
-            var firstGeoObject = res.geoObjects.get(0);
-            var addressLine;
-            addressLine = firstGeoObject.getAddressLine()   // Адрес, полученный по координатам
-            $('#inp_address').val(addressLine); // Заполним поле ввода адреса
-            eel.load_info_by_coords($('#inp_coords').val(), addressLine)();
-            });
+    if ($('#inp_address').val() == '') {
+      ymaps.geocode($('#inp_coords').val()).then(function (res) {
+        var firstGeoObject = res.geoObjects.get(0);
+        var addressLine;
+        addressLine = firstGeoObject.getAddressLine()     // Адрес, полученный по координатам
+        $('#inp_address').val(addressLine);               // Заполним поле ввода адреса
+        eel.load_info_by_coords($('#inp_coords').val(), addressLine)();
+      });
+    } else {
+      eel.load_info_by_coords($('#inp_coords').val(), $('#inp_address').val())();
+    }
   });
 
   // Кнопка Создать
-  $('#btn_create').click(function() {
+  $('#btn_create').click(function () {
     eel.create_report($('#dst_folder').val())();
   });
 
   // При открытии вкладки Геология карте нужно послать сигнал, чтобы обновить информацию о размере элемента
-  $('#link_geomap').on('shown.bs.tab', function() {
+  $('#link_geomap').on('shown.bs.tab', function () {
     geomap.invalidateSize();
   });
 
-  $('#cb_show_geomap').on('click', function() {
+  $('#cb_show_geomap').on('click', function () {
     let checked = $('#cb_show_geomap').is(':checked');
     console.log('CHECKBOX -->', checked);
 
     if (checked) {
       layer.setOpacity(1.0);
       console.log('Show layer');
-    }
-    else {
+    } else {
       layer.setOpacity(0.2);
       console.log('Hide layer');
     }

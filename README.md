@@ -7,13 +7,15 @@
     <img src="https://i.imgur.com/EuUlayC.png" alt="Empty interface">
 </div> -->
 
-## Getting Started
+# Getting Started
 
-### Требования к системе
- - Python : Python 3.3+ 
- - Chrome : библиотека Eel использует Chrome в режиме приложения
+## Требования к системе
 
-### Установка
+    - Python : Python 3.3+
+    - Chrome : библиотека Eel использует Chrome в режиме приложения
+
+## Установка $2 + 2 = 4$
+
 1. Клонировать/скачать этот репозиторий
 2. Открыть ```cmd/terminal``` и перейти в папку с проектом
 3. В папку ```web/geomap``` скопровать тайлы геологической карты (лежат тут: ```D:\Home System\РАЗНОЕ\Государственная геологическая карта РФ Урал\Сводная карта Урала - тайлы\geomap```)
@@ -23,29 +25,32 @@
 6. Установить виртуальное окружение ```virtualenv venv```
 7. Активировать виртуальное окружение ```venv\Scripts\Activate```
 8. Установить зависимости ```pip install -r requirements.txt```
-9. При необходимости изменить настройки в файле ```settings.py``` 
+9. При необходимости изменить настройки в файле ```settings.py```
 
 ## Запуск
+
 Активировать виртуальное окружение ```venv\Scripts\Activate```
 
-Запустить приложение: ```python run.py``` 
+Запустить приложение: ```python run.py```
 
 Chrome запустится в режиме приложения с этим проектом внутри.
 
 ## TODO
+
 - ~Выводить Yandex карту в отдельном поле~
 
 - ~Геологическая карта~
 
 - ~Добавить входной параметр - координаты участка~
 
-
 ## Something is Wrong?
+
 There could be a chance that you were using an old version and I have changed something and your cache is now a mess. Press Shift+F5 in the chrome app to force reload everything.
 
 If this doesn't work please report it and I will look into it!
 
 ## Screenshots
+
 ![Start screen](screenshots/screenshot1.png "Start screen")
 
 ![Map1 tab](screenshots/screenshot2.png "Yandex Map tab")
@@ -55,4 +60,3 @@ If this doesn't work please report it and I will look into it!
 ![Map2 tab](screenshots/screenshot4.png "Geology tab")
 
 `![Empty interface](https://i.imgur.com/dd0LC2n.png)`
-

@@ -189,20 +189,12 @@ $(function () {
     });
   }
 
-
   // Кнопка Старт (по кадастровому номеру)
   $('#btn_get').click(function () {
     // let info = eel.load_info($('#inp_cadaster').val())();
     console.log('eel.load_info');
     eel.load_info($('#inp_cadaster').val())();
   });
-
-
-  // Кнопка Адрес (по координатам)
-  //  $('#btn_get_address').click(function() {
-  //    console.log('eel.getAddress');
-  //    getAddress($('#inp_coords').val()); // Получим адрес по координатам из Yandex API
-  //  });
 
   // Кнопка Старт (по координатам)
   $('#btn_get_by_coords').click(function () {
@@ -212,8 +204,8 @@ $(function () {
       ymaps.geocode($('#inp_coords').val()).then(function (res) {
         var firstGeoObject = res.geoObjects.get(0);
         var addressLine;
-        addressLine = firstGeoObject.getAddressLine()     // Адрес, полученный по координатам
-        $('#inp_address').val(addressLine);               // Заполним поле ввода адреса
+        addressLine = firstGeoObject.getAddressLine() // Адрес, полученный по координатам
+        $('#inp_address').val(addressLine); // Заполним поле ввода адреса
         eel.load_info_by_coords($('#inp_coords').val(), addressLine)();
       });
     } else {

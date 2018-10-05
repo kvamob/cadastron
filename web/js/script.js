@@ -116,9 +116,6 @@ $(function () {
 
 
   geomap = L.map('geomap', map_options).fitBounds(bounds);
-  //      var geomap = L.map('geomap').fitBounds(bounds);
-  //    var geomap = L.map('geomap', {center: [lat, lon], zoom: 12});
-
   geomap.setView(new L.LatLng(lat, lon), 12);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(geomap);
@@ -138,9 +135,10 @@ $(function () {
   // Слой с тайлами гелогической карты - локальный веб-сервер
   // Почему-то тайлы плохо грузятся, если использовать доступ к локальной папке без веб-сервера
   //  layer = L.tileLayer('geomap/{z}/{x}/{y}.png', options).addTo(geomap);
-  //   layer = L.tileLayer('http://localhost/{z}/{x}/{y}.png', options).addTo(geomap);
-  layer = L.tileLayer('http://ex1c.delrus.ru/geomap/{z}/{x}/{y}.png', options).addTo(geomap);
-  //  layer = L.tileLayer('http://geo.mfvsegei.ru/200k/o-41/o-41-31/1/{z}/{x}/{y}.png', options).addTo(geomap);
+  var urlTemplate = 'http://ex1c.delrus.ru/geomap/{z}/{x}/{y}.png';
+  // var urlTemplate = 'http://localhost/{z}/{x}/{y}.png';
+  // var urlTemplate = 'http://geo.mfvsegei.ru/200k/o-41/o-41-31/1/{z}/{x}/{y}.png';
+  layer = L.tileLayer(urlTemplate, options).addTo(geomap);
   var marker = L.marker([lat, lon]).addTo(geomap);
 
   //----------------------------------------------------------------------

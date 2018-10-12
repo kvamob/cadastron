@@ -63,6 +63,7 @@ $(function () {
   $('#nomenclature').val('Лист O-41-25');
   $('#inp_coords').val('56.44567, 60.55874');
 
+  $('[data-toggle="tooltip"]').tooltip(); // Enable all tooltips Bootstrap 4
 
   // ---------------- Yandex Maps ----------------------------------------------------
   ymaps.ready(init);

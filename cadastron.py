@@ -308,7 +308,7 @@ def get_info_by_coords(lat, lon, address):
 def modify_tex_file(filename, address, cadaster, nomenclature, coords):
     """
         Заменим поля адреса участка, кадастрового номера и номенклатуры в шаблонном tex-файле на
-        реальные
+        реальные.
         Используется шаблонизатор Jinja2
     """
 

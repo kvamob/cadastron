@@ -69,7 +69,7 @@ def load_info_by_coords(coords, address):
         eel.print_to_input_report_js(cadastron.gen_report_folder(area.address))
         cadastron.make_ozi_file(settings.OZI_WAYPOINTS_FILE, area.ozi_info)
         eel.addOutput('>>> Создаем файл Ozi Waypoints\n')
-        eel.setYmapPosition_js(area.lat, area.lon, 12, area.cadaster)
+        eel.setYmapPosition_js(area.lat, area.lon, 12, '')
         eel.set_ymap_src_js(area.yandex_url_static)
         # eel.setGeoMapPosition_js(area.lat, area.lon, 12)
         eel.setGeoMapPosition_js(area.lat, area.lon)

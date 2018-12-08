@@ -80,7 +80,6 @@ def load_info_by_coords(coords, address):
 
         # eel.getAddress(area.ym_coords)
 
-
     else:
         eel.print_to_textarea_js(area.errmsg)
 

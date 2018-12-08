@@ -67,6 +67,7 @@ def load_info_by_coords(coords, address):
         eel.enable_btn_yandex_js()
         eel.enable_btn_create_js()
         eel.print_to_input_report_js(cadastron.gen_report_folder(area.address))
+        eel.print_to_input_bhpassport_js(cadastron.gen_bhpassport_folder(area.address))
         cadastron.make_ozi_file(settings.OZI_WAYPOINTS_FILE, area.ozi_info)
         eel.addOutput('>>> Создаем файл Ozi Waypoints\n')
         eel.setYmapPosition_js(area.lat, area.lon, 12, '')
@@ -94,7 +95,7 @@ def create_report(folder):
     dst_path = os.path.join(settings.REPORTS_PATH, folder)
     print('Путь к папке с отчетом:', dst_path)
     eel.addOutput('>>> Копируем шаблон отчета в папку {0}\n'.format(dst_path))
-    err = cadastron.copy_report_folder(settings.TEX_TEMPLATE_PATH, dst_path)
+    err = cadastron.copy_template_folder(settings.TEX_TEMPLATE_PATH, dst_path)
     if not err:
         eel.addOutput('>>> Шаблон скопирован\n')
 
@@ -108,7 +109,31 @@ def create_report(folder):
         eel.addOutput('*** Ошибка копирования: {0}\n'.format(err))
 
 
+@eel.expose                         # Expose this function to Javascript
+def create_bhpassport(folder):
+    global area
+    print('Адрес:', area.address)
+    print('Папка с паспортом:', folder)
+
+    # Копируем папку с шаблоном отчета в папку с изысканиями
+    dst_path = os.path.join(settings.BHPASSPORTS_PATH, folder)
+    print('Путь к папке с отчетом:', dst_path)
+    eel.addOutput('>>> Копируем шаблон отчета в папку {0}\n'.format(dst_path))
+    err = cadastron.copy_template_folder(settings.TEX_BH_TEMPLATE_PATH, dst_path)
+    if not err:
+        eel.addOutput('>>> Шаблон скопирован\n')
+
+        # Заменим в файле шаблона water.tex адрес, кад. номер и номенклатуру на реальные
+        fname = os.path.join(dst_path, settings.TEX_BH_TEMPLATE_FILE)
+        cadastron.modify_tex_file(fname, area.address, area.cadaster, area.nomenclature, area.coords)
+
+        # Откроем проводник в папке назначения
+        webbrowser.open(dst_path)
+    else:
+        eel.addOutput('*** Ошибка копирования: {0}\n'.format(err))
+
+
 eel.say_hello_js('connected!')   # Call a Javascript function
 eel.print_to_textarea_js('')     # Call a Javascript function
 
-eel.start('main.html', size=(800, 950))    # Start
+eel.start('main.html', size=(800, 1000))    # Start

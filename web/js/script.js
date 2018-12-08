@@ -20,7 +20,12 @@ $(function () {
 
   eel.expose(print_to_input_report_js); // Expose this function to Python
   function print_to_input_report_js(x) {
-    $('#dst_folder').val(x);
+    $('#dst_folder_report').val(x);
+  }
+
+  eel.expose(print_to_input_bhpassport_js); // Expose this function to Python
+  function print_to_input_bhpassport_js(x) {
+    $('#dst_folder_bhpassport').val(x);
   }
 
   eel.expose(print_to_url_js); // Expose this function to Python
@@ -48,7 +53,8 @@ $(function () {
   // У кнопки "Создать отчет" убрать атрибут disabled
   eel.expose(enable_btn_create_js); // Expose this function to Python
   function enable_btn_create_js() {
-    $('#btn_create').removeAttr('disabled');
+    $('#btn_create_report').removeAttr('disabled');
+    $('#btn_create_bhpassport').removeAttr('disabled');
   }
 
   //
@@ -215,9 +221,14 @@ $(function () {
     }
   });
 
-  // Кнопка Создать
-  $('#btn_create').click(function () {
-    eel.create_report($('#dst_folder').val())();
+  // Кнопка Создать отчет
+  $('#btn_create_report').click(function () {
+    eel.create_report($('#dst_folder_report').val())();
+  });
+
+  // Кнопка Создать паспорт скважины
+  $('#btn_create_bhpassport').click(function () {
+    eel.create_bhpassport($('#dst_folder_bhpassport').val())();
   });
 
   // При открытии вкладки Геология карте нужно послать сигнал, чтобы обновить информацию о размере элемента

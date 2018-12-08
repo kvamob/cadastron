@@ -123,7 +123,7 @@ def create_bhpassport(folder):
     if not err:
         eel.addOutput('>>> Шаблон скопирован\n')
 
-        # Заменим в файле шаблона water.tex адрес, кад. номер и номенклатуру на реальные
+        # Заменим в файле шаблона bhpassport.tex адрес, кад. номер и номенклатуру на реальные
         fname = os.path.join(dst_path, settings.TEX_BH_TEMPLATE_FILE)
         cadastron.modify_tex_file(fname, area.address, area.cadaster, area.nomenclature, area.coords)
 

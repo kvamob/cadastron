@@ -186,16 +186,16 @@ $(function () {
   // ВОзвращает полученный адрес
   //-----------------------------------------------------------------------
   //  eel.expose(getAddress);
-  function getAddress(coords) {
-    ymaps.geocode(coords).then(function (res) {
-      var firstGeoObject = res.geoObjects.get(0);
-      var addressLine;
-      addressLine = firstGeoObject.getAddressLine() // Адрес, полученный по координатам
-
-      $('#inp_address').val(addressLine); // Заполним поле ввода адреса
-
-    });
-  }
+  // function getAddress(coords) {
+  //   ymaps.geocode(coords).then(function (res) {
+  //     var firstGeoObject = res.geoObjects.get(0);
+  //     var addressLine;
+  //     addressLine = firstGeoObject.getAddressLine() // Адрес, полученный по координатам
+  //
+  //     $('#inp_address').val(addressLine); // Заполним поле ввода адреса
+  //
+  //   });
+  // }
 
   // Кнопка Старт (по кадастровому номеру)
   $('#btn_get').click(function () {
@@ -212,8 +212,8 @@ $(function () {
       ymaps.geocode($('#inp_coords').val()).then(function (res) {
         var firstGeoObject = res.geoObjects.get(0);
         var addressLine;
-        addressLine = firstGeoObject.getAddressLine() // Адрес, полученный по координатам
-        $('#inp_address').val(addressLine); // Заполним поле ввода адреса
+        addressLine = firstGeoObject.getAddressLine();  // Адрес, полученный по координатам
+        $('#inp_address').val(addressLine);       // Заполним поле ввода адреса
         eel.load_info_by_coords($('#inp_coords').val(), addressLine)();
       });
     } else {

@@ -33,6 +33,7 @@ def load_info(x):
         eel.enable_btn_yandex_js()
         eel.enable_btn_create_js()
         eel.print_to_input_report_js(cadastron.gen_report_folder(area.address))
+        eel.print_to_input_bhpassport_js(cadastron.gen_bhpassport_folder(area.address))
         cadastron.make_ozi_file(settings.OZI_WAYPOINTS_FILE, area.ozi_info)
         eel.addOutput('>>> Создаем файл Ozi Waypoints\n')
         eel.setYmapPosition_js(area.lat, area.lon, 12, area.cadaster)

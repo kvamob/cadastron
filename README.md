@@ -33,7 +33,7 @@
 
 - Запустить приложение: ```python run.py```
 
-- Можно создать cmd файл cadastron.cmd и запускать его:
+- Можно создать файл cadastron.cmd и запускать его:
 
 #### Файл cadastron.cmd
     cd d:

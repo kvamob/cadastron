@@ -1,5 +1,5 @@
 <h1 align="center">Cadastron</h1>
-<p align="center">Получение информации по участку по его кадастровому номеру. GUI основан на Python пакете <a href="https://github.com/ChrisKnott/Eel">Eel</a></p>
+<p align="center">Получение информации по участку по его кадастровому номеру либо координатам, создание отчета по изысканиям из шаблона, создание паспорта скважины из шаблона. GUI основан на Python пакете <a href="https://github.com/ChrisKnott/Eel">Eel</a></p>
 <p align="center">Идею GUI подсмотрел в проекте <a href="https://github.com/brentvollebregt/auto-py-to-exe/"><strong> Auto PY to EXE </strong></a></p>
 <p align="center">Также пользовался описанием Eel из статьи <a href="http://nitratine.net/python-gui-using-chrome/"><strong> Python GUI Using Chrome </strong></a></p>
 

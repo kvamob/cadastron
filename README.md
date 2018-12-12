@@ -35,10 +35,10 @@
 
 - Можно создать cmd файл cadastron.cmd и запускать его:
 
-```d:
-cd \GIT-REPOS\cadastron
-call venv\Scripts\Activate
-python run.py```
+- d:
+- cd \GIT-REPOS\cadastron
+- call venv\Scripts\Activate
+- python run.py
 
 - **Chrome** запустится в режиме приложения с этим проектом внутри.
 

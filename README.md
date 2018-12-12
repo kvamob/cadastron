@@ -33,6 +33,9 @@
 
 - Запустить приложение: ```python run.py```
 
+    - Python : Python 3.3+
+    - Chrome : библиотека Eel использует Chrome в режиме приложения
+
 - Можно создать cmd файл cadastron.cmd и запускать его:
 
     ```cd d:```

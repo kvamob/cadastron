@@ -35,7 +35,7 @@
 
 - Можно создать cmd файл cadastron.cmd и запускать его:
 
-# 
+### Файл cadastron.cmd
     cd d:
     cd \GIT-REPOS\cadastron
     call venv\Scripts\Activate

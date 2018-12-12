@@ -33,9 +33,6 @@
 
 - Запустить приложение: ```python run.py```
 
-    - Python : Python 3.3+
-    - Chrome : библиотека Eel использует Chrome в режиме приложения
-
 - Можно создать cmd файл cadastron.cmd и запускать его:
 
     ```cd d:```
@@ -54,7 +51,7 @@
 
 ## Something is Wrong?
 
-There could be a chance that you were using an old version and I have changed something and your cache is now a mess. Press Shift+F5 in the chrome app to force reload everything.
+    There could be a chance that you were using an old version and I have changed something and your cache is now a mess. Press Shift+F5 in the chrome app to force reload everything.
 
 If this doesn't work please report it and I will look into it!
 

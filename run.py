@@ -2,7 +2,9 @@ import eel
 import settings
 import os
 import webbrowser
+
 import cadastron
+import app
 
 
 web_location = 'web'
@@ -134,6 +136,7 @@ def create_bhpassport(folder):
         eel.addOutput('*** Ошибка копирования: {0}\n'.format(err))
 
 
+eel.print_build_js('Build: ' + app.build)     # Call a Javascript function
 eel.say_hello_js('connected!')   # Call a Javascript function
 eel.print_to_textarea_js('')     # Call a Javascript function
 

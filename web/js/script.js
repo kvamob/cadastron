@@ -6,6 +6,11 @@ $(function () {
     console.log('Hello from ' + x);
   }
 
+  eel.expose(print_build_js); // Expose this function to Python
+  function print_build_js(x) {
+    $('#build').text(x);
+  }
+
   eel.expose(print_to_textarea_js); // Expose this function to Python
   function print_to_textarea_js(x) {
     $('#output').val(x);

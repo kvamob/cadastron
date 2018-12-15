@@ -85,7 +85,6 @@ $(function () {
   var lat = 56.842004;
   var lon = 60.553123;
   var geomap;
-  var address;
 
   function init() {
 

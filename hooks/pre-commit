@@ -1,0 +1,11 @@
+#!C:/Program\ Files/Git/usr/bin/sh.exe
+
+MAJOR_NUMBER=2
+
+COUNT=$(exec git log master --pretty=oneline | wc -l)
+echo "version = '$MAJOR_NUMBER.$COUNT'" > app/__init__.py
+
+BUILD=$(exec date +%d-%m-%Y-%H:%M:%S)
+echo "build = '$BUILD'" >> app/__init__.py
+
+exec git add app/__init__.py

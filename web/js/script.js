@@ -185,22 +185,7 @@ $(function () {
     L.marker([lat, lon]).addTo(geomap);
   }
 
-  //-----------------------------------------------------------------------
-  // Выполнить запрос к API Yandex карт и получить адрес по координатам
-  // ВОзвращает полученный адрес
-  //-----------------------------------------------------------------------
-  //  eel.expose(getAddress);
-  // function getAddress(coords) {
-  //   ymaps.geocode(coords).then(function (res) {
-  //     var firstGeoObject = res.geoObjects.get(0);
-  //     var addressLine;
-  //     addressLine = firstGeoObject.getAddressLine() // Адрес, полученный по координатам
-  //
-  //     $('#inp_address').val(addressLine); // Заполним поле ввода адреса
-  //
-  //   });
-  // }
-
+  
   // Кнопка Старт (по кадастровому номеру)
   $('#btn_get').click(function () {
     // let info = eel.load_info($('#inp_cadaster').val())();

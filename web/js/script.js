@@ -212,7 +212,7 @@ $(function () {
       ymaps.geocode($('#inp_coords').val()).then(function (res) {
         var firstGeoObject = res.geoObjects.get(0);
         var addressLine;
-        addressLine = firstGeoObject.getAddressLine();  // Адрес, полученный по координатам
+        addressLine = firstGeoObject.getAddressLine();  // Адрес, полученный по1 координатам
         $('#inp_address').val(addressLine);       // Заполним поле ввода адреса
         eel.load_info_by_coords($('#inp_coords').val(), addressLine)();
       });

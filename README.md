@@ -1,5 +1,5 @@
 <h1 align="center">Cadastron</h1>
-<p align="center">Получение информации по участку по его кадастровому номеру. GUI основан на Python пакете <a href="https://github.com/ChrisKnott/Eel">Eel</a></p>
+<p align="center">Получение информации по участку по его кадастровому номеру либо координатам, создание отчета по изысканиям из шаблона, создание паспорта скважины из шаблона. GUI основан на Python пакете <a href="https://github.com/ChrisKnott/Eel">Eel</a></p>
 <p align="center">Идею GUI подсмотрел в проекте <a href="https://github.com/brentvollebregt/auto-py-to-exe/"><strong> Auto PY to EXE </strong></a></p>
 <p align="center">Также пользовался описанием Eel из статьи <a href="http://nitratine.net/python-gui-using-chrome/"><strong> Python GUI Using Chrome </strong></a></p>
 
@@ -26,12 +26,21 @@
 - Активировать виртуальное окружение ```venv\Scripts\Activate```
 - Установить зависимости ```pip install -r requirements.txt```
 - При необходимости изменить настройки в файле ```settings.py```
+- Скопировать файл ```hooks/pre-commit``` в папку ```.git/hooks```. Это скрипт, автоматически меняющий номер версии и дату сборки проекта в файле ```app/__init__.py``` перед каждым коммитом
 
 ## Запуск
 
 - Активировать виртуальное окружение ```venv\Scripts\Activate```
 
 - Запустить приложение: ```python run.py```
+
+- Можно создать файл cadastron.cmd и запускать его:
+
+#### Файл cadastron.cmd
+    cd d:
+    cd \GIT-REPOS\cadastron
+    call venv\Scripts\Activate
+    python run.py
 
 - **Chrome** запустится в режиме приложения с этим проектом внутри.
 
@@ -41,7 +50,7 @@
 
 ## Something is Wrong?
 
-There could be a chance that you were using an old version and I have changed something and your cache is now a mess. Press Shift+F5 in the chrome app to force reload everything.
+    There could be a chance that you were using an old version and I have changed something and your cache is now a mess. Press Shift+F5 in the chrome app to force reload everything.
 
 If this doesn't work please report it and I will look into it!
 

@@ -21,10 +21,10 @@
 - В папку ```web/geomap``` скопровать тайлы геологической карты (лежат тут: ```D:\Home System\РАЗНОЕ\Государственная геологическая карта РФ Урал\Сводная карта Урала - тайлы\geomap```)
 - Установить локальный веб-сервер (IIS), с домашним каталогом ```web/geomap``` 
 ( В настоящее время локальный веб-сервер не используется, тайлы геокарты лежат здесь: http://ex1c.delrus.ru/geomap/{z}/{x}/{y}.png). Этот URL присваивается переменной `urlTemplate` в файле `web/js/script.js`
-- Если не установлен пакет pyvenv, поставим его (под Windows можно так: ```pip3 install virtualenv```)
-- Установить виртуальное окружение ```virtualenv venv```
-- Активировать виртуальное окружение ```venv\Scripts\Activate```
-- Установить зависимости ```pip install -r requirements.txt```
+- Если не установлен пакет `pyvenv`, поставим его `$ sudo apt-get install -y python3-venv` (под Windows можно так: `pip3 install virtualenv`)
+- `$ pyvenv venv` создаем виртуальное окружение python3 (под Windows: `> virtualenv venv` )
+- `$ source venv/bin/activate` Активируем виртуальное окружение (под Windows: `> venv\Scripts\activate`)
+- `(venv) $ pip3 install -r requirements.txt` Устанавливаем необходимые пакеты и библиотеки в виртуальное окружение
 - При необходимости изменить настройки в файле ```settings.py```
 - Скопировать файл ```hooks/pre-commit``` в папку ```.git/hooks```. Это скрипт, автоматически меняющий номер версии и дату сборки проекта в файле ```app/__init__.py``` перед каждым коммитом
 

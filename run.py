@@ -8,10 +8,10 @@ import app
 
 
 web_location = 'web'
-web_path = os.path.dirname(os.path.realpath(__file__)) + '\\' + web_location
+web_dir = os.path.dirname(os.path.realpath(__file__))
+web_path = os.path.join(web_dir, web_location)
+print('web_path : ', web_path)
 eel.init(web_path)                  # Give folder containing web files
-
-# eel.init('web')                     # Give folder containing web files
 
 area = tuple()
 

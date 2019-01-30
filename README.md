@@ -21,7 +21,7 @@
 - В папку ```web/geomap``` скопровать тайлы геологической карты (лежат тут: ```D:\Home System\РАЗНОЕ\Государственная геологическая карта РФ Урал\Сводная карта Урала - тайлы\geomap```) (Если используется внешний веб-сервер, то тайлы копировать не надо)!
 - Установить локальный веб-сервер (IIS), с домашним каталогом ```web/geomap``` 
 ( В настоящее время локальный веб-сервер не используется, тайлы геокарты лежат здесь: http://ex1c.delrus.ru/geomap/{z}/{x}/{y}.png). Этот URL присваивается переменной `urlTemplate` в файле `web/js/script.js`
-- Если не установлен пакет `pyvenv`, поставим его: `$ sudo apt-get install -y python3-venv` (под Windows можно так: `pip3 install virtualenv`)
+- Если не установлен пакет `pyvenv`, поставим его: `$ sudo apt install -y python3-venv` (под Windows можно так: `pip3 install virtualenv`)
 - `$ pyvenv venv` создаем виртуальное окружение python3 (под Windows: `> virtualenv venv` )
 - `$ source venv/bin/activate` Активируем виртуальное окружение (под Windows: `> venv\Scripts\activate`)
 - `(venv) $ pip3 install -r requirements.txt` Устанавливаем необходимые пакеты и библиотеки в виртуальное окружение

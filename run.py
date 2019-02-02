@@ -23,7 +23,7 @@ def handleinput(x):
 
 @eel.expose                         # Expose this function to Javascript
 def load_info(x):
-    print('Входная строка %s' % x)
+    print('Введенный кад. номер: {}'.format(x))
     cadno = cadastron.parse_cadaster(x)
     global area
     eel.print_to_textarea_js('Идет поиск...')
@@ -40,7 +40,6 @@ def load_info(x):
         eel.addOutput('>>> Создаем файл Ozi Waypoints\n')
         eel.setYmapPosition_js(area.lat, area.lon, 12, area.cadaster)
         eel.set_ymap_src_js(area.yandex_url_static)
-        # eel.setGeoMapPosition_js(area.lat, area.lon, 12)
         eel.setGeoMapPosition_js(area.lat, area.lon)
         eel.print_nomenclature_js('Лист ' + area.nomenclature)
 
@@ -75,22 +74,20 @@ def load_info_by_coords(coords, address):
         eel.addOutput('>>> Создаем файл Ozi Waypoints\n')
         eel.setYmapPosition_js(area.lat, area.lon, 12, '')
         eel.set_ymap_src_js(area.yandex_url_static)
-        # eel.setGeoMapPosition_js(area.lat, area.lon, 12)
         eel.setGeoMapPosition_js(area.lat, area.lon)
         eel.print_nomenclature_js('Лист ' + area.nomenclature)
 
         eel.addOutput('>>> Latitude  : {0}\n'.format(area.lat))
         eel.addOutput('>>> Longitude : {0}\n'.format(area.lon))
 
-        # eel.getAddress(area.ym_coords)
-
     else:
         eel.print_to_textarea_js(area.errmsg)
 
 
 @eel.expose                         # Expose this function to Javascript
-def create_report(folder):
+def create_report(folder, addr):
     global area
+    area.address = addr
     print('Адрес:', area.address)
     print('Папка с отчетом:', folder)
 

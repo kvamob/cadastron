@@ -212,7 +212,8 @@ $(function () {
 
   // Кнопка Создать отчет
   $('#btn_create_report').click(function () {
-    eel.create_report($('#dst_folder_report').val())();
+    // eel.create_report($('#dst_folder_report').val())();
+    eel.create_report($('#dst_folder_report').val(), $('#inp_address').val())();
   });
 
   // Кнопка Создать паспорт скважины

@@ -84,6 +84,11 @@
                 <input id="inp_coords" type="text" class="form-control" placeholder="Широта, Долгота"
                        aria-label="Coords" aria-describedby="basic-addon2" data-toggle="tooltip" data-placement="top"
                        title="Пример: 56.44567, 60.55874">
+                <div class="input-group-append">
+                    <button id="btn_get_by_coords" class="btn btn-outline-secondary" type="button" data-toggle="tooltip"
+                            data-placement="top" title="Получить информацию по координатам">Старт
+                    </button>
+                </div>
 
             </div>
 
@@ -91,11 +96,11 @@
             <div class="input-group mb-3">
                 <input id="inp_address" type="text" class="form-control" placeholder="Адрес участка"
                        aria-label="Address" aria-describedby="basic-addon2">
-                <div class="input-group-append">
+                <!-- <div class="input-group-append">
                     <button id="btn_get_by_coords" class="btn btn-outline-secondary" type="button" data-toggle="tooltip"
                             data-placement="top" title="Получить информацию по координатам">Старт
-                    </button>
-                </div>
+                    </button> -->
+                <!-- </div> -->
 
             </div>
 
@@ -109,7 +114,8 @@
                 <input id="dst_folder_report" type="text" class="form-control"
                        placeholder="Имя папки с отчетом по изысканиям">
                 <div class="input-group-append">
-                    <button id="btn_create_report" class="btn btn-outline-secondary" type="button" disabled>Создать
+                    <button id="btn_create_report" class="btn btn-outline-secondary" type="button" data-toggle="tooltip"
+                    data-placement="top" title="Создать отчет по изысканиям" disabled>Создать
                     </button>
                 </div>
             </div>
@@ -119,7 +125,8 @@
                 <input id="dst_folder_bhpassport" type="text" class="form-control"
                        placeholder="Имя папки с паспортом скважины">
                 <div class="input-group-append">
-                    <button id="btn_create_bhpassport" class="btn btn-outline-secondary" type="button" disabled>
+                    <button id="btn_create_bhpassport" class="btn btn-outline-secondary" type="button" data-toggle="tooltip"
+                    data-placement="top" title="Создать паспорт скважины" disabled>
                         Создать
                     </button>
                 </div>

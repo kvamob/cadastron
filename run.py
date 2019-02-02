@@ -87,7 +87,10 @@ def load_info_by_coords(coords, address):
 @eel.expose                         # Expose this function to Javascript
 def create_report(folder, addr):
     global area
-    area.address = addr
+
+    if addr:
+        area.address = addr
+
     print('Адрес:', area.address)
     print('Папка с отчетом:', folder)
 

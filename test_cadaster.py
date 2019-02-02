@@ -27,3 +27,7 @@ class TestParseCadaster(unittest.TestCase):
         text = '662510010010023'
         cadaster_no = cadastron.parse_cadaster(text)
         self.assertEqual(cadaster_no, '66:25:1001001:0023')
+
+
+if __name__ == '__main__':
+    unittest.main()

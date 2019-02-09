@@ -427,7 +427,7 @@ if __name__ == '__main__':
     # Копируем папку с шаблоном отчета в папку с изысканиями
     dst_path = os.path.join(settings.REPORTS_PATH, dst_folder)
     # print('>>> Копируем шаблон отчета в папку', dst_path)
-    err = copy_report_folder(settings.TEX_TEMPLATE_PATH, dst_path)
+    err = copy_template_folder(settings.TEX_TEMPLATE_PATH, dst_path)
     if err:
         print(err, file=sys.stderr)
         exit(-1)

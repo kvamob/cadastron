@@ -77,7 +77,7 @@ $(function () {
       $('#btn_get')
           .prop('disabled', false)
           .find('.spinner-border').addClass('d-none');
-  }
+    }
   }
 
 

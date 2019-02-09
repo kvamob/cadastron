@@ -27,7 +27,10 @@ def load_info(x):
     cadno = cadastron.parse_cadaster(x)
     global area
     eel.print_to_textarea_js('Идет поиск...')
+    eel.turn_spinner_js('1') # Запустим спиннер на кнопке Старт
+
     area = cadastron.get_info(cadno)
+
     if not area.errmsg:
         # eel.print_to_textarea_js(area.brief)
         eel.print_to_textarea_js(area.info)
@@ -48,6 +51,8 @@ def load_info(x):
 
     else:
         eel.print_to_textarea_js(area.errmsg)
+ 
+    eel.turn_spinner_js('0')  # Остановим спиннер на кнопке Старт
 
 
 @eel.expose                         # Expose this function to Javascript

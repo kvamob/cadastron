@@ -62,6 +62,25 @@ $(function () {
     $('#btn_create_bhpassport').removeAttr('disabled');
   }
 
+  // Включить/выключить спиннер на кнопке Старт по кад.номеру
+  // turn_spinner_js(1) - включить спиннер
+  // turn_spinner_js(0) - выключить спиннер
+  eel.expose(turn_spinner_js); // Expose this function to Python
+  function turn_spinner_js(x) {
+    if (x == '1') {
+      // делаем кнопку недоступной и отображаем спиннер
+      $('#btn_get')
+          .prop('disabled', true)
+          .find('.spinner-border').removeClass('d-none');
+    } else {
+      // делаем кнопку доступной и убираем спиннер
+      $('#btn_get')
+          .prop('disabled', false)
+          .find('.spinner-border').addClass('d-none');
+  }
+  }
+
+
   //
   //
   //
@@ -188,9 +207,10 @@ $(function () {
   
   // Кнопка Старт (по кадастровому номеру)
   $('#btn_get').click(function () {
-    // let info = eel.load_info($('#inp_cadaster').val())();
+
     console.log('eel.load_info');
     eel.load_info($('#inp_cadaster').val())();
+
   });
 
   // Кнопка Старт (по координатам)

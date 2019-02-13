@@ -3,8 +3,14 @@ textarea {
   width: 100%;
 }
 
+#output {
+  font-family: monospace;
+  font-size: 0.8em;
+}
+
 #output_console {
   font-family: monospace;
+  font-size: 0.8em;
 }
 
 #map {

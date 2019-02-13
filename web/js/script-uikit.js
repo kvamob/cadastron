@@ -69,14 +69,12 @@ $(function () {
   function turn_spinner_js(x) {
     if (x == '1') {
       // делаем кнопку недоступной и отображаем спиннер
-      $('#btn_get')
-        .prop('disabled', true)
-        .find('.spinner-border').removeClass('d-none');
+      $('#btn_get').prop('disabled', true);
+      $('#spinner').removeAttr('hidden');
     } else {
       // делаем кнопку доступной и убираем спиннер
-      $('#btn_get')
-        .prop('disabled', false)
-        .find('.spinner-border').addClass('d-none');
+      $('#btn_get').prop('disabled', false);
+      $('#spinner').attr('hidden', true)
     }
   }
 
@@ -93,7 +91,7 @@ $(function () {
   $('#nomenclature').val('Лист O-41-25');
   $('#inp_coords').val('56.44567, 60.55874');
 
-  $('[data-toggle="tooltip"]').tooltip(); // Enable all tooltips Bootstrap 4
+  // $('[data-toggle="tooltip"]').tooltip(); // Enable all tooltips Bootstrap 4
 
   // ---------------- Yandex Maps ----------------------------------------------------
   ymaps.ready(init);
@@ -243,14 +241,14 @@ $(function () {
 
   // При открытии вкладки Геология карте нужно послать сигнал, чтобы обновить информацию о размере элемента
   // Bootstrap
-  $('#link_geomap').on('shown.bs.tab', function () {
+  //   $('#link_geomap').on('shown.bs.tab', function () {
+  //     geomap.invalidateSize();
+  //   });
+  // UIkit
+  $('#switcher').on('shown', 'li#li_map_geo', function () {
+    console.log("- Switcher switched ");
     geomap.invalidateSize();
   });
-  // UIkit
-  // $('#switcher').on('shown', 'li#li_map_geo', function () {
-  //   console.log("- Switcher switched ");
-  //   geomap.invalidateSize();
-  // });
 
 
   $('#cb_show_geomap').on('click', function () {

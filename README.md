@@ -43,19 +43,27 @@
     call venv\Scripts\Activate
     python run.py
 
+#### Файл cadastron-uikit.cmd
+    cd d:
+    cd \GIT-REPOS\cadastron
+    call venv\Scripts\Activate
+    python run-uikit.py
+
 - **Chrome** запустится в режиме приложения с этим проектом внутри.
+
+## Два варианта дизайна
+    cadastron.cmd - С использованием оформления в стиле Bootstrap
+    cadastron-uikit.cmd - С использованием оформления в стиле UIkit
+    
 
 ## TODO
 
 - ~Добавить входной параметр - координаты участка~
 
-## Something is Wrong?
-
-    There could be a chance that you were using an old version and I have changed something and your cache is now a mess. Press Shift+F5 in the chrome app to force reload everything.
-
-If this doesn't work please report it and I will look into it!
 
 ## Screenshots
+
+### Дизайн Bootstrap
 
 ![Start screen](screenshots/screenshot1.png "Start screen")
 
@@ -64,5 +72,15 @@ If this doesn't work please report it and I will look into it!
 ![Map2 tab](screenshots/screenshot3.png "Yandex image tab")
 
 ![Map2 tab](screenshots/screenshot4.png "Geology tab")
+
+### Дизайн UIkit
+
+![Start screen](screenshots/screenshot5.png "Start screen")
+
+![Map1 tab](screenshots/screenshot6.png "Yandex Map tab")
+
+![Map2 tab](screenshots/screenshot7.png "Yandex image tab")
+
+![Map2 tab](screenshots/screenshot8.png "Geology tab")
 
 

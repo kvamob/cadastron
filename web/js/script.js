@@ -69,11 +69,13 @@ $(function () {
   function turn_spinner_js(x) {
     if (x == '1') {
       // делаем кнопку недоступной и отображаем спиннер
+      $("body").css("cursor", "progress"); // Курсор-спиннер
       $('#btn_get')
         .prop('disabled', true)
         .find('.spinner-border').removeClass('d-none');
     } else {
       // делаем кнопку доступной и убираем спиннер
+      $("body").css("cursor", "default"); // Курсор-спиннер
       $('#btn_get')
         .prop('disabled', false)
         .find('.spinner-border').addClass('d-none');

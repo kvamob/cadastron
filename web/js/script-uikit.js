@@ -71,10 +71,12 @@ $(function () {
       // делаем кнопку недоступной и отображаем спиннер
       $('#btn_get').prop('disabled', true);
       $('#spinner').removeAttr('hidden');
+      $("body").css("cursor", "progress"); // Курсор-спиннер
     } else {
       // делаем кнопку доступной и убираем спиннер
       $('#btn_get').prop('disabled', false);
       $('#spinner').attr('hidden', true)
+      $("body").css("cursor", "default"); // Курсор-спиннер
     }
   }
 

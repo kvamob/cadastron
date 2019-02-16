@@ -14,6 +14,7 @@
 
     <!-- <script src="js/popper.min.js" type="text/javascript"></script> -->
     <script src="js/uikit.min.js" type="text/javascript"></script>
+    <script src="js/uikit-icons.min.js"></script>
     <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <!-- <script src="js/bootstrap.min.js" type="text/javascript"></script> -->
 
@@ -68,12 +69,20 @@
                 <div id="tab_home" class="uk-container"><br>
 
                     <label class="uk-form-label uk-text-small" for="inp_cadaster">Кадастровый номер</label>
-                    <div class="uk-flex uk-flex-middle">
+                    <div class="uk-flex">
                         <input id="inp_cadaster" type="text" class="uk-input uk-width-1-2" placeholder="Кадастровый номер">
                         <button id="btn_get" class="uk-button" type="button" uk-tooltip="Получить информацию по кад.номеру">
-                            Старт
+                            <!-- Старт -->
+                            <span uk-icon="search"></span>
                         </button>
                         <div id="spinner" uk-spinner hidden></div>
+
+                        <!-- <a href="#" class="uk-icon-link" uk-icon="heart"></a>
+
+                        <ul class="uk-iconnav">
+                            <li><a href="" uk-icon="icon: search"></a></li>
+                        </ul> -->
+
                     </div>
                     <div class="uk-margin-small">
                         <textarea id="output" rows="7" class="uk-textarea uk-text-small"></textarea>
@@ -84,7 +93,9 @@
                         <input id="inp_coords" type="text" class="uk-input uk-width-1-2" placeholder="Широта, Долгота"
                             uk-tooltip="Пример 56.44567, 60.55874">
                         <button id="btn_get_by_coords" class="uk-button" type="button" uk-tooltip="Получить информацию по координатам">
-                            Старт
+                            <!-- Старт -->
+                            <span uk-icon="search"></span>
+
                         </button>
                     </div>
 

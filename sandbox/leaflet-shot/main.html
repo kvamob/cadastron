@@ -7,6 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Cadastron</title>
     <link rel="stylesheet" href="css/leaflet.css">
+    <!-- <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -15,6 +16,8 @@
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
     <script src="js/leaflet.js" type="text/javascript"></script>
+    <!-- <script src="node_modules/leaflet/dist/leaflet.js" type="text/javascript"></script> -->
+    <script src="node_modules/leaflet-simple-map-screenshoter/dist/leaflet-simple-map-screenshoter.js" type="text/javascript"></script>
     <!-- Yandex Maps -->
     <!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
     <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
@@ -29,7 +32,10 @@
                 <!-- <div class="d-flex justify-content-center"> -->
                     <div id="geomap"></div>
                 <!-- </div> -->
-
+                
+                <button id="screenMap">Take and download screen</button>
+                <button id="screenMapAndPast">Take screen and past to body</button>
+                <div id="screens"></div>
     </div>
 
 </body>

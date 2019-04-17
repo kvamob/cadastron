@@ -1,4 +1,5 @@
 $(function () {
+  // import 'leaflet';
 
   var lat = 56.162464;
   var lon = 60.915409;
@@ -45,13 +46,30 @@ $(function () {
   // var urlTemplate = 'http://geo.mfvsegei.ru/200k/o-41/o-41-31/1/{z}/{x}/{y}.png';
   layer = L.tileLayer(urlTemplate, options).addTo(geomap);
   var marker = L.marker([lat, lon]).addTo(geomap);
-  
-  // setGeoMapPosition_js(lat, lon);
-  // geomap.setView(new L.LatLng(lat, lon));
-  // L.marker([lat, lon]).addTo(geomap);
 
+var simpleMapScreenshoter = L.simpleMapScreenshoter({
+  hidden: true
+}).addTo(geomap);
+  
   geomap.invalidateSize();
   
+
+
+    // return as image
+    document.getElementById('screenMapAndPast').addEventListener('click', function () {
+      simpleMapScreenshoter.takeScreen('image', {
+          caption: function () {
+              return 'Hello world'
+          }
+      }).then(image => {
+          var img = document.createElement('img')
+          img.src = image
+          document.getElementById('screens').appendChild(img)
+      }).catch(e => {
+          alert(e.toString())
+      })
+  })
+
   //----------------------------------------------------------------------
   // Задать позицию цетра интерактивной Yandex карты
   // И установить маркер на центр

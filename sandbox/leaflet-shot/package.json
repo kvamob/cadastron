@@ -1,0 +1,17 @@
+{
+  "name": "leaflet-shot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "leaflet": "^1.4.0",
+    "leaflet-simple-map-screenshoter": "^0.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,22 @@
+textarea {
+  font-family: monospace;
+  width: 100%;
+}
+
+#output_console {
+  font-family: monospace;
+}
+
+#map {
+  width: 650px;
+  height: 650px;
+}
+
+#geomap {
+  width: 650px;
+  height: 650px;
+}
+
+h1 {
+  color: #1882a5;
+}

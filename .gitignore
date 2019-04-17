@@ -5,3 +5,4 @@ __pycache__
 geomap/
 !readme.txt
 debug.log
+node_modules

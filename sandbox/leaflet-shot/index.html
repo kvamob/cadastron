@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>leaflet-simple-map-screenshoter examples</title>
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <script src="js/leaflet.js"></script>
+    <script src="node_modules/leaflet-simple-map-screenshoter/dist/leaflet-simple-map-screenshoter.js"></script>
+    <style>
+        .maps {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .maps > div > div {
+            display: block;
+            margin: 10px;
+            height: 600px;
+            width:  600px;
+        }
+    </style>
+</head>
+
+<body>
+<div id="mapsScreeningState"></div>
+<div class="maps">
+    <div>
+        <div id="mapSimple"></div>
+    </div>
+    <div>
+        <div id="map"></div>
+        <button id="screenMap">Take and download screen</button>
+        <button id="screenMapAndPast">Take screen and past to body</button>
+        <div id="screens"></div>
+    </div>
+</div>
+<script>
+    /* show screen btn in panel */
+    var mapSimple = L.map('mapSimple').setView([56, 60], 9);
+    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mapSimple);
+    // https://api.mapbox.com/styles/v1/kvamob/cjunz9dg50klh1frz33ul9uhm/wmts?access_token=pk.eyJ1Ijoia3ZhbW9iIiwiYSI6ImNqdW53c3E3ZjJuYzAzeXBnM3VvN29zd3cifQ.s2_KFnM8vY-q6uK8tmexcQ
+    // L.tileLayer('https://api.mapbox.com/styles/v1/kvamob/cjunz9dg50klh1frz33ul9uhm/wmts?access_token=pk.eyJ1Ijoia3ZhbW9iIiwiYSI6ImNqdW53c3E3ZjJuYzAzeXBnM3VvN29zd3cifQ.s2_KFnM8vY-q6uK8tmexcQ', 
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoia3ZhbW9iIiwiYSI6ImNqdW53eDc0czEybjEzeW84aWU1Mjl6ZTUifQ.RxRk9wp75Bg0xZA5Z3WJpQ', 
+    {
+        maxZoom: 20,
+        id: 'mapbox.streets'
+    }
+    ).addTo(mapSimple);
+
+
+    L.simpleMapScreenshoter({
+        screenName: function () {
+            return new Date().toDateString()
+        }
+    }).addTo(mapSimple)
+
+    // add loaders
+    mapSimple.on('simpleMapScreenshoter.takeScreen', function () {
+        document.getElementById('mapsScreeningState').innerHTML += 'screening...<br>'
+    })
+    mapSimple.on('simpleMapScreenshoter.done', function () {
+        document.getElementById('mapsScreeningState').innerHTML += 'screen end...<br>'
+    })
+    mapSimple.on('simpleMapScreenshoter.error', function (event) {
+        console.error(event.e)
+        document.getElementById('mapsScreeningState').innerHTML += event.e.toString() + '<br>'
+    })
+
+    /* custom usage */
+    var map = L.map('map').setView([56.852059, 60.601159], 10);
+//    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+   L.tileLayer('https://ex1c.delrus.ru/geomap/{z}/{x}/{y}.png').addTo(map);
+    var simpleMapScreenshoter = L.simpleMapScreenshoter({
+        hidden: true
+    }).addTo(map)
+
+    // return as blob
+    document.getElementById('screenMap').addEventListener('click', function () {
+        simpleMapScreenshoter.takeScreen('blob', {
+            caption: function () {
+                return 'Hello world'
+            }
+        }).then(blob => {
+            var a = document.createElement('a')
+            var url = window.URL.createObjectURL(blob)
+            document.body.appendChild(a)
+            a.href = url
+            a.download = 'screen.png'
+            a.click()
+            window.URL.revokeObjectURL(url)
+        }).catch(e => {
+          alert(e.toString())
+        })
+    })
+
+    // return as image
+    document.getElementById('screenMapAndPast').addEventListener('click', function () {
+        simpleMapScreenshoter.takeScreen('image', {
+            caption: function () {
+                return 'Hello world'
+            }
+        }).then(image => {
+            var img = document.createElement('img')
+            img.src = image
+            document.getElementById('screens').appendChild(img)
+        }).catch(e => {
+            alert(e.toString())
+        })
+    })
+
+    // listen on fired error or catch error in prev promise
+    map.on('simpleMapScreenshoter.error', function (event) {
+        var el = document.createElement('div')
+        el.classList.add('create-screen-error')
+        el.innerHTML = event.e.toString()
+        document.getElementById('screens').appendChild(el)
+    })
+</script>
+</body>
+
+</html>

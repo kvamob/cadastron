@@ -41,7 +41,7 @@ $(function () {
   // Слой с тайлами гелогической карты - локальный веб-сервер
   // Почему-то тайлы плохо грузятся, если использовать доступ к локальной папке без веб-сервера
   //  layer = L.tileLayer('geomap/{z}/{x}/{y}.png', options).addTo(geomap);
-  var urlTemplate = 'http://ex1c.delrus.ru/geomap/{z}/{x}/{y}.png';
+  var urlTemplate = 'https://ex1c.delrus.ru/geomap/{z}/{x}/{y}.png';
   // var urlTemplate = 'http://localhost/{z}/{x}/{y}.png';
   // var urlTemplate = 'http://geo.mfvsegei.ru/200k/o-41/o-41-31/1/{z}/{x}/{y}.png';
   layer = L.tileLayer(urlTemplate, options).addTo(geomap);

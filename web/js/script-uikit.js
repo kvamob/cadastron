@@ -1,5 +1,7 @@
 $(function () {
 
+  console.log('screenX = ', window.screenX, 'screenY = ', window.screenY);
+
   // Эти функции вызываются из Python
   eel.expose(say_hello_js); // Expose this function to Python
   function say_hello_js(x) {

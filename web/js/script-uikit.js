@@ -243,6 +243,27 @@ $(function () {
     eel.create_bhpassport($('#dst_folder_bhpassport').val())();
   });
 
+  // Кнопка Снимок карты Yandex (2-я вкладка)
+  $('#btn_shot_yandex').click(function () {
+    let offsetX = $('#map').offset().left;
+    let offsetY = $('#map').offset().top;
+    console.log('Создать снимок карты Yandex');
+    console.log('offset X = ', offsetX, 'offset Y = ', offsetY);
+    console.log('offsetw X = ', window.screenX, 'offsetw Y = ', window.screenY);
+    console.log('Scrolltop = ', window.scrollY)
+  });
+
+  // Кнопка Снимок геологической карты (4-я вкладка)
+  $('#btn_shot_geomap').click(function () {
+    console.log('Создать снимок геологической карты');
+    let offsetX = $('#geomap').offset().left;
+    let offsetY = $('#geomap').offset().top;
+    console.log('Создать снимок карты Yandex');
+    console.log('offset X = ', offsetX, 'offset Y = ', offsetY);
+    console.log('offsetw X = ', window.screenX, 'offsetw Y = ', window.screenY);
+    console.log('Scrolltop = ', window.scrollY)
+  });
+
   // При открытии вкладки Геология карте нужно послать сигнал, чтобы обновить информацию о размере элемента
   // Bootstrap
   //   $('#link_geomap').on('shown.bs.tab', function () {

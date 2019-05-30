@@ -177,7 +177,8 @@ $(function () {
   // var urlTemplate = 'http://localhost/{z}/{x}/{y}.png';
   // var urlTemplate = 'http://geo.mfvsegei.ru/200k/o-41/o-41-31/1/{z}/{x}/{y}.png';
   layer = L.tileLayer(urlTemplate, options).addTo(geomap);
-  // OpenStreetMap кара с ресурса thunderforest.com (бесплатный тариф)
+  
+  // Слой с тайлами OpenStreetMap карт с ресурса thunderforest.com с красивым оформлением (бесплатный тариф)
   layer_osm = L.tileLayer('https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=162ea9a3b951432e8456860e7e3c965d').addTo(osmmap);
 
   var marker = L.marker([lat, lon]).addTo(geomap);

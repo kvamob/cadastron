@@ -44,6 +44,7 @@ def load_info(x):
         eel.setYmapPosition_js(area.lat, area.lon, 12, area.cadaster)
         eel.set_ymap_src_js(area.yandex_url_static)
         eel.setGeoMapPosition_js(area.lat, area.lon)
+        eel.setOSMMapPosition_js(area.lat, area.lon)
         eel.print_nomenclature_js('Лист ' + area.nomenclature)
 
         eel.addOutput('>>> Latitude  : {0}\n'.format(area.lat))
@@ -80,6 +81,7 @@ def load_info_by_coords(coords, address):
         eel.setYmapPosition_js(area.lat, area.lon, 12, '')
         eel.set_ymap_src_js(area.yandex_url_static)
         eel.setGeoMapPosition_js(area.lat, area.lon)
+        eel.setOSMMapPosition_js(area.lat, area.lon)
         eel.print_nomenclature_js('Лист ' + area.nomenclature)
 
         eel.addOutput('>>> Latitude  : {0}\n'.format(area.lat))

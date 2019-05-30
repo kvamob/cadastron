@@ -18,6 +18,11 @@ textarea {
   height: 650px;
 }
 
+#osmmap {
+  width: 650px;
+  height: 650px;
+}
+
 #geomap {
   width: 650px;
   height: 650px;

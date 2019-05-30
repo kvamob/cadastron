@@ -147,13 +147,18 @@ $(function () {
     zoomControl: false
   };
 
-
+// Геокарта
   geomap = L.map('geomap', map_options).fitBounds(bounds);
   geomap.setView(new L.LatLng(lat, lon), 12);
+// OSM карта
+  osmmap = L.map('osmmap', map_options).fitBounds(bounds);
+  osmmap.setView(new L.LatLng(lat, lon), 12);
+
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(geomap);
 
   var layer;
+  var layer_osm;
   var options = {
     minZoom: mapMinZoom,
     maxZoom: mapMaxZoom,
@@ -172,7 +177,11 @@ $(function () {
   // var urlTemplate = 'http://localhost/{z}/{x}/{y}.png';
   // var urlTemplate = 'http://geo.mfvsegei.ru/200k/o-41/o-41-31/1/{z}/{x}/{y}.png';
   layer = L.tileLayer(urlTemplate, options).addTo(geomap);
+  // OpenStreetMap кара с ресурса thunderforest.com (бесплатный тариф)
+  layer_osm = L.tileLayer('https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=162ea9a3b951432e8456860e7e3c965d').addTo(osmmap);
+
   var marker = L.marker([lat, lon]).addTo(geomap);
+  var marker_osm = L.marker([lat, lon]).addTo(osmmap);
 
   //----------------------------------------------------------------------
   // Задать позицию цетра интерактивной Yandex карты
@@ -204,6 +213,21 @@ $(function () {
 
     geomap.setView(new L.LatLng(lat, lon));
     L.marker([lat, lon]).addTo(geomap);
+  }
+
+  //----------------------------------------------------------------------
+  // Задать позицию цетра интерактивной карты OSM (на Leaflet.js)
+  // И установить маркер на центр
+  //----------------------------------------------------------------------
+  eel.expose(setOSMMapPosition_js);
+
+  function setOSMMapPosition_js(lat, lon) {
+
+    console.log('lat=', lat);
+    console.log('lon=', lon);
+
+    osmmap.setView(new L.LatLng(lat, lon));
+    L.marker([lat, lon]).addTo(osmmap);
   }
 
 
@@ -262,6 +286,17 @@ $(function () {
     console.log('offset X = ', offsetX, 'offset Y = ', offsetY);
     console.log('offsetw X = ', window.screenX, 'offsetw Y = ', window.screenY);
     console.log('Scrolltop = ', window.scrollY)
+  });
+
+  // При открытии вкладки OpenStreetMap карте нужно послать сигнал, чтобы обновить информацию о размере элемента
+  // Bootstrap
+  //   $('#link_geomap').on('shown.bs.tab', function () {
+  //     geomap.invalidateSize();
+  //   });
+  // UIkit
+  $('#switcher').on('shown', 'li#li_map_osm', function () {
+    console.log("- Switcher switched OSM");
+    osmmap.invalidateSize();
   });
 
   // При открытии вкладки Геология карте нужно послать сигнал, чтобы обновить информацию о размере элемента

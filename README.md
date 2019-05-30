@@ -60,6 +60,7 @@
 ## TODO
 
 - ~Добавить входной параметр - координаты участка~
+- Использовать наряду с Yandex картой красивую карту из проекта https://www.thunderforest.com/ (Outdoors, LandScape)
 
 
 ## Screenshots

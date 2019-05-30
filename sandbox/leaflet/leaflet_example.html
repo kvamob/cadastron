@@ -26,7 +26,8 @@
       new L.LatLng(mapExtent[1], mapExtent[0]),
       new L.LatLng(mapExtent[3], mapExtent[2]));
     var map = L.map('map').fitBounds(bounds);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    L.tileLayer('https://tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey=162ea9a3b951432e8456860e7e3c965d').addTo(map);
     var layer;
     var options = {
       minZoom: mapMinZoom,

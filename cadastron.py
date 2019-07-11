@@ -146,8 +146,22 @@ def get_info(cadaster):
         return Result
     url = 'http://pkk5.rosreestr.ru/api/features/1/' + obj_id
 
+    # Метод GET не всегда работает нормально с API Росеестра, поскольку там идет редирект на https, а сервис, отвечающий по https, иногда падает
+    # С помощью Postman выявлено, что лучше работать с POST запросом с такими заголовками, при этом редирект Росеестра игнорируется:
+    headers = {
+        'User-Agent': "PostmanRuntime/7.15.0",
+        'Accept': "*/*",
+        'Cache-Control': "no-cache",
+        'Postman-Token': "cc512150-e155-495d-9099-41f401b57e55,c40e8aca-f791-4afa-b8a0-f0f23163ca8d",
+        'accept-encoding': "gzip, deflate",
+        'referer': url,
+        'Connection': "keep-alive",
+        'cache-control': "no-cache"
+    }
+
     try:
-        r = requests.get(url, timeout=5)
+        # r = requests.get(url, timeout=5) # Метод GET Не всегда работает!
+        r = requests.request('POST', url, headers=headers, timeout=5)
         r.raise_for_status()  # Проверим на ошибки HTTP
         data = r.json()
     except requests.exceptions.Timeout as e:

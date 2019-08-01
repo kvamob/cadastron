@@ -17,9 +17,11 @@ eel.init(web_path)                  # Give folder containing web files
 area = tuple()
 
 logging.basicConfig(
-    handlers=[logging.FileHandler('cadastron.log', 'w', 'utf-8')],
+    handlers=[logging.FileHandler('cadastron.log', 'a', 'utf-8')],
     # level=logging.INFO,
-    level=logging.DEBUG
+    level=logging.DEBUG,
+    format='%(asctime)s %(levelname)s:%(message)s',
+    datefmt='%d-%m-%Y %I:%M:%S'
 )
 
 @eel.expose                         # Expose this function to Javascript

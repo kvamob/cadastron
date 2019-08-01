@@ -1,35 +1,22 @@
-INFO:root:***************** Starting Cadastron v2.137 Build: 01-08-2019-08:33:05 *****************
-DEBUG:geventwebsocket.handler:Initializing WebSocket
-DEBUG:geventwebsocket.handler:Validating WebSocket request
-INFO:geventwebsocket.handler:127.0.0.1 - - [2019-08-01 12:00:35] "GET /eel.js HTTP/1.1" 200 4803 0.000998
-DEBUG:geventwebsocket.handler:Initializing WebSocket
-DEBUG:geventwebsocket.handler:Validating WebSocket request
-DEBUG:geventwebsocket.handler:Attempting to upgrade connection
-DEBUG:geventwebsocket.handler:WebSocket request accepted, switching protocols
-DEBUG:root:Введенный кад. номер: 74090607001634
-DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
-DEBUG:urllib3.connectionpool:http://pkk5.rosreestr.ru:80 "POST /api/features/1/74:9:607001:634 HTTP/1.1" 301 0
-DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
-DEBUG:urllib3.connectionpool:https://pkk5.rosreestr.ru:443 "GET /api/features/1/74:9:607001:634 HTTP/1.1" 200 2184
-INFO:root:Кадастровый номер: 74:09:0607001:634
-Адрес: Челябинская область, р-н Каслинский, д. Григорьевка, ул. Березовая, 5
-Координаты:
-56,162464	60,915409
-56°09ʹ44ʺ с.ш. 60°54ʹ55ʺ в.д.
-Лист М 1:200000 : O-41-31
-
-https://yandex.ru/maps/?mode=search&text=56.162464%2C60.915409
-
-file://d:/OziExplorer/data/CADASTER.txt
-Datum,WGS 84
-WP,D,74:09:0607001:634,56.162464,60.915409,08/01/19,12/00/40,,D,N,-9999
-
-DEBUG:root:Адрес:Челябинская область, р-н Каслинский, д. Григорьевка, ул. Березовая, 5
-DEBUG:root:Папка с отчетом:5 Август 2019
-DEBUG:root:*** Ошибка копирования: *** Ошибка копирования: [WinError 183] Невозможно создать файл, так как он уже существует: 'D:\\Home System\\ИЗЫСКАНИЯ\\5 Август 2019'
-
-DEBUG:root:Адрес:Челябинская область, р-н Каслинский, д. Григорьевка, ул. Березовая, 5
-DEBUG:root:Папка с отчетом:5 Август 2019
-DEBUG:geventwebsocket.handler:Closed WebSocket
-DEBUG:geventwebsocket.handler:Failed to write closing frame -> closing socket
-DEBUG:geventwebsocket.handler:Closed WebSocket
+01-08-2019 12:44:32 INFO:***************** Starting Cadastron v2.138 Build: 01-08-2019-12:04:56 *****************
+01-08-2019 12:44:32 DEBUG:Initializing WebSocket
+01-08-2019 12:44:32 DEBUG:Validating WebSocket request
+01-08-2019 12:44:32 INFO:127.0.0.1 - - [2019-08-01 12:44:32] "GET /eel.js HTTP/1.1" 200 4803 0.000998
+01-08-2019 12:44:32 DEBUG:Initializing WebSocket
+01-08-2019 12:44:32 DEBUG:Validating WebSocket request
+01-08-2019 12:44:32 DEBUG:Attempting to upgrade connection
+01-08-2019 12:44:32 DEBUG:WebSocket request accepted, switching protocols
+01-08-2019 12:44:34 DEBUG:Closed WebSocket
+01-08-2019 12:44:35 DEBUG:Failed to write closing frame -> closing socket
+01-08-2019 12:44:35 DEBUG:Closed WebSocket
+01-08-2019 12:46:05 INFO:***************** Starting Cadastron v2.138 Build: 01-08-2019-12:04:56 *****************
+01-08-2019 12:46:05 DEBUG:Initializing WebSocket
+01-08-2019 12:46:05 DEBUG:Validating WebSocket request
+01-08-2019 12:46:05 INFO:127.0.0.1 - - [2019-08-01 12:46:05] "GET /eel.js HTTP/1.1" 200 4803 0.000000
+01-08-2019 12:46:06 DEBUG:Initializing WebSocket
+01-08-2019 12:46:06 DEBUG:Validating WebSocket request
+01-08-2019 12:46:06 DEBUG:Attempting to upgrade connection
+01-08-2019 12:46:06 DEBUG:WebSocket request accepted, switching protocols
+01-08-2019 12:46:08 DEBUG:Closed WebSocket
+01-08-2019 12:46:09 DEBUG:Failed to write closing frame -> closing socket
+01-08-2019 12:46:09 DEBUG:Closed WebSocket

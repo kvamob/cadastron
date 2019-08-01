@@ -24,6 +24,7 @@ logging.basicConfig(
     datefmt='%d-%m-%Y %I:%M:%S'
 )
 
+
 @eel.expose                         # Expose this function to Javascript
 def handleinput(x):
     print('%s' % x)
@@ -150,7 +151,7 @@ def create_bhpassport(folder):
     # Копируем папку с шаблоном отчета в папку с изысканиями
     dst_path = os.path.join(settings.BHPASSPORTS_PATH, folder)
     print('Путь к папке с отчетом:', dst_path)
-    logging.debug('Путь к папке с отчетом:', dst_path)
+    logging.debug('Путь к папке с отчетом:' + dst_path)
     eel.addOutput('>>> Копируем шаблон отчета в папку {0}\n'.format(dst_path))
     err = cadastron.copy_template_folder(settings.TEX_BH_TEMPLATE_PATH, dst_path)
     if not err:

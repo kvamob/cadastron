@@ -17,8 +17,9 @@ eel.init(web_path)                  # Give folder containing web files
 area = tuple()
 
 logging.basicConfig(
-    filename='cadastron.log',
-    level=logging.INFO
+    handlers=[logging.FileHandler('cadastron.log', 'w', 'utf-8')],
+    # level=logging.INFO,
+    level=logging.DEBUG
 )
 
 @eel.expose                         # Expose this function to Javascript
@@ -29,6 +30,7 @@ def handleinput(x):
 @eel.expose                         # Expose this function to Javascript
 def load_info(x):
     print('Введенный кад. номер: {}'.format(x))
+    logging.debug('Введенный кад. номер: {}'.format(x))
     cadno = cadastron.parse_cadaster(x)
     global area
     eel.print_to_textarea_js('Идет поиск...')
@@ -39,6 +41,7 @@ def load_info(x):
     if not area.errmsg:
         # eel.print_to_textarea_js(area.brief)
         eel.print_to_textarea_js(area.info)
+        logging.info(area.info)
         eel.print_to_url_js(area.yandex_url)
         eel.enable_btn_yandex_js()
         eel.enable_btn_create_js()
@@ -57,6 +60,7 @@ def load_info(x):
 
     else:
         eel.print_to_textarea_js(area.errmsg)
+        logging.debug(area.errmsg)
  
     eel.turn_spinner_js('0')  # Остановим спиннер на кнопке Старт
 
@@ -65,17 +69,22 @@ def load_info(x):
 def load_info_by_coords(coords, address):
     global area
     print('Входная строка 1(координаты) %s' % coords)
+    logging.debug('Входная строка 1(координаты) %s' % coords)
     print('Входная строка 2 %s' % address)
+    logging.debug('Входная строка 2 %s' % address)
     (lat, lon) = cadastron.parse_coords(coords)
     print('Lat {} Lon {}'.format(lat, lon))
+    logging.debug('Lat {} Lon {}'.format(lat, lon))
 
     eel.print_to_textarea_js('Получение информации по координатам...')
+    logging.debug('Получение информации по координатам...')
 
     area = cadastron.get_info_by_coords(lat, lon, address)
 
     if not area.errmsg:
         # eel.print_to_textarea_js(area.brief)
         eel.print_to_textarea_js(area.info)
+        logging.debug(area.info)
         eel.print_to_url_js(area.yandex_url)
         eel.enable_btn_yandex_js()
         eel.enable_btn_create_js()
@@ -94,6 +103,7 @@ def load_info_by_coords(coords, address):
 
     else:
         eel.print_to_textarea_js(area.errmsg)
+        logging.debug(area.errmsg)
 
 
 @eel.expose                         # Expose this function to Javascript
@@ -104,7 +114,9 @@ def create_report(folder, addr):
         area.address = addr
 
     print('Адрес:', area.address)
+    logging.debug('Адрес:' + area.address)
     print('Папка с отчетом:', folder)
+    logging.debug('Папка с отчетом:' + folder)
 
     # Копируем папку с шаблоном отчета в папку с изысканиями
     dst_path = os.path.join(settings.REPORTS_PATH, folder)
@@ -122,17 +134,21 @@ def create_report(folder, addr):
         webbrowser.open(dst_path)
     else:
         eel.addOutput('*** Ошибка копирования: {0}\n'.format(err))
+        logging.debug('*** Ошибка копирования: {0}\n'.format(err))
 
 
 @eel.expose                         # Expose this function to Javascript
 def create_bhpassport(folder):
     global area
     print('Адрес:', area.address)
+    logging.debug('Адрес:' + area.address)
     print('Папка с паспортом:', folder)
+    logging.debug('Папка с паспортом:' + folder)
 
     # Копируем папку с шаблоном отчета в папку с изысканиями
     dst_path = os.path.join(settings.BHPASSPORTS_PATH, folder)
     print('Путь к папке с отчетом:', dst_path)
+    logging.debug('Путь к папке с отчетом:', dst_path)
     eel.addOutput('>>> Копируем шаблон отчета в папку {0}\n'.format(dst_path))
     err = cadastron.copy_template_folder(settings.TEX_BH_TEMPLATE_PATH, dst_path)
     if not err:
@@ -146,10 +162,11 @@ def create_bhpassport(folder):
         webbrowser.open(dst_path)
     else:
         eel.addOutput('*** Ошибка копирования: {0}\n'.format(err))
+        logging.debug('*** Ошибка копирования: {0}\n'.format(err))
 
 
 eel.print_build_js('v {0} Build: {1}'.format(app.version, app.build))     # Call a Javascript function
-logging.info('Starting Cadastron v{0} Build: {1}'.format(app.version, app.build))
+logging.info('***************** Starting Cadastron v{0} Build: {1} *****************'.format(app.version, app.build))
 eel.say_hello_js('connected!')   # Call a Javascript function
 eel.print_to_textarea_js('')     # Call a Javascript function
 

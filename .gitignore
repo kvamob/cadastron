@@ -5,4 +5,5 @@ __pycache__
 geomap/
 !readme.txt
 debug.log
+cadastron.log
 node_modules

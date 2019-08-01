@@ -11,8 +11,10 @@ import codecs
 from collections import namedtuple
 from jinja2 import Template
 
-# Преобразование координат из метрической системы (которую выдает сервис Росеестра) в WGS-84
-# Позаимствовано отсюда: https://github.com/rendrom/rosreestr2coord/blob/master/scripts/utils.py
+"""
+ Преобразование координат из метрической системы (которую выдает сервис Росеестра) в WGS-84 
+ Позаимствовано отсюда: https://github.com/rendrom/rosreestr2coord/blob/master/scripts/utils.py 
+"""
 
 
 def y2lat(y):

@@ -2,6 +2,7 @@ import eel
 import settings
 import os
 import webbrowser
+import logging
 
 import cadastron
 import app
@@ -15,6 +16,10 @@ eel.init(web_path)                  # Give folder containing web files
 
 area = tuple()
 
+logging.basicConfig(
+    filename='cadastron.log',
+    level=logging.INFO
+)
 
 @eel.expose                         # Expose this function to Javascript
 def handleinput(x):
@@ -144,6 +149,7 @@ def create_bhpassport(folder):
 
 
 eel.print_build_js('v {0} Build: {1}'.format(app.version, app.build))     # Call a Javascript function
+logging.info('Starting Cadastron v{0} Build: {1}'.format(app.version, app.build))
 eel.say_hello_js('connected!')   # Call a Javascript function
 eel.print_to_textarea_js('')     # Call a Javascript function
 

@@ -1,0 +1,4 @@
+INFO:root:Starting v 2.136 Build: 11-07-2019-09:44:23
+INFO:geventwebsocket.handler:127.0.0.1 - - [2019-08-01 08:19:45] "GET /eel.js HTTP/1.1" 200 4803 0.000997
+INFO:root:Starting Cadastron v2.136 Build: 11-07-2019-09:44:23
+INFO:geventwebsocket.handler:127.0.0.1 - - [2019-08-01 08:21:37] "GET /eel.js HTTP/1.1" 200 4803 0.000997

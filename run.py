@@ -15,7 +15,6 @@ eel.init(web_path)                  # Give folder containing web files
 
 area = tuple()
 
-
 @eel.expose                         # Expose this function to Javascript
 def handleinput(x):
     print('%s' % x)

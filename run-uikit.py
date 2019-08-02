@@ -32,8 +32,8 @@ def handleinput(x):
 
 @eel.expose                         # Expose this function to Javascript
 def load_info(x):
-    print('Введенный кад. номер: {}'.format(x))
-    logging.debug('Введенный кад. номер: {}'.format(x))
+    print(f'Введенный кад. номер: {x}')
+    logging.debug(f'Введенный кад. номер: {x}')
     cadno = cadastron.parse_cadaster(x)
     global area
     eel.print_to_textarea_js('Идет поиск...')
@@ -71,13 +71,13 @@ def load_info(x):
 @eel.expose                         # Expose this function to Javascript
 def load_info_by_coords(coords, address):
     global area
-    print('Входная строка 1(координаты) %s' % coords)
-    logging.debug('Входная строка 1(координаты) %s' % coords)
-    print('Входная строка 2 %s' % address)
-    logging.debug('Входная строка 2 %s' % address)
+    print(f'Входная строка 1(координаты) {coords}')
+    logging.debug(f'Входная строка 1(координаты) {coords}')
+    print(f'Входная строка 2 {address}')
+    logging.debug(f'Входная строка 2 {address}')
     (lat, lon) = cadastron.parse_coords(coords)
-    print('Lat {} Lon {}'.format(lat, lon))
-    logging.debug('Lat {} Lon {}'.format(lat, lon))
+    print(f'Lat {lat} Lon {lon}')
+    logging.debug(f'Lat {lat} Lon {lon}')
 
     eel.print_to_textarea_js('Получение информации по координатам...')
     logging.debug('Получение информации по координатам...')
@@ -101,8 +101,8 @@ def load_info_by_coords(coords, address):
         eel.setOSMMapPosition_js(area.lat, area.lon)
         eel.print_nomenclature_js('Лист ' + area.nomenclature)
 
-        eel.addOutput('>>> Latitude  : {0}\n'.format(area.lat))
-        eel.addOutput('>>> Longitude : {0}\n'.format(area.lon))
+        eel.addOutput(f'>>> Latitude  : {area.lat}\n')
+        eel.addOutput(f'>>> Longitude : {area.lon}\n')
 
     else:
         eel.print_to_textarea_js(area.errmsg)
@@ -116,15 +116,15 @@ def create_report(folder, addr):
     if addr:
         area.address = addr
 
-    print('Адрес:', area.address)
-    logging.debug('Адрес:' + area.address)
-    print('Папка с отчетом:', folder)
-    logging.debug('Папка с отчетом:' + folder)
+    print(f'Адрес:{area.address}')
+    logging.debug(f'Адрес:{area.address}')
+    print(f'Папка с отчетом:{folder}')
+    logging.debug(f'Папка с отчетом:{folder}')
 
     # Копируем папку с шаблоном отчета в папку с изысканиями
     dst_path = os.path.join(settings.REPORTS_PATH, folder)
-    print('Путь к папке с отчетом:', dst_path)
-    eel.addOutput('>>> Копируем шаблон отчета в папку {0}\n'.format(dst_path))
+    print(f'Путь к папке с отчетом:{dst_path}')
+    eel.addOutput(f'>>> Копируем шаблон отчета в папку {dst_path}\n')
     err = cadastron.copy_template_folder(settings.TEX_TEMPLATE_PATH, dst_path)
     if not err:
         eel.addOutput('>>> Шаблон скопирован\n')
@@ -136,23 +136,23 @@ def create_report(folder, addr):
         # Откроем проводник в папке назначения
         webbrowser.open(dst_path)
     else:
-        eel.addOutput('*** Ошибка копирования: {0}\n'.format(err))
-        logging.debug('*** Ошибка копирования: {0}\n'.format(err))
+        eel.addOutput(f'*** Ошибка копирования: {err}\n')
+        logging.debug(f'*** Ошибка копирования: {err}\n')
 
 
 @eel.expose                         # Expose this function to Javascript
 def create_bhpassport(folder):
     global area
-    print('Адрес:', area.address)
-    logging.debug('Адрес:' + area.address)
-    print('Папка с паспортом:', folder)
-    logging.debug('Папка с паспортом:' + folder)
+    print(f'Адрес:{area.address}')
+    logging.debug(f'Адрес:{area.address}')
+    print(f'Папка с паспортом:{folder}')
+    logging.debug(f'Папка с паспортом:{folder}')
 
     # Копируем папку с шаблоном отчета в папку с изысканиями
     dst_path = os.path.join(settings.BHPASSPORTS_PATH, folder)
-    print('Путь к папке с отчетом:', dst_path)
-    logging.debug('Путь к папке с отчетом:' + dst_path)
-    eel.addOutput('>>> Копируем шаблон отчета в папку {0}\n'.format(dst_path))
+    print(f'Путь к папке с отчетом:{dst_path}')
+    logging.debug(f'Путь к папке с отчетом:{dst_path}')
+    eel.addOutput(f'>>> Копируем шаблон отчета в папку {dst_path}\n')
     err = cadastron.copy_template_folder(settings.TEX_BH_TEMPLATE_PATH, dst_path)
     if not err:
         eel.addOutput('>>> Шаблон скопирован\n')
@@ -164,12 +164,12 @@ def create_bhpassport(folder):
         # Откроем проводник в папке назначения
         webbrowser.open(dst_path)
     else:
-        eel.addOutput('*** Ошибка копирования: {0}\n'.format(err))
-        logging.debug('*** Ошибка копирования: {0}\n'.format(err))
+        eel.addOutput(f'*** Ошибка копирования: {err}\n')
+        logging.debug(f'*** Ошибка копирования: {err}\n')
 
 
-eel.print_build_js('v {0} Build: {1}'.format(app.version, app.build))     # Call a Javascript function
-logging.info('***************** Starting Cadastron v{0} Build: {1} *****************'.format(app.version, app.build))
+eel.print_build_js(f'v {app.version} Build: {app.build}')     # Call a Javascript function
+logging.info(f'******************** Starting Cadastron v{app.version} Build: {app.build} ********************')
 eel.say_hello_js('connected!')   # Call a Javascript function
 eel.print_to_textarea_js('')     # Call a Javascript function
 

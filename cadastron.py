@@ -77,7 +77,7 @@ def parse_cadaster(input_str):
     if input_str.find(':') > -1:      # Кадастровый номер задан в традиционном формате
         return input_str
     cn = ''.join(input_str.split())     # Удаляем пробелы, если они есть
-    cadaster = '{}:{}:{}:{}'.format(cn[0:2], cn[2:4], cn[4:11], cn[11:])
+    cadaster = f'{cn[0:2]}:{cn[2:4]}:{cn[4:11]}:{cn[11:]}'
     return cadaster
 
 
@@ -146,10 +146,12 @@ def get_info(cadaster):
     if not obj_id:
         Result.errmsg = 'Ошибка(опечатка) в кадастровом номере!'
         return Result
-    url = 'http://pkk5.rosreestr.ru/api/features/1/' + obj_id
+    url = f'http://pkk5.rosreestr.ru/api/features/1/{obj_id}'
 
-    # Метод GET не всегда работает нормально с API Росеестра, поскольку там идет редирект на https, а сервис, отвечающий по https, иногда падает
-    # С помощью Postman выявлено, что лучше работать с POST запросом с такими заголовками, при этом редирект Росеестра игнорируется:
+    # Метод GET не всегда работает нормально с API Росеестра, поскольку там идет редирект на https, а сервис,
+    # отвечающий по https, иногда падает
+    # С помощью Postman выявлено, что лучше работать с POST запросом с такими заголовками, при этом редирект
+    # Росеестра игнорируется:
     headers = {
         'User-Agent': "PostmanRuntime/7.15.0",
         'Accept': "*/*",

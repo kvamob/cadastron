@@ -20,3 +20,334 @@
 01-08-2019 12:46:08 DEBUG:Closed WebSocket
 01-08-2019 12:46:09 DEBUG:Failed to write closing frame -> closing socket
 01-08-2019 12:46:09 DEBUG:Closed WebSocket
+01-08-2019 04:23:27 INFO:***************** Starting Cadastron v2.141 Build: 01-08-2019-14:20:34 *****************
+01-08-2019 04:23:27 DEBUG:Initializing WebSocket
+01-08-2019 04:23:27 DEBUG:Validating WebSocket request
+01-08-2019 04:23:27 INFO:127.0.0.1 - - [2019-08-01 16:23:27] "GET /eel.js HTTP/1.1" 200 4803 0.000998
+01-08-2019 04:23:28 DEBUG:Initializing WebSocket
+01-08-2019 04:23:28 DEBUG:Validating WebSocket request
+01-08-2019 04:23:28 DEBUG:Attempting to upgrade connection
+01-08-2019 04:23:28 DEBUG:WebSocket request accepted, switching protocols
+01-08-2019 04:23:40 DEBUG:Введенный кад. номер: 66192501001172
+01-08-2019 04:23:40 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+01-08-2019 04:23:40 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/66:19:2501001:172 HTTP/1.1" 301 0
+01-08-2019 04:23:40 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+01-08-2019 04:23:40 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/66:19:2501001:172 HTTP/1.1" 200 2389
+01-08-2019 04:23:40 INFO:Кадастровый номер: 66:19:2501001:172
+Адрес: Свердловская область, Пригородный район, поселок Молодежный, улица Совхозная, участок 34 А
+Координаты:
+58,008224	60,302817
+58°00ʹ29ʺ с.ш. 60°18ʹ10ʺ в.д.
+Лист М 1:200000 : O-41-13
+
+https://yandex.ru/maps/?mode=search&text=58.008224%2C60.302817
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,66:19:2501001:172,58.008224,60.302817,08/01/19,16/23/40,,D,N,-9999
+
+01-08-2019 04:25:21 DEBUG:Адрес:Свердловская область, Пригородный район, поселок Молодежный, улица Совхозная, участок 34 А
+01-08-2019 04:25:21 DEBUG:Папка с отчетом:Н.Тагил, Молодежный, ул Совхозная, уч 34А Август 2019
+01-08-2019 04:30:43 DEBUG:Closed WebSocket
+01-08-2019 04:30:44 DEBUG:Failed to write closing frame -> closing socket
+01-08-2019 04:30:44 DEBUG:Closed WebSocket
+02-08-2019 04:51:55 INFO:******************** Starting Cadastron v2.141 Build: 01-08-2019-14:20:34 ********************
+02-08-2019 04:51:56 DEBUG:Initializing WebSocket
+02-08-2019 04:51:56 DEBUG:Validating WebSocket request
+02-08-2019 04:51:56 INFO:127.0.0.1 - - [2019-08-02 16:51:56] "GET /main-uikit.html HTTP/1.1" 200 9516 0.336166
+02-08-2019 04:51:56 DEBUG:Initializing WebSocket
+02-08-2019 04:51:56 DEBUG:Validating WebSocket request
+02-08-2019 04:51:56 INFO:127.0.0.1 - - [2019-08-02 16:51:56] "GET /css/uikit.min.css HTTP/1.1" 200 253541 0.014960
+02-08-2019 04:51:56 DEBUG:Initializing WebSocket
+02-08-2019 04:51:56 DEBUG:Validating WebSocket request
+02-08-2019 04:51:56 INFO:127.0.0.1 - - [2019-08-02 16:51:56] "GET /css/leaflet.css HTTP/1.1" 200 14292 0.019945
+02-08-2019 04:51:56 DEBUG:Initializing WebSocket
+02-08-2019 04:51:56 DEBUG:Validating WebSocket request
+02-08-2019 04:51:56 INFO:127.0.0.1 - - [2019-08-02 16:51:56] "GET /css/main-uikit.css HTTP/1.1" 200 556 0.001996
+02-08-2019 04:51:56 DEBUG:Initializing WebSocket
+02-08-2019 04:51:56 DEBUG:Validating WebSocket request
+02-08-2019 04:51:56 INFO:127.0.0.1 - - [2019-08-02 16:51:56] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63621 0.000997
+02-08-2019 04:51:56 DEBUG:Initializing WebSocket
+02-08-2019 04:51:56 DEBUG:Validating WebSocket request
+02-08-2019 04:51:56 INFO:127.0.0.1 - - [2019-08-02 16:51:56] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87114 0.000998
+02-08-2019 04:51:56 DEBUG:Initializing WebSocket
+02-08-2019 04:51:56 DEBUG:Validating WebSocket request
+02-08-2019 04:51:56 INFO:127.0.0.1 - - [2019-08-02 16:51:56] "GET /js/uikit.min.js HTTP/1.1" 200 132179 0.000000
+02-08-2019 04:51:56 DEBUG:Initializing WebSocket
+02-08-2019 04:51:56 DEBUG:Validating WebSocket request
+02-08-2019 04:51:56 INFO:127.0.0.1 - - [2019-08-02 16:51:56] "GET /js/leaflet.js HTTP/1.1" 200 141315 0.000998
+02-08-2019 04:51:56 DEBUG:Initializing WebSocket
+02-08-2019 04:51:56 DEBUG:Validating WebSocket request
+02-08-2019 04:51:56 INFO:127.0.0.1 - - [2019-08-02 16:51:56] "GET /eel.js HTTP/1.1" 200 4803 0.000998
+02-08-2019 04:51:56 DEBUG:Initializing WebSocket
+02-08-2019 04:51:56 DEBUG:Validating WebSocket request
+02-08-2019 04:51:56 INFO:127.0.0.1 - - [2019-08-02 16:51:56] "GET /js/script-uikit.js HTTP/1.1" 200 12495 0.000997
+02-08-2019 04:51:56 DEBUG:Initializing WebSocket
+02-08-2019 04:51:56 DEBUG:Validating WebSocket request
+02-08-2019 04:51:56 INFO:127.0.0.1 - - [2019-08-02 16:51:56] "GET /favicon.ico HTTP/1.1" 200 15261 0.017951
+02-08-2019 04:51:57 DEBUG:Initializing WebSocket
+02-08-2019 04:51:57 DEBUG:Validating WebSocket request
+02-08-2019 04:51:57 INFO:127.0.0.1 - - [2019-08-02 16:51:57] "GET /css/images/marker-icon.png HTTP/1.1" 200 1637 0.004997
+02-08-2019 04:51:57 DEBUG:Initializing WebSocket
+02-08-2019 04:51:57 DEBUG:Validating WebSocket request
+02-08-2019 04:51:57 INFO:127.0.0.1 - - [2019-08-02 16:51:57] "GET /css/images/marker-shadow.png HTTP/1.1" 200 788 0.002992
+02-08-2019 04:51:57 DEBUG:Initializing WebSocket
+02-08-2019 04:51:57 DEBUG:Validating WebSocket request
+02-08-2019 04:51:57 DEBUG:Attempting to upgrade connection
+02-08-2019 04:51:57 DEBUG:WebSocket request accepted, switching protocols
+02-08-2019 04:51:59 DEBUG:Введенный кад. номер: 74090607001634
+02-08-2019 04:51:59 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+02-08-2019 04:51:59 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/74:9:607001:634 HTTP/1.1" 301 0
+02-08-2019 04:51:59 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+02-08-2019 04:51:59 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/74:9:607001:634 HTTP/1.1" 200 2184
+02-08-2019 04:51:59 INFO:Кадастровый номер: 74:09:0607001:634
+Адрес: Челябинская область, р-н Каслинский, д. Григорьевка, ул. Березовая, 5
+Координаты:
+56,162464	60,915409
+56°09ʹ44ʺ с.ш. 60°54ʹ55ʺ в.д.
+Лист М 1:200000 : O-41-31
+
+https://yandex.ru/maps/?mode=search&text=56.162464%2C60.915409
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,74:09:0607001:634,56.162464,60.915409,08/02/19,16/51/59,,D,N,-9999
+
+02-08-2019 04:52:09 DEBUG:Closed WebSocket
+02-08-2019 04:52:10 DEBUG:Failed to write closing frame -> closing socket
+02-08-2019 04:52:10 DEBUG:Closed WebSocket
+02-08-2019 04:57:10 INFO:******************** Starting Cadastron v2.142 Build: 02-08-2019-16:56:25 ********************
+02-08-2019 04:57:10 DEBUG:Initializing WebSocket
+02-08-2019 04:57:10 DEBUG:Validating WebSocket request
+02-08-2019 04:57:10 INFO:127.0.0.1 - - [2019-08-02 16:57:10] "GET /eel.js HTTP/1.1" 200 4803 0.000000
+02-08-2019 04:57:10 DEBUG:Initializing WebSocket
+02-08-2019 04:57:10 DEBUG:Validating WebSocket request
+02-08-2019 04:57:10 DEBUG:Attempting to upgrade connection
+02-08-2019 04:57:10 DEBUG:WebSocket request accepted, switching protocols
+02-08-2019 04:57:12 DEBUG:Введенный кад. номер: 74090607001634
+02-08-2019 04:57:12 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+02-08-2019 04:57:12 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/74:9:607001:634 HTTP/1.1" 301 0
+02-08-2019 04:57:12 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+02-08-2019 04:57:12 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/74:9:607001:634 HTTP/1.1" 200 2184
+02-08-2019 04:57:12 INFO:Кадастровый номер: 74:09:0607001:634
+Адрес: Челябинская область, р-н Каслинский, д. Григорьевка, ул. Березовая, 5
+Координаты:
+56,162464	60,915409
+56°09ʹ44ʺ с.ш. 60°54ʹ55ʺ в.д.
+Лист М 1:200000 : O-41-31
+
+https://yandex.ru/maps/?mode=search&text=56.162464%2C60.915409
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,74:09:0607001:634,56.162464,60.915409,08/02/19,16/57/12,,D,N,-9999
+
+02-08-2019 04:57:17 DEBUG:Closed WebSocket
+02-08-2019 04:57:18 DEBUG:Failed to write closing frame -> closing socket
+02-08-2019 04:57:18 DEBUG:Closed WebSocket
+06-08-2019 08:27:33 INFO:******************** Starting Cadastron v2.142 Build: 02-08-2019-16:56:25 ********************
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /main-uikit.html HTTP/1.1" 200 9516 0.311289
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /css/uikit.min.css HTTP/1.1" 200 253541 0.006982
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /css/leaflet.css HTTP/1.1" 200 14292 0.020945
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /css/main-uikit.css HTTP/1.1" 200 556 0.001994
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63621 0.000000
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87114 0.000995
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /js/uikit.min.js HTTP/1.1" 200 132179 0.000998
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /js/leaflet.js HTTP/1.1" 200 141315 0.000998
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /eel.js HTTP/1.1" 200 4803 0.000000
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /js/script-uikit.js HTTP/1.1" 200 12495 0.000997
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /favicon.ico HTTP/1.1" 200 15261 0.019977
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /css/images/marker-icon.png HTTP/1.1" 200 1637 0.023924
+06-08-2019 08:27:34 DEBUG:Initializing WebSocket
+06-08-2019 08:27:34 DEBUG:Validating WebSocket request
+06-08-2019 08:27:34 INFO:127.0.0.1 - - [2019-08-06 08:27:34] "GET /css/images/marker-shadow.png HTTP/1.1" 200 788 0.002022
+06-08-2019 08:27:35 DEBUG:Initializing WebSocket
+06-08-2019 08:27:35 DEBUG:Validating WebSocket request
+06-08-2019 08:27:35 DEBUG:Attempting to upgrade connection
+06-08-2019 08:27:35 DEBUG:WebSocket request accepted, switching protocols
+06-08-2019 08:27:39 DEBUG:Введенный кад. номер: 66582902030122
+06-08-2019 08:27:39 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+06-08-2019 08:27:39 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/66:58:2902030:122 HTTP/1.1" 301 0
+06-08-2019 08:27:39 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+06-08-2019 08:27:39 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/66:58:2902030:122 HTTP/1.1" 200 2083
+06-08-2019 08:27:39 INFO:Кадастровый номер: 66:58:2902030:122
+Адрес: Свердловская обл, г Первоуральск, в 0,5 км на юго-восток от села Новоалексеевское
+Координаты:
+56,837006	60,158449
+56°50ʹ13ʺ с.ш. 60°09ʹ30ʺ в.д.
+Лист М 1:200000 : O-41-25
+
+https://yandex.ru/maps/?mode=search&text=56.837006%2C60.158449
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,66:58:2902030:122,56.837006,60.158449,08/06/19,08/27/39,,D,N,-9999
+
+06-08-2019 11:12:56 DEBUG:Closed WebSocket
+06-08-2019 11:12:57 DEBUG:Failed to write closing frame -> closing socket
+06-08-2019 11:12:57 DEBUG:Closed WebSocket
+06-08-2019 12:47:31 INFO:******************** Starting Cadastron v2.142 Build: 02-08-2019-16:56:25 ********************
+06-08-2019 12:47:32 DEBUG:Initializing WebSocket
+06-08-2019 12:47:32 DEBUG:Validating WebSocket request
+06-08-2019 12:47:32 INFO:127.0.0.1 - - [2019-08-06 12:47:32] "GET /main-uikit.html HTTP/1.1" 200 9516 0.338058
+06-08-2019 12:47:32 DEBUG:Initializing WebSocket
+06-08-2019 12:47:32 DEBUG:Validating WebSocket request
+06-08-2019 12:47:32 INFO:127.0.0.1 - - [2019-08-06 12:47:32] "GET /css/uikit.min.css HTTP/1.1" 200 253541 0.003989
+06-08-2019 12:47:32 DEBUG:Initializing WebSocket
+06-08-2019 12:47:32 DEBUG:Validating WebSocket request
+06-08-2019 12:47:32 INFO:127.0.0.1 - - [2019-08-06 12:47:32] "GET /css/leaflet.css HTTP/1.1" 200 14292 0.001995
+06-08-2019 12:47:32 DEBUG:Initializing WebSocket
+06-08-2019 12:47:32 DEBUG:Validating WebSocket request
+06-08-2019 12:47:32 INFO:127.0.0.1 - - [2019-08-06 12:47:32] "GET /css/main-uikit.css HTTP/1.1" 200 556 0.001995
+06-08-2019 12:47:32 DEBUG:Initializing WebSocket
+06-08-2019 12:47:32 DEBUG:Validating WebSocket request
+06-08-2019 12:47:32 INFO:127.0.0.1 - - [2019-08-06 12:47:32] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63621 0.000997
+06-08-2019 12:47:32 DEBUG:Initializing WebSocket
+06-08-2019 12:47:32 DEBUG:Validating WebSocket request
+06-08-2019 12:47:32 INFO:127.0.0.1 - - [2019-08-06 12:47:32] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87114 0.000997
+06-08-2019 12:47:32 DEBUG:Initializing WebSocket
+06-08-2019 12:47:32 DEBUG:Validating WebSocket request
+06-08-2019 12:47:32 INFO:127.0.0.1 - - [2019-08-06 12:47:32] "GET /js/uikit.min.js HTTP/1.1" 200 132179 0.001006
+06-08-2019 12:47:32 DEBUG:Initializing WebSocket
+06-08-2019 12:47:32 DEBUG:Validating WebSocket request
+06-08-2019 12:47:32 INFO:127.0.0.1 - - [2019-08-06 12:47:32] "GET /js/leaflet.js HTTP/1.1" 200 141315 0.000997
+06-08-2019 12:47:32 DEBUG:Initializing WebSocket
+06-08-2019 12:47:32 DEBUG:Validating WebSocket request
+06-08-2019 12:47:32 INFO:127.0.0.1 - - [2019-08-06 12:47:32] "GET /eel.js HTTP/1.1" 200 4803 0.000000
+06-08-2019 12:47:32 DEBUG:Initializing WebSocket
+06-08-2019 12:47:32 DEBUG:Validating WebSocket request
+06-08-2019 12:47:32 INFO:127.0.0.1 - - [2019-08-06 12:47:32] "GET /js/script-uikit.js HTTP/1.1" 200 12495 0.000000
+06-08-2019 12:47:32 DEBUG:Initializing WebSocket
+06-08-2019 12:47:32 DEBUG:Validating WebSocket request
+06-08-2019 12:47:32 INFO:127.0.0.1 - - [2019-08-06 12:47:32] "GET /favicon.ico HTTP/1.1" 200 15261 0.000997
+06-08-2019 12:47:33 DEBUG:Initializing WebSocket
+06-08-2019 12:47:33 DEBUG:Validating WebSocket request
+06-08-2019 12:47:33 INFO:127.0.0.1 - - [2019-08-06 12:47:33] "GET /css/images/marker-icon.png HTTP/1.1" 200 1637 0.000997
+06-08-2019 12:47:33 DEBUG:Initializing WebSocket
+06-08-2019 12:47:33 DEBUG:Validating WebSocket request
+06-08-2019 12:47:33 INFO:127.0.0.1 - - [2019-08-06 12:47:33] "GET /css/images/marker-shadow.png HTTP/1.1" 200 788 0.001994
+06-08-2019 12:47:33 DEBUG:Initializing WebSocket
+06-08-2019 12:47:33 DEBUG:Validating WebSocket request
+06-08-2019 12:47:33 DEBUG:Attempting to upgrade connection
+06-08-2019 12:47:33 DEBUG:WebSocket request accepted, switching protocols
+06-08-2019 12:47:45 DEBUG:Введенный кад. номер: 6606450105920
+06-08-2019 12:47:45 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+06-08-2019 12:47:45 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/66:6:4501059:20 HTTP/1.1" 301 0
+06-08-2019 12:47:45 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+06-08-2019 12:47:45 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/66:6:4501059:20 HTTP/1.1" 200 1961
+06-08-2019 12:47:45 INFO:Кадастровый номер: 66:06:4501059:20
+Адрес: обл. Свердловская, р-н Белоярский,  41 км К-Уральского тракта, СНТ "Елена" участок № 50
+Координаты:
+56,68013 	61,149196
+56°40ʹ48ʺ с.ш. 61°08ʹ57ʺ в.д.
+Лист М 1:200000 : O-41-26
+
+https://yandex.ru/maps/?mode=search&text=56.68013%2C61.149196
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,66:06:4501059:20,56.68013 ,61.149196,08/06/19,12/47/45,,D,N,-9999
+
+06-08-2019 12:49:33 DEBUG:Адрес:обл. Свердловская, р-н Белоярский,  41 км К-Уральского тракта, СНТ "Елена" участок № 50
+06-08-2019 12:49:33 DEBUG:Папка с отчетом:Каменск-Уральский тракт 41 км СНТ Елена уч 50 Август 2019
+06-08-2019 12:56:43 DEBUG:Closed WebSocket
+06-08-2019 12:56:44 DEBUG:Failed to write closing frame -> closing socket
+06-08-2019 12:56:44 DEBUG:Closed WebSocket
+06-08-2019 12:58:47 INFO:******************** Starting Cadastron v2.142 Build: 02-08-2019-16:56:25 ********************
+06-08-2019 12:58:47 DEBUG:Initializing WebSocket
+06-08-2019 12:58:47 DEBUG:Validating WebSocket request
+06-08-2019 12:58:47 INFO:127.0.0.1 - - [2019-08-06 12:58:47] "GET /eel.js HTTP/1.1" 200 4803 0.000000
+06-08-2019 12:58:48 DEBUG:Initializing WebSocket
+06-08-2019 12:58:48 DEBUG:Validating WebSocket request
+06-08-2019 12:58:48 DEBUG:Attempting to upgrade connection
+06-08-2019 12:58:48 DEBUG:WebSocket request accepted, switching protocols
+06-08-2019 12:59:12 DEBUG:Введенный кад. номер: 664105070793
+06-08-2019 12:59:12 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+06-08-2019 12:59:12 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/66:41:507079:3 HTTP/1.1" 301 0
+06-08-2019 12:59:12 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+06-08-2019 12:59:12 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/66:41:507079:3 HTTP/1.1" 200 39
+06-08-2019 12:59:12 DEBUG:Данных об участке нет
+06-08-2019 01:05:21 DEBUG:Введенный кад. номер: 6641050707934
+06-08-2019 01:05:21 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+06-08-2019 01:05:21 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/66:41:507079:34 HTTP/1.1" 301 0
+06-08-2019 01:05:21 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+06-08-2019 01:05:22 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/66:41:507079:34 HTTP/1.1" 200 2302
+06-08-2019 01:05:22 INFO:Кадастровый номер: 66:41:0507079:34
+Адрес: Свердловская область, г. Екатеринбург
+Координаты:
+56,70551 	60,622624
+56°42ʹ19ʺ с.ш. 60°37ʹ21ʺ в.д.
+Лист М 1:200000 : O-41-25
+
+https://yandex.ru/maps/?mode=search&text=56.70551%2C60.622624
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,66:41:0507079:34,56.70551 ,60.622624,08/06/19,13/05/22,,D,N,-9999
+
+06-08-2019 01:09:23 DEBUG:Адрес:г. Екатеринбург, Елизаветинский опытный завод
+06-08-2019 01:09:23 DEBUG:Папка с отчетом:Екатеринбург, Елизаветинский опытный завод Август 2019
+06-08-2019 01:15:27 DEBUG:Closed WebSocket
+06-08-2019 01:15:28 DEBUG:Failed to write closing frame -> closing socket
+06-08-2019 01:15:28 DEBUG:Closed WebSocket
+06-08-2019 04:51:59 INFO:******************** Starting Cadastron v2.142 Build: 02-08-2019-16:56:25 ********************
+06-08-2019 04:51:59 DEBUG:Initializing WebSocket
+06-08-2019 04:51:59 DEBUG:Validating WebSocket request
+06-08-2019 04:51:59 INFO:127.0.0.1 - - [2019-08-06 16:51:59] "GET /eel.js HTTP/1.1" 200 4803 0.000000
+06-08-2019 04:51:59 DEBUG:Initializing WebSocket
+06-08-2019 04:51:59 DEBUG:Validating WebSocket request
+06-08-2019 04:51:59 DEBUG:Attempting to upgrade connection
+06-08-2019 04:51:59 DEBUG:WebSocket request accepted, switching protocols
+06-08-2019 04:52:31 DEBUG:Введенный кад. номер: 664105150305
+06-08-2019 04:52:31 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+06-08-2019 04:52:31 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/66:41:515030:5 HTTP/1.1" 301 0
+06-08-2019 04:52:31 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+06-08-2019 04:52:31 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/66:41:515030:5 HTTP/1.1" 200 1681
+06-08-2019 04:52:31 INFO:Кадастровый номер: 66:41:0515030:5
+Адрес: обл. Свердловская, г. Екатеринбург, п. Шабровский, ул. Серова, дом 30
+Координаты:
+56,636028	60,57617 
+56°38ʹ09ʺ с.ш. 60°34ʹ34ʺ в.д.
+Лист М 1:200000 : O-41-31
+
+https://yandex.ru/maps/?mode=search&text=56.636028%2C60.57617
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,66:41:0515030:5,56.636028,60.57617 ,08/06/19,16/52/31,,D,N,-9999
+
+06-08-2019 04:56:54 DEBUG:Closed WebSocket
+06-08-2019 04:56:55 DEBUG:Failed to write closing frame -> closing socket
+06-08-2019 04:56:55 DEBUG:Closed WebSocket
+06-08-2019 04:57:24 INFO:******************** Starting Cadastron v2.142 Build: 02-08-2019-16:56:25 ********************
+06-08-2019 04:57:24 DEBUG:Initializing WebSocket
+06-08-2019 04:57:24 DEBUG:Validating WebSocket request
+06-08-2019 04:57:25 INFO:127.0.0.1 - - [2019-08-06 16:57:25] "GET /eel.js HTTP/1.1" 200 4803 0.000997
+06-08-2019 04:57:25 DEBUG:Initializing WebSocket
+06-08-2019 04:57:25 DEBUG:Validating WebSocket request
+06-08-2019 04:57:25 DEBUG:Attempting to upgrade connection
+06-08-2019 04:57:25 DEBUG:WebSocket request accepted, switching protocols

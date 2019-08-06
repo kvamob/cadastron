@@ -65,7 +65,8 @@
 
 ## Screenshots
 
-### Дизайн Bootstrap
+
+### Дизайн UIkit
 
 ![Start screen](screenshots/screenshot1.png "Start screen")
 
@@ -73,16 +74,8 @@
 
 ![Map2 tab](screenshots/screenshot3.png "Yandex image tab")
 
-![Map2 tab](screenshots/screenshot4.png "Geology tab")
+![Map3 tab](screenshots/screenshot4.png "OpenstreetMap tab")
 
-### Дизайн UIkit
-
-![Start screen](screenshots/screenshot5.png "Start screen")
-
-![Map1 tab](screenshots/screenshot6.png "Yandex Map tab")
-
-![Map2 tab](screenshots/screenshot7.png "Yandex image tab")
-
-![Map2 tab](screenshots/screenshot8.png "Geology tab")
+![Map4 tab](screenshots/screenshot4.png "Geology tab")
 
 

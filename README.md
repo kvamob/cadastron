@@ -76,6 +76,6 @@
 
 ![Map3 tab](screenshots/screenshot4.png "OpenstreetMap tab")
 
-![Map4 tab](screenshots/screenshot4.png "Geology tab")
+![Map4 tab](screenshots/screenshot5.png "Geology tab")
 
 

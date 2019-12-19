@@ -3632,3 +3632,77 @@ WP,D,74:09:0607001:634,56.162464,60.915409,12/18/19,15/39/55,,D,N,-9999
 18-12-2019 03:40:07 DEBUG:Closed WebSocket
 18-12-2019 03:40:08 DEBUG:Failed to write closing frame -> closing socket
 18-12-2019 03:40:08 DEBUG:Closed WebSocket
+19-12-2019 10:37:29 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+19-12-2019 10:37:29 DEBUG:Initializing WebSocket
+19-12-2019 10:37:29 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /main-uikit.html HTTP/1.1" 200 9541 0.559656
+19-12-2019 10:37:30 DEBUG:Initializing WebSocket
+19-12-2019 10:37:30 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.005995
+19-12-2019 10:37:30 DEBUG:Initializing WebSocket
+19-12-2019 10:37:30 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.001000
+19-12-2019 10:37:30 DEBUG:Initializing WebSocket
+19-12-2019 10:37:30 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.000999
+19-12-2019 10:37:30 DEBUG:Initializing WebSocket
+19-12-2019 10:37:30 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.002997
+19-12-2019 10:37:30 DEBUG:Initializing WebSocket
+19-12-2019 10:37:30 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.001998
+19-12-2019 10:37:30 DEBUG:Initializing WebSocket
+19-12-2019 10:37:30 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.001999
+19-12-2019 10:37:30 DEBUG:Initializing WebSocket
+19-12-2019 10:37:30 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /eel.js HTTP/1.1" 200 5281 0.000000
+19-12-2019 10:37:30 DEBUG:Initializing WebSocket
+19-12-2019 10:37:30 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.000999
+19-12-2019 10:37:30 DEBUG:Initializing WebSocket
+19-12-2019 10:37:30 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.002998
+19-12-2019 10:37:30 DEBUG:Initializing WebSocket
+19-12-2019 10:37:30 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /favicon.ico HTTP/1.1" 200 15286 0.000999
+19-12-2019 10:37:30 DEBUG:Initializing WebSocket
+19-12-2019 10:37:30 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.000999
+19-12-2019 10:37:30 DEBUG:Initializing WebSocket
+19-12-2019 10:37:30 DEBUG:Validating WebSocket request
+19-12-2019 10:37:30 INFO:127.0.0.1 - - [2019-12-19 22:37:30] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.000999
+19-12-2019 10:37:31 DEBUG:Initializing WebSocket
+19-12-2019 10:37:31 DEBUG:Validating WebSocket request
+19-12-2019 10:37:31 DEBUG:Attempting to upgrade connection
+19-12-2019 10:37:31 DEBUG:WebSocket request accepted, switching protocols
+19-12-2019 10:37:33 DEBUG:Initializing WebSocket
+19-12-2019 10:37:33 DEBUG:Validating WebSocket request
+19-12-2019 10:37:33 INFO:127.0.0.1 - - [2019-12-19 22:37:33] "GET /favicon.ico HTTP/1.1" 200 15286 0.000999
+19-12-2019 10:37:33 DEBUG:Введенный кад. номер: 74090607001634
+19-12-2019 10:37:33 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+19-12-2019 10:37:33 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/74:9:607001:634 HTTP/1.1" 301 0
+19-12-2019 10:37:33 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+19-12-2019 10:37:33 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/74:9:607001:634 HTTP/1.1" 200 2266
+19-12-2019 10:37:33 INFO:Кадастровый номер: 74:09:0607001:634
+Адрес: Челябинская область, р-н Каслинский, д. Григорьевка, ул. Березовая, 5
+Координаты:
+56,162464	60,915409
+56°09ʹ44ʺ с.ш. 60°54ʹ55ʺ в.д.
+Лист М 1:200000 : O-41-31
+
+https://yandex.ru/maps/?mode=search&text=56.162464%2C60.915409
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,74:09:0607001:634,56.162464,60.915409,12/19/19,22/37/33,,D,N,-9999
+
+19-12-2019 10:37:33 DEBUG:Initializing WebSocket
+19-12-2019 10:37:33 DEBUG:Validating WebSocket request
+19-12-2019 10:37:33 INFO:127.0.0.1 - - [2019-12-19 22:37:33] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.001998
+19-12-2019 10:37:33 DEBUG:Initializing WebSocket
+19-12-2019 10:37:33 DEBUG:Validating WebSocket request
+19-12-2019 10:37:33 INFO:127.0.0.1 - - [2019-12-19 22:37:33] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.001999
+19-12-2019 10:37:38 DEBUG:Closed WebSocket
+19-12-2019 10:37:39 DEBUG:Failed to write closing frame -> closing socket
+19-12-2019 10:37:39 DEBUG:Closed WebSocket

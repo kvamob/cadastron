@@ -3706,3 +3706,230 @@ WP,D,74:09:0607001:634,56.162464,60.915409,12/19/19,22/37/33,,D,N,-9999
 19-12-2019 10:37:38 DEBUG:Closed WebSocket
 19-12-2019 10:37:39 DEBUG:Failed to write closing frame -> closing socket
 19-12-2019 10:37:39 DEBUG:Closed WebSocket
+23-12-2019 03:56:59 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+23-12-2019 03:56:59 DEBUG:Initializing WebSocket
+23-12-2019 03:56:59 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /main-uikit.html HTTP/1.1" 200 9541 0.303119
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.028923
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.000998
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.019946
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.001005
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.000000
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.000998
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.000997
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /eel.js HTTP/1.1" 200 5281 0.000000
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.000998
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /favicon.ico HTTP/1.1" 200 15286 0.022938
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.010969
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 INFO:127.0.0.1 - - [2019-12-23 15:57:00] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.000997
+23-12-2019 03:57:00 DEBUG:Initializing WebSocket
+23-12-2019 03:57:00 DEBUG:Validating WebSocket request
+23-12-2019 03:57:00 DEBUG:Attempting to upgrade connection
+23-12-2019 03:57:00 DEBUG:WebSocket request accepted, switching protocols
+23-12-2019 03:57:02 DEBUG:Initializing WebSocket
+23-12-2019 03:57:02 DEBUG:Validating WebSocket request
+23-12-2019 03:57:02 INFO:127.0.0.1 - - [2019-12-23 15:57:02] "GET /favicon.ico HTTP/1.1" 200 15286 0.000997
+23-12-2019 03:57:13 DEBUG:Введенный кад. номер: 664101060836
+23-12-2019 03:57:13 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+23-12-2019 03:57:13 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/66:41:106083:6 HTTP/1.1" 301 0
+23-12-2019 03:57:13 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+23-12-2019 03:57:14 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/66:41:106083:6 HTTP/1.1" 200 1746
+23-12-2019 03:57:14 INFO:Кадастровый номер: 66:41:0106083:6
+Адрес: обл. Свердловская, г. Екатеринбург, ул. Молодежи, дом 2 в
+Координаты:
+56,901444	60,572311
+56°54ʹ05ʺ с.ш. 60°34ʹ20ʺ в.д.
+Лист М 1:200000 : O-41-25
+
+https://yandex.ru/maps/?mode=search&text=56.901444%2C60.572311
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,66:41:0106083:6,56.901444,60.572311,12/23/19,15/57/14,,D,N,-9999
+
+23-12-2019 03:57:14 DEBUG:Initializing WebSocket
+23-12-2019 03:57:14 DEBUG:Validating WebSocket request
+23-12-2019 03:57:14 INFO:127.0.0.1 - - [2019-12-23 15:57:14] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.000998
+23-12-2019 03:57:14 DEBUG:Initializing WebSocket
+23-12-2019 03:57:14 DEBUG:Validating WebSocket request
+23-12-2019 03:57:14 INFO:127.0.0.1 - - [2019-12-23 15:57:14] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.000997
+23-12-2019 04:01:04 DEBUG:Адрес:Свердловская обл., г. Екатеринбург, ул. Молодежи, дом 2 в
+23-12-2019 04:01:04 DEBUG:Папка с отчетом:Екатеринбург Уралмаш ул. Молодежи, дом 2 в Декабрь 2019
+23-12-2019 04:07:28 DEBUG:Closed WebSocket
+23-12-2019 04:07:29 DEBUG:Failed to write closing frame -> closing socket
+23-12-2019 04:07:29 DEBUG:Closed WebSocket
+24-12-2019 11:41:11 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+24-12-2019 11:41:11 DEBUG:Initializing WebSocket
+24-12-2019 11:41:11 DEBUG:Validating WebSocket request
+24-12-2019 11:41:11 INFO:127.0.0.1 - - [2019-12-24 11:41:11] "GET /main-uikit.html HTTP/1.1" 200 9541 0.291222
+24-12-2019 11:41:11 DEBUG:Initializing WebSocket
+24-12-2019 11:41:11 DEBUG:Validating WebSocket request
+24-12-2019 11:41:11 INFO:127.0.0.1 - - [2019-12-24 11:41:11] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.019946
+24-12-2019 11:41:11 DEBUG:Initializing WebSocket
+24-12-2019 11:41:11 DEBUG:Validating WebSocket request
+24-12-2019 11:41:11 INFO:127.0.0.1 - - [2019-12-24 11:41:11] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.000997
+24-12-2019 11:41:11 DEBUG:Initializing WebSocket
+24-12-2019 11:41:11 DEBUG:Validating WebSocket request
+24-12-2019 11:41:11 INFO:127.0.0.1 - - [2019-12-24 11:41:11] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.019976
+24-12-2019 11:41:11 DEBUG:Initializing WebSocket
+24-12-2019 11:41:11 DEBUG:Validating WebSocket request
+24-12-2019 11:41:11 INFO:127.0.0.1 - - [2019-12-24 11:41:11] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.000998
+24-12-2019 11:41:11 DEBUG:Initializing WebSocket
+24-12-2019 11:41:11 DEBUG:Validating WebSocket request
+24-12-2019 11:41:11 INFO:127.0.0.1 - - [2019-12-24 11:41:11] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.000997
+24-12-2019 11:41:11 DEBUG:Initializing WebSocket
+24-12-2019 11:41:11 DEBUG:Validating WebSocket request
+24-12-2019 11:41:11 INFO:127.0.0.1 - - [2019-12-24 11:41:11] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.000998
+24-12-2019 11:41:11 DEBUG:Initializing WebSocket
+24-12-2019 11:41:11 DEBUG:Validating WebSocket request
+24-12-2019 11:41:11 INFO:127.0.0.1 - - [2019-12-24 11:41:11] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.000997
+24-12-2019 11:41:11 DEBUG:Initializing WebSocket
+24-12-2019 11:41:11 DEBUG:Validating WebSocket request
+24-12-2019 11:41:11 INFO:127.0.0.1 - - [2019-12-24 11:41:11] "GET /eel.js HTTP/1.1" 200 5281 0.000000
+24-12-2019 11:41:11 DEBUG:Initializing WebSocket
+24-12-2019 11:41:11 DEBUG:Validating WebSocket request
+24-12-2019 11:41:11 INFO:127.0.0.1 - - [2019-12-24 11:41:11] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.000990
+24-12-2019 11:41:11 DEBUG:Initializing WebSocket
+24-12-2019 11:41:11 DEBUG:Validating WebSocket request
+24-12-2019 11:41:11 INFO:127.0.0.1 - - [2019-12-24 11:41:11] "GET /favicon.ico HTTP/1.1" 200 15286 0.020938
+24-12-2019 11:41:12 DEBUG:Initializing WebSocket
+24-12-2019 11:41:12 DEBUG:Validating WebSocket request
+24-12-2019 11:41:12 INFO:127.0.0.1 - - [2019-12-24 11:41:12] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.015957
+24-12-2019 11:41:12 DEBUG:Initializing WebSocket
+24-12-2019 11:41:12 DEBUG:Validating WebSocket request
+24-12-2019 11:41:12 INFO:127.0.0.1 - - [2019-12-24 11:41:12] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.001024
+24-12-2019 11:41:12 DEBUG:Initializing WebSocket
+24-12-2019 11:41:12 DEBUG:Validating WebSocket request
+24-12-2019 11:41:12 DEBUG:Attempting to upgrade connection
+24-12-2019 11:41:12 DEBUG:WebSocket request accepted, switching protocols
+24-12-2019 11:41:19 DEBUG:Введенный кад. номер: 663600000005
+24-12-2019 11:41:19 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+24-12-2019 11:41:19 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/66:36:0:5 HTTP/1.1" 301 0
+24-12-2019 11:41:19 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+24-12-2019 11:41:20 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/66:36:0:5 HTTP/1.1" 200 2061
+24-12-2019 11:41:20 DEBUG:Ошибка get_info(): KeyError('center')
+24-12-2019 11:45:04 DEBUG:Входная строка 1(координаты) 57.029063, 60.543120
+24-12-2019 11:45:04 DEBUG:Входная строка 2 Свердловская обл., г. В. Пышма, п. Санаторный, северная часть на берегу озера Балтым
+24-12-2019 11:45:04 DEBUG:Lat 57.029063 Lon 60.543120
+24-12-2019 11:45:04 DEBUG:Получение информации по координатам...
+24-12-2019 11:45:04 DEBUG:Кадастровый номер: Участок
+Адрес: Свердловская обл., г. В. Пышма, п. Санаторный, северная часть на берегу озера Балтым
+Координаты:
+57,029063	60,543120
+57°01ʹ44ʺ с.ш. 60°32ʹ35ʺ в.д.
+Лист М 1:200000 : O-41-25
+
+https://yandex.ru/maps/?mode=search&text=57.029063%2C60.543120
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,Участок,57.029063,60.543120,12/24/19,11/45/04,,D,N,-9999
+
+24-12-2019 11:45:04 DEBUG:Initializing WebSocket
+24-12-2019 11:45:04 DEBUG:Validating WebSocket request
+24-12-2019 11:45:04 INFO:127.0.0.1 - - [2019-12-24 11:45:04] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.001994
+24-12-2019 11:45:04 DEBUG:Initializing WebSocket
+24-12-2019 11:45:04 DEBUG:Validating WebSocket request
+24-12-2019 11:45:04 INFO:127.0.0.1 - - [2019-12-24 11:45:04] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.000997
+24-12-2019 11:47:14 DEBUG:Адрес:Свердловская обл., г. В. Пышма, п. Санаторный, северная часть на берегу озера Балтым
+24-12-2019 11:47:14 DEBUG:Папка с отчетом:Балтым Санаторный, Лазурный берег Декабрь 2019
+24-12-2019 12:40:06 DEBUG:Closed WebSocket
+24-12-2019 12:40:07 DEBUG:Failed to write closing frame -> closing socket
+24-12-2019 12:40:07 DEBUG:Closed WebSocket
+27-12-2019 12:18:38 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /main-uikit.html HTTP/1.1" 200 9541 0.284256
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.025929
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.000998
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.019946
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.002993
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.000997
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.000997
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.000998
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /eel.js HTTP/1.1" 200 5281 0.000000
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.000997
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /favicon.ico HTTP/1.1" 200 15286 0.020942
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.011967
+27-12-2019 12:18:39 DEBUG:Initializing WebSocket
+27-12-2019 12:18:39 DEBUG:Validating WebSocket request
+27-12-2019 12:18:39 INFO:127.0.0.1 - - [2019-12-27 12:18:39] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.000998
+27-12-2019 12:18:40 DEBUG:Initializing WebSocket
+27-12-2019 12:18:40 DEBUG:Validating WebSocket request
+27-12-2019 12:18:40 DEBUG:Attempting to upgrade connection
+27-12-2019 12:18:40 DEBUG:WebSocket request accepted, switching protocols
+27-12-2019 12:18:48 DEBUG:Введенный кад. номер: 66410310030100
+27-12-2019 12:18:48 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+27-12-2019 12:18:49 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/66:41:310030:100 HTTP/1.1" 301 0
+27-12-2019 12:18:49 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+27-12-2019 12:18:49 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/66:41:310030:100 HTTP/1.1" 200 1690
+27-12-2019 12:18:49 INFO:Кадастровый номер: 66:41:0310030:100
+Адрес: обл. Свердловская, г. Екатеринбург,  садоводческое товарищество "Строитель СМУ-3", уч. № 100
+Координаты:
+56,796159	60,454333
+56°47ʹ46ʺ с.ш. 60°27ʹ15ʺ в.д.
+Лист М 1:200000 : O-41-25
+
+https://yandex.ru/maps/?mode=search&text=56.796159%2C60.454333
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,66:41:0310030:100,56.796159,60.454333,12/27/19,12/18/49,,D,N,-9999
+
+27-12-2019 12:18:49 DEBUG:Initializing WebSocket
+27-12-2019 12:18:49 DEBUG:Validating WebSocket request
+27-12-2019 12:18:49 INFO:127.0.0.1 - - [2019-12-27 12:18:49] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.000997
+27-12-2019 12:18:49 DEBUG:Initializing WebSocket
+27-12-2019 12:18:49 DEBUG:Validating WebSocket request
+27-12-2019 12:18:49 INFO:127.0.0.1 - - [2019-12-27 12:18:49] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.000997
+27-12-2019 12:21:10 DEBUG:Адрес:Свердловская обл., г. Екатеринбург,  СТ <<Строитель СМУ-3>>, уч. № 100
+27-12-2019 12:21:10 DEBUG:Папка с отчетом:Широкая Речка СТ Строитель СМУ-3, уч. 100 Декабрь 2019
+27-12-2019 12:27:35 DEBUG:Closed WebSocket
+27-12-2019 12:27:36 DEBUG:Failed to write closing frame -> closing socket
+27-12-2019 12:27:36 DEBUG:Closed WebSocket

@@ -3706,3 +3706,972 @@ WP,D,74:09:0607001:634,56.162464,60.915409,12/19/19,22/37/33,,D,N,-9999
 19-12-2019 10:37:38 DEBUG:Closed WebSocket
 19-12-2019 10:37:39 DEBUG:Failed to write closing frame -> closing socket
 19-12-2019 10:37:39 DEBUG:Closed WebSocket
+28-02-2020 09:16:34 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+28-02-2020 09:16:35 DEBUG:Initializing WebSocket
+28-02-2020 09:16:35 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /main-uikit.html HTTP/1.1" 200 9541 0.776522
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.089945
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.012992
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.014991
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.001998
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.001000
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.001998
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.000999
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.001999
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /eel.js HTTP/1.1" 200 5281 0.001000
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /favicon.ico HTTP/1.1" 200 15286 0.006996
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.003997
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 INFO:127.0.0.1 - - [2020-02-28 21:16:36] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.001998
+28-02-2020 09:16:36 DEBUG:Initializing WebSocket
+28-02-2020 09:16:36 DEBUG:Validating WebSocket request
+28-02-2020 09:16:36 DEBUG:Attempting to upgrade connection
+28-02-2020 09:16:36 DEBUG:WebSocket request accepted, switching protocols
+28-02-2020 09:16:38 DEBUG:Initializing WebSocket
+28-02-2020 09:16:38 DEBUG:Validating WebSocket request
+28-02-2020 09:16:38 INFO:127.0.0.1 - - [2020-02-28 21:16:38] "GET /favicon.ico HTTP/1.1" 200 15286 0.000999
+28-02-2020 09:16:44 DEBUG:Введенный кад. номер: 66:06:4501021:4228
+28-02-2020 09:16:44 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+28-02-2020 09:16:44 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/66:6:4501021:4228 HTTP/1.1" 301 0
+28-02-2020 09:16:44 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+28-02-2020 09:16:44 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/66:6:4501021:4228 HTTP/1.1" 200 2397
+28-02-2020 09:16:44 INFO:Кадастровый номер: 66:06:4501021:4228
+Адрес: Российская Федерация, Свердловская область, Белоярский городской округ, д. Гусева, мкр. Александрия, ул. Пятнадцатая, 68
+Координаты:
+56,674216	61,198074
+56°40ʹ27ʺ с.ш. 61°11ʹ53ʺ в.д.
+Лист М 1:200000 : O-41-26
+
+https://yandex.ru/maps/?mode=search&text=56.674216%2C61.198074
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,66:06:4501021:4228,56.674216,61.198074,02/28/20,21/16/44,,D,N,-9999
+
+28-02-2020 09:16:45 DEBUG:Initializing WebSocket
+28-02-2020 09:16:45 DEBUG:Validating WebSocket request
+28-02-2020 09:16:45 INFO:127.0.0.1 - - [2020-02-28 21:16:45] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.000999
+28-02-2020 09:16:45 DEBUG:Initializing WebSocket
+28-02-2020 09:16:45 DEBUG:Validating WebSocket request
+28-02-2020 09:16:45 INFO:127.0.0.1 - - [2020-02-28 21:16:45] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.001998
+28-02-2020 09:17:54 DEBUG:Адрес:Свердловская обл., Белоярский ГО, д. Гусева, мкр. Александрия, ул. Пятнадцатая, 68
+28-02-2020 09:17:54 DEBUG:Папка с отчетом:Гусева-Чернобровкина кп Александрия Февраль 2020
+28-02-2020 09:39:57 DEBUG:Closed WebSocket
+28-02-2020 09:39:58 DEBUG:Failed to write closing frame -> closing socket
+28-02-2020 09:39:58 DEBUG:Closed WebSocket
+12-03-2020 10:02:21 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+12-03-2020 10:02:22 DEBUG:Initializing WebSocket
+12-03-2020 10:02:22 DEBUG:Validating WebSocket request
+12-03-2020 10:02:22 INFO:127.0.0.1 - - [2020-03-12 22:02:22] "GET /main-uikit.html HTTP/1.1" 200 9541 0.665590
+12-03-2020 10:02:22 DEBUG:Initializing WebSocket
+12-03-2020 10:02:22 DEBUG:Validating WebSocket request
+12-03-2020 10:02:22 INFO:127.0.0.1 - - [2020-03-12 22:02:22] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.089944
+12-03-2020 10:02:22 DEBUG:Initializing WebSocket
+12-03-2020 10:02:22 DEBUG:Validating WebSocket request
+12-03-2020 10:02:22 INFO:127.0.0.1 - - [2020-03-12 22:02:22] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.055966
+12-03-2020 10:02:22 DEBUG:Initializing WebSocket
+12-03-2020 10:02:22 DEBUG:Validating WebSocket request
+12-03-2020 10:02:23 INFO:127.0.0.1 - - [2020-03-12 22:02:23] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.004996
+12-03-2020 10:02:23 DEBUG:Initializing WebSocket
+12-03-2020 10:02:23 DEBUG:Validating WebSocket request
+12-03-2020 10:02:23 INFO:127.0.0.1 - - [2020-03-12 22:02:23] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.000999
+12-03-2020 10:02:23 DEBUG:Initializing WebSocket
+12-03-2020 10:02:23 DEBUG:Validating WebSocket request
+12-03-2020 10:02:23 INFO:127.0.0.1 - - [2020-03-12 22:02:23] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.001999
+12-03-2020 10:02:23 DEBUG:Initializing WebSocket
+12-03-2020 10:02:23 DEBUG:Validating WebSocket request
+12-03-2020 10:02:23 INFO:127.0.0.1 - - [2020-03-12 22:02:23] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.005996
+12-03-2020 10:02:23 DEBUG:Initializing WebSocket
+12-03-2020 10:02:23 DEBUG:Validating WebSocket request
+12-03-2020 10:02:23 INFO:127.0.0.1 - - [2020-03-12 22:02:23] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.002998
+12-03-2020 10:02:23 DEBUG:Initializing WebSocket
+12-03-2020 10:02:23 DEBUG:Validating WebSocket request
+12-03-2020 10:02:23 INFO:127.0.0.1 - - [2020-03-12 22:02:23] "GET /eel.js HTTP/1.1" 200 5281 0.000000
+12-03-2020 10:02:23 DEBUG:Initializing WebSocket
+12-03-2020 10:02:23 DEBUG:Validating WebSocket request
+12-03-2020 10:02:23 INFO:127.0.0.1 - - [2020-03-12 22:02:23] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.001999
+12-03-2020 10:02:23 DEBUG:Initializing WebSocket
+12-03-2020 10:02:23 DEBUG:Validating WebSocket request
+12-03-2020 10:02:23 INFO:127.0.0.1 - - [2020-03-12 22:02:23] "GET /favicon.ico HTTP/1.1" 200 15286 0.066959
+12-03-2020 10:02:23 DEBUG:Initializing WebSocket
+12-03-2020 10:02:23 DEBUG:Validating WebSocket request
+12-03-2020 10:02:23 INFO:127.0.0.1 - - [2020-03-12 22:02:23] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.023985
+12-03-2020 10:02:23 DEBUG:Initializing WebSocket
+12-03-2020 10:02:23 DEBUG:Validating WebSocket request
+12-03-2020 10:02:23 INFO:127.0.0.1 - - [2020-03-12 22:02:23] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.001999
+12-03-2020 10:02:23 DEBUG:Initializing WebSocket
+12-03-2020 10:02:23 DEBUG:Validating WebSocket request
+12-03-2020 10:02:23 DEBUG:Attempting to upgrade connection
+12-03-2020 10:02:23 DEBUG:WebSocket request accepted, switching protocols
+12-03-2020 10:02:24 DEBUG:Initializing WebSocket
+12-03-2020 10:02:24 DEBUG:Validating WebSocket request
+12-03-2020 10:02:24 INFO:127.0.0.1 - - [2020-03-12 22:02:24] "GET /favicon.ico HTTP/1.1" 200 15286 0.001999
+12-03-2020 10:04:21 DEBUG:Входная строка 1(координаты) 56.854341, 60.377620
+12-03-2020 10:04:21 DEBUG:Входная строка 2 Свердловская обл., г. Екатеринбург, пос. Палкинский Торфяник, Торфяная улица, 24
+12-03-2020 10:04:21 DEBUG:Lat 56.854341 Lon 60.377620
+12-03-2020 10:04:21 DEBUG:Получение информации по координатам...
+12-03-2020 10:04:22 DEBUG:Кадастровый номер: Участок
+Адрес: Свердловская обл., г. Екатеринбург, пос. Палкинский Торфяник, Торфяная улица, 24
+Координаты:
+56,854341	60,377620
+56°51ʹ15ʺ с.ш. 60°22ʹ39ʺ в.д.
+Лист М 1:200000 : O-41-25
+
+https://yandex.ru/maps/?mode=search&text=56.854341%2C60.377620
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,Участок,56.854341,60.377620,03/12/20,22/04/22,,D,N,-9999
+
+12-03-2020 10:04:22 DEBUG:Initializing WebSocket
+12-03-2020 10:04:22 DEBUG:Validating WebSocket request
+12-03-2020 10:04:22 INFO:127.0.0.1 - - [2020-03-12 22:04:22] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.000999
+12-03-2020 10:04:22 DEBUG:Initializing WebSocket
+12-03-2020 10:04:22 DEBUG:Validating WebSocket request
+12-03-2020 10:04:22 INFO:127.0.0.1 - - [2020-03-12 22:04:22] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.001999
+12-03-2020 10:04:24 DEBUG:Адрес:Свердловская обл., г. Екатеринбург, пос. Палкинский Торфяник, Торфяная улица, 24
+12-03-2020 10:04:24 DEBUG:Папка с паспортом:Паспорт Свердловская обл., г. Екатеринбург, пос. Палкинский Торфяник, Торфяная улица, 24
+12-03-2020 10:04:24 DEBUG:Путь к папке с отчетом:D:\Home System\ИЗЫСКАНИЯ\Паспорта скважин\2019\Паспорт Свердловская обл., г. Екатеринбург, пос. Палкинский Торфяник, Торфяная улица, 24
+12-03-2020 10:46:43 DEBUG:Closed WebSocket
+12-03-2020 10:46:44 DEBUG:Failed to write closing frame -> closing socket
+12-03-2020 10:46:44 DEBUG:Closed WebSocket
+23-03-2020 10:02:08 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+23-03-2020 10:02:08 DEBUG:Initializing WebSocket
+23-03-2020 10:02:08 DEBUG:Validating WebSocket request
+23-03-2020 10:02:09 INFO:127.0.0.1 - - [2020-03-23 22:02:09] "GET /main-uikit.html HTTP/1.1" 200 9541 1.043357
+23-03-2020 10:02:09 DEBUG:Initializing WebSocket
+23-03-2020 10:02:09 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 INFO:127.0.0.1 - - [2020-03-23 22:02:10] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.071956
+23-03-2020 10:02:10 DEBUG:Initializing WebSocket
+23-03-2020 10:02:10 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 INFO:127.0.0.1 - - [2020-03-23 22:02:10] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.009994
+23-03-2020 10:02:10 DEBUG:Initializing WebSocket
+23-03-2020 10:02:10 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 INFO:127.0.0.1 - - [2020-03-23 22:02:10] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.003997
+23-03-2020 10:02:10 DEBUG:Initializing WebSocket
+23-03-2020 10:02:10 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 INFO:127.0.0.1 - - [2020-03-23 22:02:10] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.001999
+23-03-2020 10:02:10 DEBUG:Initializing WebSocket
+23-03-2020 10:02:10 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 INFO:127.0.0.1 - - [2020-03-23 22:02:10] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.001997
+23-03-2020 10:02:10 DEBUG:Initializing WebSocket
+23-03-2020 10:02:10 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 INFO:127.0.0.1 - - [2020-03-23 22:02:10] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.000999
+23-03-2020 10:02:10 DEBUG:Initializing WebSocket
+23-03-2020 10:02:10 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 INFO:127.0.0.1 - - [2020-03-23 22:02:10] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.001999
+23-03-2020 10:02:10 DEBUG:Initializing WebSocket
+23-03-2020 10:02:10 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 INFO:127.0.0.1 - - [2020-03-23 22:02:10] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.000999
+23-03-2020 10:02:10 DEBUG:Initializing WebSocket
+23-03-2020 10:02:10 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 INFO:127.0.0.1 - - [2020-03-23 22:02:10] "GET /eel.js HTTP/1.1" 200 5281 0.000000
+23-03-2020 10:02:10 DEBUG:Initializing WebSocket
+23-03-2020 10:02:10 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 INFO:127.0.0.1 - - [2020-03-23 22:02:10] "GET /favicon.ico HTTP/1.1" 200 15286 0.009994
+23-03-2020 10:02:10 DEBUG:Initializing WebSocket
+23-03-2020 10:02:10 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 INFO:127.0.0.1 - - [2020-03-23 22:02:10] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.014991
+23-03-2020 10:02:10 DEBUG:Initializing WebSocket
+23-03-2020 10:02:10 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 INFO:127.0.0.1 - - [2020-03-23 22:02:10] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.001999
+23-03-2020 10:02:10 DEBUG:Initializing WebSocket
+23-03-2020 10:02:10 DEBUG:Validating WebSocket request
+23-03-2020 10:02:10 DEBUG:Attempting to upgrade connection
+23-03-2020 10:02:10 DEBUG:WebSocket request accepted, switching protocols
+23-03-2020 10:02:11 DEBUG:Initializing WebSocket
+23-03-2020 10:02:11 DEBUG:Validating WebSocket request
+23-03-2020 10:02:11 INFO:127.0.0.1 - - [2020-03-23 22:02:11] "GET /favicon.ico HTTP/1.1" 200 15286 0.000999
+23-03-2020 10:02:13 DEBUG:Введенный кад. номер: 74090607001634
+23-03-2020 10:02:13 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+23-03-2020 10:02:13 DEBUG:http://pkk5.rosreestr.ru:80 "POST /api/features/1/74:9:607001:634 HTTP/1.1" 301 0
+23-03-2020 10:02:13 DEBUG:Starting new HTTPS connection (1): pkk5.rosreestr.ru:443
+23-03-2020 10:02:14 DEBUG:https://pkk5.rosreestr.ru:443 "GET /api/features/1/74:9:607001:634 HTTP/1.1" 404 None
+23-03-2020 10:02:14 DEBUG:Ошибка HTTP: `404 Client Error: Not found for url: https://pkk5.rosreestr.ru/api/features/1/74:9:607001:634`
+23-03-2020 10:02:26 DEBUG:Closed WebSocket
+23-03-2020 10:02:27 DEBUG:Failed to write closing frame -> closing socket
+23-03-2020 10:02:27 DEBUG:Closed WebSocket
+24-03-2020 08:15:13 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+24-03-2020 08:15:14 DEBUG:Initializing WebSocket
+24-03-2020 08:15:14 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /main-uikit.html HTTP/1.1" 200 9541 0.560727
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.054974
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.005996
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.003998
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.001000
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.001999
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.002000
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.001998
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.000999
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /eel.js HTTP/1.1" 200 5281 0.000999
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /favicon.ico HTTP/1.1" 200 15286 0.004997
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.001999
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 INFO:127.0.0.1 - - [2020-03-24 08:15:15] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.003998
+24-03-2020 08:15:15 DEBUG:Initializing WebSocket
+24-03-2020 08:15:15 DEBUG:Validating WebSocket request
+24-03-2020 08:15:15 DEBUG:Attempting to upgrade connection
+24-03-2020 08:15:15 DEBUG:WebSocket request accepted, switching protocols
+24-03-2020 08:15:27 DEBUG:Входная строка 1(координаты) 56.893701, 59.922092
+24-03-2020 08:15:27 DEBUG:Входная строка 2 1
+24-03-2020 08:15:27 DEBUG:Lat 56.893701 Lon 59.922092
+24-03-2020 08:15:27 DEBUG:Получение информации по координатам...
+24-03-2020 08:15:27 DEBUG:Кадастровый номер: Участок
+Адрес: 1
+Координаты:
+56,893701	59,922092
+56°53ʹ37ʺ с.ш. 59°55ʹ19ʺ в.д.
+Лист М 1:200000 : O-40-30
+
+https://yandex.ru/maps/?mode=search&text=56.893701%2C59.922092
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,Участок,56.893701,59.922092,03/24/20,08/15/27,,D,N,-9999
+
+24-03-2020 08:15:27 DEBUG:Initializing WebSocket
+24-03-2020 08:15:27 DEBUG:Validating WebSocket request
+24-03-2020 08:15:27 INFO:127.0.0.1 - - [2020-03-24 08:15:27] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.001000
+24-03-2020 08:15:27 DEBUG:Initializing WebSocket
+24-03-2020 08:15:27 DEBUG:Validating WebSocket request
+24-03-2020 08:15:27 INFO:127.0.0.1 - - [2020-03-24 08:15:27] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.001999
+24-03-2020 08:20:32 DEBUG:Входная строка 1(координаты) 56.893701, 59.922092
+24-03-2020 08:20:32 DEBUG:Входная строка 2 Свердловская обл., г.Первоуральск, СНТ <<Шишмарь-9>>, участок №4
+24-03-2020 08:20:32 DEBUG:Lat 56.893701 Lon 59.922092
+24-03-2020 08:20:32 DEBUG:Получение информации по координатам...
+24-03-2020 08:20:32 DEBUG:Кадастровый номер: Участок
+Адрес: Свердловская обл., г.Первоуральск, СНТ <<Шишмарь-9>>, участок №4
+Координаты:
+56,893701	59,922092
+56°53ʹ37ʺ с.ш. 59°55ʹ19ʺ в.д.
+Лист М 1:200000 : O-40-30
+
+https://yandex.ru/maps/?mode=search&text=56.893701%2C59.922092
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,Участок,56.893701,59.922092,03/24/20,08/20/32,,D,N,-9999
+
+24-03-2020 08:20:32 DEBUG:Initializing WebSocket
+24-03-2020 08:20:33 DEBUG:Validating WebSocket request
+24-03-2020 08:20:33 INFO:127.0.0.1 - - [2020-03-24 08:20:33] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.515802
+24-03-2020 08:20:33 DEBUG:Initializing WebSocket
+24-03-2020 08:20:33 DEBUG:Validating WebSocket request
+24-03-2020 08:20:33 INFO:127.0.0.1 - - [2020-03-24 08:20:33] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.000999
+24-03-2020 08:20:56 DEBUG:Адрес:Свердловская обл., г.Первоуральск, СНТ <<Шишмарь-9>>, участок №4
+24-03-2020 08:20:56 DEBUG:Папка с отчетом:Первоуральск, СНТ Шишмарь-9, уч 4 Март 2020
+24-03-2020 08:31:13 DEBUG:Closed WebSocket
+24-03-2020 08:31:14 DEBUG:Failed to write closing frame -> closing socket
+24-03-2020 08:31:14 DEBUG:Closed WebSocket
+24-03-2020 11:56:52 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+24-03-2020 11:56:53 DEBUG:Initializing WebSocket
+24-03-2020 11:56:53 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /main-uikit.html HTTP/1.1" 200 9541 0.559654
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.001999
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.001000
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.000999
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.000998
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.001999
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.002000
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.001998
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.001000
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /favicon.ico HTTP/1.1" 200 15286 0.000999
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /eel.js HTTP/1.1" 200 5281 0.000999
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.000999
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 INFO:127.0.0.1 - - [2020-03-24 11:56:54] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.001999
+24-03-2020 11:56:54 DEBUG:Initializing WebSocket
+24-03-2020 11:56:54 DEBUG:Validating WebSocket request
+24-03-2020 11:56:54 DEBUG:Attempting to upgrade connection
+24-03-2020 11:56:54 DEBUG:WebSocket request accepted, switching protocols
+24-03-2020 11:56:58 DEBUG:Введенный кад. номер: 74090607001634
+24-03-2020 11:56:58 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+24-03-2020 11:56:58 DEBUG:Ошибка запроса: `('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))`
+24-03-2020 11:57:01 DEBUG:Closed WebSocket
+24-03-2020 11:57:02 DEBUG:Failed to write closing frame -> closing socket
+24-03-2020 11:57:02 DEBUG:Closed WebSocket
+24-03-2020 10:41:51 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+24-03-2020 10:41:52 DEBUG:Initializing WebSocket
+24-03-2020 10:41:52 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /main-uikit.html HTTP/1.1" 200 9541 0.621617
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.055965
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.004996
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.003997
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.001998
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.000998
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.001999
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.001999
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.001000
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /eel.js HTTP/1.1" 200 5281 0.000000
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /favicon.ico HTTP/1.1" 200 15286 0.003998
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.002000
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 INFO:127.0.0.1 - - [2020-03-24 22:41:53] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.001999
+24-03-2020 10:41:53 DEBUG:Initializing WebSocket
+24-03-2020 10:41:53 DEBUG:Validating WebSocket request
+24-03-2020 10:41:53 DEBUG:Attempting to upgrade connection
+24-03-2020 10:41:53 DEBUG:WebSocket request accepted, switching protocols
+24-03-2020 10:41:56 DEBUG:Введенный кад. номер: 74090607001634
+24-03-2020 10:41:56 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+24-03-2020 10:42:01 DEBUG:Ошибка по тайм-ауту: `HTTPConnectionPool(host='pkk5.rosreestr.ru', port=80): Read timed out. (read timeout=5)`
+24-03-2020 10:42:16 DEBUG:Введенный кад. номер: 74090607001634
+24-03-2020 10:42:16 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+24-03-2020 10:42:21 DEBUG:Ошибка по тайм-ауту: `HTTPConnectionPool(host='pkk5.rosreestr.ru', port=80): Read timed out. (read timeout=5)`
+24-03-2020 10:42:25 DEBUG:Closed WebSocket
+24-03-2020 10:42:26 DEBUG:Failed to write closing frame -> closing socket
+24-03-2020 10:42:26 DEBUG:Closed WebSocket
+25-03-2020 10:05:55 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+25-03-2020 10:05:55 DEBUG:Initializing WebSocket
+25-03-2020 10:05:55 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /main-uikit.html HTTP/1.1" 200 9541 0.557657
+25-03-2020 10:05:56 DEBUG:Initializing WebSocket
+25-03-2020 10:05:56 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.050969
+25-03-2020 10:05:56 DEBUG:Initializing WebSocket
+25-03-2020 10:05:56 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.004996
+25-03-2020 10:05:56 DEBUG:Initializing WebSocket
+25-03-2020 10:05:56 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.003997
+25-03-2020 10:05:56 DEBUG:Initializing WebSocket
+25-03-2020 10:05:56 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.001999
+25-03-2020 10:05:56 DEBUG:Initializing WebSocket
+25-03-2020 10:05:56 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.002000
+25-03-2020 10:05:56 DEBUG:Initializing WebSocket
+25-03-2020 10:05:56 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.001999
+25-03-2020 10:05:56 DEBUG:Initializing WebSocket
+25-03-2020 10:05:56 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.001998
+25-03-2020 10:05:56 DEBUG:Initializing WebSocket
+25-03-2020 10:05:56 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.001000
+25-03-2020 10:05:56 DEBUG:Initializing WebSocket
+25-03-2020 10:05:56 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /eel.js HTTP/1.1" 200 5281 0.000000
+25-03-2020 10:05:56 DEBUG:Initializing WebSocket
+25-03-2020 10:05:56 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /favicon.ico HTTP/1.1" 200 15286 0.003998
+25-03-2020 10:05:56 DEBUG:Initializing WebSocket
+25-03-2020 10:05:56 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.001999
+25-03-2020 10:05:56 DEBUG:Initializing WebSocket
+25-03-2020 10:05:56 DEBUG:Validating WebSocket request
+25-03-2020 10:05:56 INFO:127.0.0.1 - - [2020-03-25 10:05:56] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.001999
+25-03-2020 10:05:57 DEBUG:Initializing WebSocket
+25-03-2020 10:05:57 DEBUG:Validating WebSocket request
+25-03-2020 10:05:57 DEBUG:Attempting to upgrade connection
+25-03-2020 10:05:57 DEBUG:WebSocket request accepted, switching protocols
+25-03-2020 10:05:58 DEBUG:Введенный кад. номер: 74090607001634
+25-03-2020 10:05:58 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+25-03-2020 10:06:03 DEBUG:Ошибка по тайм-ауту: `HTTPConnectionPool(host='pkk5.rosreestr.ru', port=80): Read timed out. (read timeout=5)`
+25-03-2020 10:06:06 DEBUG:Closed WebSocket
+25-03-2020 10:06:07 DEBUG:Failed to write closing frame -> closing socket
+25-03-2020 10:06:07 DEBUG:Closed WebSocket
+25-03-2020 03:54:52 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+25-03-2020 03:54:53 DEBUG:Initializing WebSocket
+25-03-2020 03:54:53 DEBUG:Validating WebSocket request
+25-03-2020 03:54:53 INFO:127.0.0.1 - - [2020-03-25 15:54:53] "GET /main-uikit.html HTTP/1.1" 200 9541 0.560655
+25-03-2020 03:54:53 DEBUG:Initializing WebSocket
+25-03-2020 03:54:53 DEBUG:Validating WebSocket request
+25-03-2020 03:54:53 INFO:127.0.0.1 - - [2020-03-25 15:54:53] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.001999
+25-03-2020 03:54:53 DEBUG:Initializing WebSocket
+25-03-2020 03:54:53 DEBUG:Validating WebSocket request
+25-03-2020 03:54:53 INFO:127.0.0.1 - - [2020-03-25 15:54:53] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.001000
+25-03-2020 03:54:53 DEBUG:Initializing WebSocket
+25-03-2020 03:54:53 DEBUG:Validating WebSocket request
+25-03-2020 03:54:53 INFO:127.0.0.1 - - [2020-03-25 15:54:53] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.001000
+25-03-2020 03:54:53 DEBUG:Initializing WebSocket
+25-03-2020 03:54:53 DEBUG:Validating WebSocket request
+25-03-2020 03:54:53 INFO:127.0.0.1 - - [2020-03-25 15:54:53] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.001999
+25-03-2020 03:54:53 DEBUG:Initializing WebSocket
+25-03-2020 03:54:53 DEBUG:Validating WebSocket request
+25-03-2020 03:54:53 INFO:127.0.0.1 - - [2020-03-25 15:54:53] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.001999
+25-03-2020 03:54:53 DEBUG:Initializing WebSocket
+25-03-2020 03:54:53 DEBUG:Validating WebSocket request
+25-03-2020 03:54:53 INFO:127.0.0.1 - - [2020-03-25 15:54:53] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.000998
+25-03-2020 03:54:53 DEBUG:Initializing WebSocket
+25-03-2020 03:54:53 DEBUG:Validating WebSocket request
+25-03-2020 03:54:53 INFO:127.0.0.1 - - [2020-03-25 15:54:53] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.001000
+25-03-2020 03:54:53 DEBUG:Initializing WebSocket
+25-03-2020 03:54:53 DEBUG:Validating WebSocket request
+25-03-2020 03:54:53 INFO:127.0.0.1 - - [2020-03-25 15:54:53] "GET /eel.js HTTP/1.1" 200 5281 0.000999
+25-03-2020 03:54:53 DEBUG:Initializing WebSocket
+25-03-2020 03:54:53 DEBUG:Validating WebSocket request
+25-03-2020 03:54:53 INFO:127.0.0.1 - - [2020-03-25 15:54:53] "GET /favicon.ico HTTP/1.1" 200 15286 0.001998
+25-03-2020 03:54:53 DEBUG:Initializing WebSocket
+25-03-2020 03:54:53 DEBUG:Validating WebSocket request
+25-03-2020 03:54:53 INFO:127.0.0.1 - - [2020-03-25 15:54:53] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.001999
+25-03-2020 03:54:54 DEBUG:Initializing WebSocket
+25-03-2020 03:54:54 DEBUG:Validating WebSocket request
+25-03-2020 03:54:54 INFO:127.0.0.1 - - [2020-03-25 15:54:54] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.002000
+25-03-2020 03:54:54 DEBUG:Initializing WebSocket
+25-03-2020 03:54:54 DEBUG:Validating WebSocket request
+25-03-2020 03:54:54 INFO:127.0.0.1 - - [2020-03-25 15:54:54] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.001999
+25-03-2020 03:54:54 DEBUG:Initializing WebSocket
+25-03-2020 03:54:54 DEBUG:Validating WebSocket request
+25-03-2020 03:54:54 DEBUG:Attempting to upgrade connection
+25-03-2020 03:54:54 DEBUG:WebSocket request accepted, switching protocols
+25-03-2020 03:55:38 DEBUG:Входная строка 1(координаты) 56.968239, 60.430493
+25-03-2020 03:55:38 DEBUG:Входная строка 2 Свердловская обл., ГО Среднеуральск, д. Коптяки, ул. Радужная, 7
+25-03-2020 03:55:38 DEBUG:Lat 56.968239 Lon 60.430493
+25-03-2020 03:55:38 DEBUG:Получение информации по координатам...
+25-03-2020 03:55:39 DEBUG:Кадастровый номер: Участок
+Адрес: Свердловская обл., ГО Среднеуральск, д. Коптяки, ул. Радужная, 7
+Координаты:
+56,968239	60,430493
+56°58ʹ05ʺ с.ш. 60°25ʹ49ʺ в.д.
+Лист М 1:200000 : O-41-25
+
+https://yandex.ru/maps/?mode=search&text=56.968239%2C60.430493
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,Участок,56.968239,60.430493,03/25/20,15/55/39,,D,N,-9999
+
+25-03-2020 03:55:39 DEBUG:Initializing WebSocket
+25-03-2020 03:55:39 DEBUG:Validating WebSocket request
+25-03-2020 03:55:39 INFO:127.0.0.1 - - [2020-03-25 15:55:39] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.000999
+25-03-2020 03:55:39 DEBUG:Initializing WebSocket
+25-03-2020 03:55:39 DEBUG:Validating WebSocket request
+25-03-2020 03:55:39 INFO:127.0.0.1 - - [2020-03-25 15:55:39] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.001000
+25-03-2020 03:56:26 DEBUG:Адрес:Свердловская обл., ГО Среднеуральск, д. Коптяки, ул. Радужная, 7
+25-03-2020 03:56:26 DEBUG:Папка с отчетом:Коптяки Радужная, 7 Март 2020
+25-03-2020 04:20:15 DEBUG:Closed WebSocket
+25-03-2020 04:20:16 DEBUG:Failed to write closing frame -> closing socket
+25-03-2020 04:20:16 DEBUG:Closed WebSocket
+26-03-2020 12:23:45 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+26-03-2020 12:23:46 DEBUG:Initializing WebSocket
+26-03-2020 12:23:46 DEBUG:Validating WebSocket request
+26-03-2020 12:23:46 INFO:127.0.0.1 - - [2020-03-26 12:23:46] "GET /main-uikit.html HTTP/1.1" 200 9541 0.611994
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 INFO:127.0.0.1 - - [2020-03-26 12:23:47] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.059963
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 INFO:127.0.0.1 - - [2020-03-26 12:23:47] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.003998
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 INFO:127.0.0.1 - - [2020-03-26 12:23:47] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.002998
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 INFO:127.0.0.1 - - [2020-03-26 12:23:47] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.001999
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 INFO:127.0.0.1 - - [2020-03-26 12:23:47] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.001999
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 INFO:127.0.0.1 - - [2020-03-26 12:23:47] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.001999
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 INFO:127.0.0.1 - - [2020-03-26 12:23:47] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.000999
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 INFO:127.0.0.1 - - [2020-03-26 12:23:47] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.000999
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 INFO:127.0.0.1 - - [2020-03-26 12:23:47] "GET /eel.js HTTP/1.1" 200 5281 0.000999
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 INFO:127.0.0.1 - - [2020-03-26 12:23:47] "GET /favicon.ico HTTP/1.1" 200 15286 0.003997
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 INFO:127.0.0.1 - - [2020-03-26 12:23:47] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.001999
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 INFO:127.0.0.1 - - [2020-03-26 12:23:47] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.000999
+26-03-2020 12:23:47 DEBUG:Initializing WebSocket
+26-03-2020 12:23:47 DEBUG:Validating WebSocket request
+26-03-2020 12:23:47 DEBUG:Attempting to upgrade connection
+26-03-2020 12:23:47 DEBUG:WebSocket request accepted, switching protocols
+26-03-2020 12:23:49 DEBUG:Введенный кад. номер: 74090607001634
+26-03-2020 12:23:49 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+26-03-2020 12:23:54 DEBUG:Ошибка по тайм-ауту: `HTTPConnectionPool(host='pkk5.rosreestr.ru', port=80): Read timed out. (read timeout=5)`
+26-03-2020 12:23:56 DEBUG:Closed WebSocket
+26-03-2020 12:23:57 DEBUG:Failed to write closing frame -> closing socket
+26-03-2020 12:23:57 DEBUG:Closed WebSocket
+26-03-2020 02:39:16 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+26-03-2020 02:39:17 DEBUG:Initializing WebSocket
+26-03-2020 02:39:17 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /main-uikit.html HTTP/1.1" 200 9541 0.563684
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.001998
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.001000
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.000999
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.001999
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.001999
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.001998
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.001999
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.001999
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /eel.js HTTP/1.1" 200 5281 0.000999
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /favicon.ico HTTP/1.1" 200 15286 0.001000
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.000999
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 INFO:127.0.0.1 - - [2020-03-26 14:39:18] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.000999
+26-03-2020 02:39:18 DEBUG:Initializing WebSocket
+26-03-2020 02:39:18 DEBUG:Validating WebSocket request
+26-03-2020 02:39:18 DEBUG:Attempting to upgrade connection
+26-03-2020 02:39:18 DEBUG:WebSocket request accepted, switching protocols
+26-03-2020 02:40:53 DEBUG:Входная строка 1(координаты) 56.819626, 59.543197
+26-03-2020 02:40:53 DEBUG:Входная строка 2 Свердловская обл., Нижнесергинский р-н , с. Первомайское, ул. Московская, дом 23
+26-03-2020 02:40:53 DEBUG:Lat 56.819626 Lon 59.543197
+26-03-2020 02:40:53 DEBUG:Получение информации по координатам...
+26-03-2020 02:40:53 DEBUG:Кадастровый номер: Участок
+Адрес: Свердловская обл., Нижнесергинский р-н , с. Первомайское, ул. Московская, дом 23
+Координаты:
+56,819626	59,543197
+56°49ʹ10ʺ с.ш. 59°32ʹ35ʺ в.д.
+Лист М 1:200000 : O-40-30
+
+https://yandex.ru/maps/?mode=search&text=56.819626%2C59.543197
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,Участок,56.819626,59.543197,03/26/20,14/40/53,,D,N,-9999
+
+26-03-2020 02:40:53 DEBUG:Initializing WebSocket
+26-03-2020 02:40:53 DEBUG:Validating WebSocket request
+26-03-2020 02:40:53 INFO:127.0.0.1 - - [2020-03-26 14:40:53] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.001998
+26-03-2020 02:40:53 DEBUG:Initializing WebSocket
+26-03-2020 02:40:53 DEBUG:Validating WebSocket request
+26-03-2020 02:40:53 INFO:127.0.0.1 - - [2020-03-26 14:40:53] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.001000
+26-03-2020 02:41:24 DEBUG:Адрес:Свердловская обл., Нижнесергинский р-н , с. Первомайское, ул. Московская, дом 23
+26-03-2020 02:41:24 DEBUG:Папка с отчетом:Первомайское (Дружинино) Московская 23 Март 2020
+26-03-2020 02:53:50 DEBUG:Closed WebSocket
+26-03-2020 02:53:51 DEBUG:Failed to write closing frame -> closing socket
+26-03-2020 02:53:51 DEBUG:Closed WebSocket
+27-03-2020 10:29:50 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+27-03-2020 10:29:51 DEBUG:Initializing WebSocket
+27-03-2020 10:29:51 DEBUG:Validating WebSocket request
+27-03-2020 10:29:51 INFO:127.0.0.1 - - [2020-03-27 10:29:51] "GET /main-uikit.html HTTP/1.1" 200 9541 0.654593
+27-03-2020 10:29:51 DEBUG:Initializing WebSocket
+27-03-2020 10:29:51 DEBUG:Validating WebSocket request
+27-03-2020 10:29:51 INFO:127.0.0.1 - - [2020-03-27 10:29:51] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.057964
+27-03-2020 10:29:51 DEBUG:Initializing WebSocket
+27-03-2020 10:29:51 DEBUG:Validating WebSocket request
+27-03-2020 10:29:51 INFO:127.0.0.1 - - [2020-03-27 10:29:51] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.008994
+27-03-2020 10:29:51 DEBUG:Initializing WebSocket
+27-03-2020 10:29:51 DEBUG:Validating WebSocket request
+27-03-2020 10:29:51 INFO:127.0.0.1 - - [2020-03-27 10:29:51] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.003997
+27-03-2020 10:29:51 DEBUG:Initializing WebSocket
+27-03-2020 10:29:51 DEBUG:Validating WebSocket request
+27-03-2020 10:29:51 INFO:127.0.0.1 - - [2020-03-27 10:29:51] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.002000
+27-03-2020 10:29:51 DEBUG:Initializing WebSocket
+27-03-2020 10:29:51 DEBUG:Validating WebSocket request
+27-03-2020 10:29:51 INFO:127.0.0.1 - - [2020-03-27 10:29:51] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.001999
+27-03-2020 10:29:51 DEBUG:Initializing WebSocket
+27-03-2020 10:29:51 DEBUG:Validating WebSocket request
+27-03-2020 10:29:51 INFO:127.0.0.1 - - [2020-03-27 10:29:51] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.001998
+27-03-2020 10:29:51 DEBUG:Initializing WebSocket
+27-03-2020 10:29:51 DEBUG:Validating WebSocket request
+27-03-2020 10:29:51 INFO:127.0.0.1 - - [2020-03-27 10:29:51] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.001999
+27-03-2020 10:29:51 DEBUG:Initializing WebSocket
+27-03-2020 10:29:51 DEBUG:Validating WebSocket request
+27-03-2020 10:29:51 INFO:127.0.0.1 - - [2020-03-27 10:29:51] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.001998
+27-03-2020 10:29:51 DEBUG:Initializing WebSocket
+27-03-2020 10:29:51 DEBUG:Validating WebSocket request
+27-03-2020 10:29:51 INFO:127.0.0.1 - - [2020-03-27 10:29:51] "GET /eel.js HTTP/1.1" 200 5281 0.000000
+27-03-2020 10:29:51 DEBUG:Initializing WebSocket
+27-03-2020 10:29:51 DEBUG:Validating WebSocket request
+27-03-2020 10:29:51 INFO:127.0.0.1 - - [2020-03-27 10:29:51] "GET /favicon.ico HTTP/1.1" 200 15286 0.011994
+27-03-2020 10:29:52 DEBUG:Initializing WebSocket
+27-03-2020 10:29:52 DEBUG:Validating WebSocket request
+27-03-2020 10:29:52 INFO:127.0.0.1 - - [2020-03-27 10:29:52] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.004997
+27-03-2020 10:29:52 DEBUG:Initializing WebSocket
+27-03-2020 10:29:52 DEBUG:Validating WebSocket request
+27-03-2020 10:29:52 INFO:127.0.0.1 - - [2020-03-27 10:29:52] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.002998
+27-03-2020 10:29:52 DEBUG:Initializing WebSocket
+27-03-2020 10:29:52 DEBUG:Validating WebSocket request
+27-03-2020 10:29:52 DEBUG:Attempting to upgrade connection
+27-03-2020 10:29:52 DEBUG:WebSocket request accepted, switching protocols
+27-03-2020 10:30:05 DEBUG:Введенный кад. номер: 666203010011192
+27-03-2020 10:30:05 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+27-03-2020 10:30:10 DEBUG:Ошибка по тайм-ауту: `HTTPConnectionPool(host='pkk5.rosreestr.ru', port=80): Read timed out. (read timeout=5)`
+27-03-2020 10:32:29 DEBUG:Входная строка 1(координаты) 56.969625, 60.429467
+27-03-2020 10:32:29 DEBUG:Входная строка 2 Свердловская обл., ГО Среднеуральск, д. Коптяки, ул. Радужная, 25
+27-03-2020 10:32:29 DEBUG:Lat 56.969625 Lon 60.429467
+27-03-2020 10:32:29 DEBUG:Получение информации по координатам...
+27-03-2020 10:32:30 DEBUG:Кадастровый номер: Участок
+Адрес: Свердловская обл., ГО Среднеуральск, д. Коптяки, ул. Радужная, 25
+Координаты:
+56,969625	60,429467
+56°58ʹ10ʺ с.ш. 60°25ʹ46ʺ в.д.
+Лист М 1:200000 : O-41-25
+
+https://yandex.ru/maps/?mode=search&text=56.969625%2C60.429467
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,Участок,56.969625,60.429467,03/27/20,10/32/30,,D,N,-9999
+
+27-03-2020 10:32:30 DEBUG:Initializing WebSocket
+27-03-2020 10:32:30 DEBUG:Validating WebSocket request
+27-03-2020 10:32:30 INFO:127.0.0.1 - - [2020-03-27 10:32:30] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.001999
+27-03-2020 10:32:30 DEBUG:Initializing WebSocket
+27-03-2020 10:32:30 DEBUG:Validating WebSocket request
+27-03-2020 10:32:30 INFO:127.0.0.1 - - [2020-03-27 10:32:30] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.000999
+27-03-2020 10:32:43 DEBUG:Адрес:Свердловская обл., ГО Среднеуральск, д. Коптяки, ул. Радужная, 25
+27-03-2020 10:32:43 DEBUG:Папка с отчетом:Коптяки Радужная, 25 Март 2020
+27-03-2020 10:48:12 DEBUG:Closed WebSocket
+27-03-2020 10:48:13 DEBUG:Failed to write closing frame -> closing socket
+27-03-2020 10:48:13 DEBUG:Closed WebSocket
+29-03-2020 06:02:58 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+29-03-2020 06:02:58 DEBUG:Initializing WebSocket
+29-03-2020 06:02:58 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /main-uikit.html HTTP/1.1" 200 9541 0.609623
+29-03-2020 06:02:59 DEBUG:Initializing WebSocket
+29-03-2020 06:02:59 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.059964
+29-03-2020 06:02:59 DEBUG:Initializing WebSocket
+29-03-2020 06:02:59 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.017988
+29-03-2020 06:02:59 DEBUG:Initializing WebSocket
+29-03-2020 06:02:59 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.004997
+29-03-2020 06:02:59 DEBUG:Initializing WebSocket
+29-03-2020 06:02:59 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.000999
+29-03-2020 06:02:59 DEBUG:Initializing WebSocket
+29-03-2020 06:02:59 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.001999
+29-03-2020 06:02:59 DEBUG:Initializing WebSocket
+29-03-2020 06:02:59 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.001000
+29-03-2020 06:02:59 DEBUG:Initializing WebSocket
+29-03-2020 06:02:59 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.001999
+29-03-2020 06:02:59 DEBUG:Initializing WebSocket
+29-03-2020 06:02:59 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.000999
+29-03-2020 06:02:59 DEBUG:Initializing WebSocket
+29-03-2020 06:02:59 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /eel.js HTTP/1.1" 200 5281 0.000000
+29-03-2020 06:02:59 DEBUG:Initializing WebSocket
+29-03-2020 06:02:59 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /favicon.ico HTTP/1.1" 200 15286 0.010993
+29-03-2020 06:02:59 DEBUG:Initializing WebSocket
+29-03-2020 06:02:59 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.009995
+29-03-2020 06:02:59 DEBUG:Initializing WebSocket
+29-03-2020 06:02:59 DEBUG:Validating WebSocket request
+29-03-2020 06:02:59 INFO:127.0.0.1 - - [2020-03-29 18:02:59] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.002000
+29-03-2020 06:03:00 DEBUG:Initializing WebSocket
+29-03-2020 06:03:00 DEBUG:Validating WebSocket request
+29-03-2020 06:03:00 DEBUG:Attempting to upgrade connection
+29-03-2020 06:03:00 DEBUG:WebSocket request accepted, switching protocols
+29-03-2020 06:05:21 DEBUG:Входная строка 1(координаты) 56.794588, 60.699502
+29-03-2020 06:05:21 DEBUG:Входная строка 2 Свердловская обл., г. Екатеринбург, сад <<Дачник>>, 7-й км. Сибирского тракта, уч. 19 
+29-03-2020 06:05:21 DEBUG:Lat 56.794588 Lon 60.699502
+29-03-2020 06:05:21 DEBUG:Получение информации по координатам...
+29-03-2020 06:05:22 DEBUG:Кадастровый номер: Участок
+Адрес: Свердловская обл., г. Екатеринбург, сад <<Дачник>>, 7-й км. Сибирского тракта, уч. 19 
+Координаты:
+56,794588	60,699502
+56°47ʹ40ʺ с.ш. 60°41ʹ58ʺ в.д.
+Лист М 1:200000 : O-41-25
+
+https://yandex.ru/maps/?mode=search&text=56.794588%2C60.699502
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,Участок,56.794588,60.699502,03/29/20,18/05/22,,D,N,-9999
+
+29-03-2020 06:05:22 DEBUG:Initializing WebSocket
+29-03-2020 06:05:22 DEBUG:Validating WebSocket request
+29-03-2020 06:05:22 INFO:127.0.0.1 - - [2020-03-29 18:05:22] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.000999
+29-03-2020 06:05:22 DEBUG:Initializing WebSocket
+29-03-2020 06:05:22 DEBUG:Validating WebSocket request
+29-03-2020 06:05:22 INFO:127.0.0.1 - - [2020-03-29 18:05:22] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.001999
+29-03-2020 06:05:42 DEBUG:Адрес:Свердловская обл., г. Екатеринбург, сад <<Дачник>>, 7-й км. Сибирского тракта, уч. 19 
+29-03-2020 06:05:42 DEBUG:Папка с отчетом:Екатеринбург сад Дачник, 7-й км. Сибирского тракта, уч. 19  Март 2020
+29-03-2020 06:14:51 DEBUG:Closed WebSocket
+29-03-2020 06:14:52 DEBUG:Failed to write closing frame -> closing socket
+29-03-2020 06:14:52 DEBUG:Closed WebSocket
+02-04-2020 02:46:39 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+02-04-2020 02:46:40 DEBUG:Initializing WebSocket
+02-04-2020 02:46:40 DEBUG:Validating WebSocket request
+02-04-2020 02:46:40 INFO:127.0.0.1 - - [2020-04-02 14:46:40] "GET /main-uikit.html HTTP/1.1" 200 9541 0.674584
+02-04-2020 02:46:40 DEBUG:Initializing WebSocket
+02-04-2020 02:46:40 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 INFO:127.0.0.1 - - [2020-04-02 14:46:41] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.094942
+02-04-2020 02:46:41 DEBUG:Initializing WebSocket
+02-04-2020 02:46:41 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 INFO:127.0.0.1 - - [2020-04-02 14:46:41] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.012992
+02-04-2020 02:46:41 DEBUG:Initializing WebSocket
+02-04-2020 02:46:41 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 INFO:127.0.0.1 - - [2020-04-02 14:46:41] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.003997
+02-04-2020 02:46:41 DEBUG:Initializing WebSocket
+02-04-2020 02:46:41 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 INFO:127.0.0.1 - - [2020-04-02 14:46:41] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.001998
+02-04-2020 02:46:41 DEBUG:Initializing WebSocket
+02-04-2020 02:46:41 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 INFO:127.0.0.1 - - [2020-04-02 14:46:41] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.002000
+02-04-2020 02:46:41 DEBUG:Initializing WebSocket
+02-04-2020 02:46:41 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 INFO:127.0.0.1 - - [2020-04-02 14:46:41] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.001999
+02-04-2020 02:46:41 DEBUG:Initializing WebSocket
+02-04-2020 02:46:41 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 INFO:127.0.0.1 - - [2020-04-02 14:46:41] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.001000
+02-04-2020 02:46:41 DEBUG:Initializing WebSocket
+02-04-2020 02:46:41 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 INFO:127.0.0.1 - - [2020-04-02 14:46:41] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.002998
+02-04-2020 02:46:41 DEBUG:Initializing WebSocket
+02-04-2020 02:46:41 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 INFO:127.0.0.1 - - [2020-04-02 14:46:41] "GET /eel.js HTTP/1.1" 200 5281 0.000000
+02-04-2020 02:46:41 DEBUG:Initializing WebSocket
+02-04-2020 02:46:41 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 INFO:127.0.0.1 - - [2020-04-02 14:46:41] "GET /favicon.ico HTTP/1.1" 200 15286 0.007995
+02-04-2020 02:46:41 DEBUG:Initializing WebSocket
+02-04-2020 02:46:41 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 INFO:127.0.0.1 - - [2020-04-02 14:46:41] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.005996
+02-04-2020 02:46:41 DEBUG:Initializing WebSocket
+02-04-2020 02:46:41 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 INFO:127.0.0.1 - - [2020-04-02 14:46:41] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.002998
+02-04-2020 02:46:41 DEBUG:Initializing WebSocket
+02-04-2020 02:46:41 DEBUG:Validating WebSocket request
+02-04-2020 02:46:41 DEBUG:Attempting to upgrade connection
+02-04-2020 02:46:41 DEBUG:WebSocket request accepted, switching protocols
+02-04-2020 02:46:42 DEBUG:Initializing WebSocket
+02-04-2020 02:46:42 DEBUG:Validating WebSocket request
+02-04-2020 02:46:42 INFO:127.0.0.1 - - [2020-04-02 14:46:42] "GET /favicon.ico HTTP/1.1" 200 15286 0.001998
+02-04-2020 02:46:51 DEBUG:Введенный кад. номер: 66191901012113
+02-04-2020 02:46:51 DEBUG:Starting new HTTP connection (1): pkk5.rosreestr.ru:80
+02-04-2020 02:46:56 DEBUG:Ошибка по тайм-ауту: `HTTPConnectionPool(host='pkk5.rosreestr.ru', port=80): Read timed out. (read timeout=5)`
+02-04-2020 02:49:25 DEBUG:Входная строка 1(координаты) 57.926636, 60.318389
+02-04-2020 02:49:25 DEBUG:Входная строка 2 Свердловская обл., Пригородный р-н, к.с.№11, уч.№106
+02-04-2020 02:49:25 DEBUG:Lat 57.926636 Lon 60.318389
+02-04-2020 02:49:25 DEBUG:Получение информации по координатам...
+02-04-2020 02:49:26 DEBUG:Кадастровый номер: Участок
+Адрес: Свердловская обл., Пригородный р-н, к.с.№11, уч.№106
+Координаты:
+57,926636	60,318389
+57°55ʹ35ʺ с.ш. 60°19ʹ06ʺ в.д.
+Лист М 1:200000 : O-41-19
+
+https://yandex.ru/maps/?mode=search&text=57.926636%2C60.318389
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,Участок,57.926636,60.318389,04/02/20,14/49/26,,D,N,-9999
+
+02-04-2020 02:49:26 DEBUG:Initializing WebSocket
+02-04-2020 02:49:26 DEBUG:Validating WebSocket request
+02-04-2020 02:49:26 INFO:127.0.0.1 - - [2020-04-02 14:49:26] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.000999
+02-04-2020 02:49:26 DEBUG:Initializing WebSocket
+02-04-2020 02:49:26 DEBUG:Validating WebSocket request
+02-04-2020 02:49:26 INFO:127.0.0.1 - - [2020-04-02 14:49:26] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.000999
+02-04-2020 02:51:21 DEBUG:Адрес:Свердловская обл., Пригородный р-н, к.с. №11, уч.№106
+02-04-2020 02:51:21 DEBUG:Папка с отчетом:Н.Тагил  кс 11, уч 106 Апрель 2020
+02-04-2020 03:24:27 DEBUG:Входная строка 1(координаты) 56.943252, 60.795720
+02-04-2020 03:24:27 DEBUG:Входная строка 2 Свердловская обл., Пригородный р-н, к.с. №11, уч.№106
+02-04-2020 03:24:27 DEBUG:Lat 56.943252 Lon 60.795720
+02-04-2020 03:24:27 DEBUG:Получение информации по координатам...
+02-04-2020 03:24:27 DEBUG:Кадастровый номер: Участок
+Адрес: Свердловская обл., Пригородный р-н, к.с. №11, уч.№106
+Координаты:
+56,943252	60,795720
+56°56ʹ35ʺ с.ш. 60°47ʹ44ʺ в.д.
+Лист М 1:200000 : O-41-25
+
+https://yandex.ru/maps/?mode=search&text=56.943252%2C60.795720
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,Участок,56.943252,60.795720,04/02/20,15/24/27,,D,N,-9999
+
+02-04-2020 03:24:28 DEBUG:Initializing WebSocket
+02-04-2020 03:24:28 DEBUG:Validating WebSocket request
+02-04-2020 03:24:28 INFO:127.0.0.1 - - [2020-04-02 15:24:28] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.001999
+02-04-2020 03:24:28 DEBUG:Initializing WebSocket
+02-04-2020 03:24:28 DEBUG:Validating WebSocket request
+02-04-2020 03:24:28 INFO:127.0.0.1 - - [2020-04-02 15:24:28] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.000999
+02-04-2020 03:25:29 DEBUG:Closed WebSocket
+02-04-2020 03:25:30 DEBUG:Failed to write closing frame -> closing socket
+02-04-2020 03:25:30 DEBUG:Closed WebSocket
+03-04-2020 01:40:56 INFO:******************** Starting Cadastron v2.150 Build: 18-12-2019-15:42:10 ********************
+03-04-2020 01:40:57 DEBUG:Initializing WebSocket
+03-04-2020 01:40:57 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /main-uikit.html HTTP/1.1" 200 9541 0.594114
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /css/uikit.min.css HTTP/1.1" 200 253566 0.069957
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /css/leaflet.css HTTP/1.1" 200 14317 0.013991
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /css/main-uikit.css HTTP/1.1" 200 581 0.003998
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /js/uikit-icons.min.js HTTP/1.1" 200 63646 0.001000
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 87139 0.001999
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /js/uikit.min.js HTTP/1.1" 200 132204 0.001000
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /js/leaflet.js HTTP/1.1" 200 141340 0.001999
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /js/script-uikit.js HTTP/1.1" 200 12520 0.000999
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /eel.js HTTP/1.1" 200 5281 0.000999
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /favicon.ico HTTP/1.1" 200 15286 0.011114
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /css/images/marker-icon.png HTTP/1.1" 200 1662 0.010993
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 INFO:127.0.0.1 - - [2020-04-03 13:40:58] "GET /css/images/marker-shadow.png HTTP/1.1" 200 813 0.000999
+03-04-2020 01:40:58 DEBUG:Initializing WebSocket
+03-04-2020 01:40:58 DEBUG:Validating WebSocket request
+03-04-2020 01:40:58 DEBUG:Attempting to upgrade connection
+03-04-2020 01:40:58 DEBUG:WebSocket request accepted, switching protocols
+03-04-2020 01:41:00 DEBUG:Введенный кад. номер: 74090607001634
+03-04-2020 01:41:00 DEBUG:Starting new HTTP connection (1): pkk.rosreestr.ru:80
+03-04-2020 01:41:00 DEBUG:http://pkk.rosreestr.ru:80 "POST /api/features/1/74:9:607001:634 HTTP/1.1" 301 0
+03-04-2020 01:41:00 DEBUG:Starting new HTTPS connection (1): pkk.rosreestr.ru:443
+03-04-2020 01:41:00 DEBUG:https://pkk.rosreestr.ru:443 "GET /api/features/1/74:9:607001:634 HTTP/1.1" 200 1417
+03-04-2020 01:41:00 INFO:Кадастровый номер: 74:09:0607001:634
+Адрес: Челябинская область, р-н Каслинский, д. Григорьевка, ул. Березовая, 5
+Координаты:
+56,162464	60,915409
+56°09ʹ44ʺ с.ш. 60°54ʹ55ʺ в.д.
+Лист М 1:200000 : O-41-31
+
+https://yandex.ru/maps/?mode=search&text=56.162464%2C60.915409
+
+file://d:/OziExplorer/data/CADASTER.txt
+Datum,WGS 84
+WP,D,74:09:0607001:634,56.162464,60.915409,04/03/20,13/41/00,,D,N,-9999
+
+03-04-2020 01:41:00 DEBUG:Initializing WebSocket
+03-04-2020 01:41:00 DEBUG:Validating WebSocket request
+03-04-2020 01:41:00 INFO:127.0.0.1 - - [2020-04-03 13:41:00] "GET /css/images/marker-icon.png HTTP/1.1" 200 1666 0.001999
+03-04-2020 01:41:00 DEBUG:Initializing WebSocket
+03-04-2020 01:41:00 DEBUG:Validating WebSocket request
+03-04-2020 01:41:00 INFO:127.0.0.1 - - [2020-04-03 13:41:00] "GET /css/images/marker-shadow.png HTTP/1.1" 200 817 0.001000
+03-04-2020 01:41:03 DEBUG:Closed WebSocket
+03-04-2020 01:41:04 DEBUG:Failed to write closing frame -> closing socket
+03-04-2020 01:41:04 DEBUG:Closed WebSocket

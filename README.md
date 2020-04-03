@@ -52,6 +52,13 @@
 
 - **Chrome** запустится в режиме приложения с этим проектом внутри.
 
+## Если перестал работать запрос в API Росеестра
+API Росеестра иногда меняет url и другие параметры, поэтому мониторим форумы:
+
+http://www.sasgis.org/forum/viewtopic.php?f=56&t=1135&start=110
+
+http://www.sasgis.org/forum/viewtopic.php?f=2&t=168&start=1600
+
 ## Два варианта дизайна
     cadastron.cmd - С использованием оформления в стиле Bootstrap
     cadastron-uikit.cmd - С использованием оформления в стиле UIkit

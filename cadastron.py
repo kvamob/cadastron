@@ -146,7 +146,10 @@ def get_info(cadaster):
     if not obj_id:
         Result.errmsg = 'Ошибка(опечатка) в кадастровом номере!'
         return Result
-    url = f'http://pkk5.rosreestr.ru/api/features/1/{obj_id}'
+
+    # Эти URL иногда меняются, из-за чего все перестает работать!
+    # url = f'http://pkk5.rosreestr.ru/api/features/1/{obj_id}'
+    url = f'http://pkk.rosreestr.ru/api/features/1/{obj_id}'
 
     # Метод GET не всегда работает нормально с API Росеестра, поскольку там идет редирект на https, а сервис,
     # отвечающий по https, иногда падает

@@ -5,7 +5,7 @@ OZI_WAYPOINTS_FILE = r'd:\OziExplorer\data\CADASTER.txt'
 REPORTS_PATH = r'D:\Home System\ИЗЫСКАНИЯ'
 
 # Путь к папке с паспортами скважин
-BHPASSPORTS_PATH = r'D:\Home System\ИЗЫСКАНИЯ\Паспорта скважин\2019'
+BHPASSPORTS_PATH = r'D:\Home System\ИЗЫСКАНИЯ\Паспорта скважин\2020'
 
 # Путь к файлу с TeX файлом - шаблоном отчета по изысканиям
 TEX_TEMPLATE_PATH = r'D:\GIT-REPOS\latex-templates\water'

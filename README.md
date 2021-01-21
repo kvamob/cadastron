@@ -26,7 +26,15 @@
 - Если не установлен пакет `pyvenv`, поставим его: `$ sudo apt install -y python3-venv` (под Windows можно так: `pip3 install virtualenv`)
 - `$ pyvenv venv` создаем виртуальное окружение python3 (под Windows: `> virtualenv venv` )
 - `$ source venv/bin/activate` Активируем виртуальное окружение (под Windows: `> venv\Scripts\activate`)
-- `(venv) $ pip3 install -r requirements.txt` Устанавливаем необходимые пакеты и библиотеки в виртуальное окружение
+- `(venv) $ pip3 install -r requirements.txt` Устанавливаем необходимые пакеты и библиотеки в виртуальное окружение (либо просто выполнить:
+
+```pip3 install eel```
+
+```pip3 install requests```
+
+```pip3 install jinja2```
+
+
 - При необходимости изменить настройки в файле ```settings.py```
 - Скопировать файл ```hooks/pre-commit``` в папку ```.git/hooks```. Это скрипт, автоматически меняющий номер версии и дату сборки проекта в файле ```app/__init__.py``` перед каждым коммитом
 
